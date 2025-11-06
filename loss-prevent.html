@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Loss Prevention Plans - GROUP AGECOSCO | Maritime Risk Management & Prevention</title>
+    <title data-i18n="loss_prevent.header.title">Loss Prevention</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="loss prevention, maritime risk management, cargo protection, marine insurance, GROUP AGECOSCO, Togo, West Africa, risk assessment, damage prevention, maritime security, cargo surveys"
@@ -65,6 +65,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -172,10 +173,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">About</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
@@ -183,41 +185,59 @@
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <a href="branches.html" class="nav-item nav-link">Branches</a>
+                <a href="branches.html" data-i18n="nav.branches">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
                         <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                        <a href="loss-prevent.html" class="dropdown-item" aria-current="page">Loss prevention plans</a>
+                        <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
                         <a href="risk.html" class="dropdown-item">Risk and management</a>
                         <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
                         <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/agecosco" aria-label="Follow us on Facebook" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.twitter.com/agecosco" aria-label="Follow us on Twitter" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
                     <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.linkedin.com/company/agecosco" aria-label="Connect with us on LinkedIn"
-                    target="_blank" rel="noopener noreferrer">
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-0"
-                    href="https://www.instagram.com/agecosco" aria-label="Follow us on Instagram" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
@@ -226,368 +246,188 @@
     <!-- Navbar End -->
 
 
-    <!-- Page Header Start -->
-    <main id="main-content">
-        <section class="container-fluid page-header py-5 mb-5" role="banner">
-            <div class="container py-5">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Loss Prevention</h1>
-                <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a class="text-white text-decoration-none" href="index.html">
-                                <span class="visually-hidden">Navigate to </span>Home
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a class="text-white text-decoration-none" href="service.html">
-                                <span class="visually-hidden">Navigate to </span>Services
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">
-                            Loss Prevention
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-    </main>
-    <!-- Page Header End -->
+    <!-- Page Header supprimé: fusion avec lp-banner -->
 
-    <!--Section Surveys banner Start-->
-
+    <!-- Nouveau design Loss Prevention Plans -->
     <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            color: #5b3f1a;
-            background-color: #fff;
+        .lp-banner {
+            background: linear-gradient(180deg, rgba(12,48,77,0.65), rgba(12,48,77,0.6)),
+                        url('img/carousel-3.jpg') center/cover no-repeat;
+            padding: 70px 0 50px 0;
         }
+        .lp-banner h1 {
+            font-size: 3.1rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.25rem;
+        }
+        .lp-banner small {
+            color: #a3d3ff;
+            font-size: 1.05rem;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+        }
+        .lp-subtitle { color: #e7f2ff; font-size: 1.25rem; margin-top: .35rem; }
+        .lp-icon-row { display: flex; gap: 20px; align-items: center; margin-top: 18px; }
+        .lp-icon-row .lp-icon { width: 58px; height: 58px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.15); color: #ffffff; box-shadow: 0 3px 10px rgba(0,0,0,.15); font-size: 1.4rem; }
+        /* Breadcrumb dans le banner */
+        .lp-breadcrumb { margin-top: 10px; }
+        .lp-breadcrumb .breadcrumb { background: transparent; margin-bottom: 0; }
+        .lp-breadcrumb .breadcrumb-item a { color: #e7f2ff; text-decoration: none; }
+        .lp-breadcrumb .breadcrumb-item.active { color: #ffffff; }
+        .lp-breadcrumb .breadcrumb-item + .breadcrumb-item::before { color: #c6e2ff; }
 
-        .navbar-nav .nav-link {
-            font-weight: 600;
-            color: #5b3f1a !important;
-        }
+        .lp-services-list { list-style: none; padding-left: 0; }
+        .lp-services-list li { font-size: 1.15rem; font-weight: 600; color: #0c304d; margin-bottom: .65rem; display: flex; align-items: center; }
+        .lp-services-list li i { color: #0c304d; margin-right: 10px; }
 
-        .banner {
-            background-color: #e6d5bf;
-            padding: 60px 0;
-        }
+        .lp-section { background: #fff; padding: 45px 0 0 0; }
+        .lp-section h2 { color: #0c304d; font-size: 2.05rem; font-weight: 800; margin-bottom: 1rem; }
+        .lp-section ul { list-style: none; padding-left: 0; }
+        .lp-section ul li { font-size: 1.08rem; margin-bottom: .7rem; color: #214762; display: flex; align-items: flex-start; }
+        .lp-section ul li i { color: #1a6fb0; margin-right: 10px; margin-top: 3px; }
 
-        .banner h1 {
-            font-size: 2.8rem;
-            font-weight: bold;
-            border-left: 4px solid #5b3f1a;
-            padding-left: 15px;
-        }
+        .lp-feature-cards { margin-top: 18px; }
+        .lp-feature-card { background: #f3f8fc; border: 1px solid #e1eef7; border-radius: 10px; padding: 18px; height: 100%; }
+        .lp-feature-card .icon { width: 46px; height: 46px; border-radius: 50%; display: inline-flex; align-items:center; justify-content:center; background: #e6f2ff; color: #1a6fb0; font-size: 1.2rem; margin-right: 10px; }
+        .lp-feature-card h3 { font-size: 1.15rem; color: #0c304d; margin: 10px 0 6px; }
+        .lp-feature-card p { color: #214762; font-size: .98rem; margin: 0; }
 
-        .banner ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .banner ul li::before {
-            content: "\f622";
-            font-family: "Bootstrap Icons";
-            margin-right: 10px;
-            color: #5b3f1a;
-        }
-
-        .section-content {
-            padding: 40px 0;
-        }
-
-        .section-content h5 {
-            font-weight: bold;
-            color: #5b3f1a;
-            text-decoration: underline;
-            margin-bottom: 20px;
-        }
-
-        .section-content ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .section-content ul li::before {
-            content: "\f0f3";
-            font-family: "Bootstrap Icons";
-            margin-right: 10px;
-            color: #5b3f1a;
-        }
+        .lp-highlight { background: #eef6fb; border-left: 5px solid #1a6fb0; padding: 1.4rem 1.6rem; margin: 1.6rem 0 2.2rem 0; font-size: 1.08rem; color: #0c304d; }
+        .lp-gallery { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 2rem; }
+        .lp-gallery figure { width: calc(25% - 14px); min-width: 180px; max-width: 260px; }
+        .lp-gallery img { width: 100%; height: 170px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .lp-gallery figcaption { font-size: .9rem; color: #214762; margin-top: 6px; }
+        @media (max-width: 991px) { .lp-gallery figure { width: calc(50% - 10px); } }
+        @media (max-width: 600px) { .lp-gallery figure { width: 100%; } .lp-gallery img { height: 140px; } }
     </style>
 
-    <!-- Banner Section -->
-    <section class="banner">
+    <main id="main-content">
+    <section class="lp-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-white">
+                    <small>Services</small>
+                    <h1>Loss Prevention<br>Plans</h1>
+                    <p class="lp-subtitle">Solutions proactives pour sécuriser vos opérations maritimes.</p>
+                    <nav class="lp-breadcrumb" aria-label="Breadcrumb navigation">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="service.html">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Loss Prevention</li>
+                        </ol>
+                    </nav>
+                    <div class="lp-icon-row" aria-hidden="true">
+                        <span class="lp-icon"><i class="fas fa-ship"></i></span>
+                        <span class="lp-icon"><i class="fas fa-anchor"></i></span>
+                        <span class="lp-icon"><i class="fas fa-life-ring"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="lp-services-list" aria-label="Principaux services">
+                        <li><i class="fas fa-clipboard-list"></i> Tally Inspections and Supervisions</li>
+                        <li><i class="fas fa-shield-alt"></i> Surveys (pre-loading, discharge & damage)</li>
+                        <li><i class="fas fa-first-aid"></i> Crisis Control Interventions (Casualty Management)</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Risk Management</li>
+                        <li><i class="fas fa-search"></i> Forensic Investigations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <section class="lp-section">
         <div class="container">
             <div class="row">
-                <!-- Title -->
-                <div class="col-md-6">
-                    <small class="text-muted">Services</small>
-                    <h1>Loss<br>Prevention</h1>
+                <div class="col-12">
+                    <p style="font-size:1.18rem; color:#7a5a22;">Based on past loss experience, Loss Prevention Plans will be tailor-made in order to assist our Principals and/or their assureds to minimize losses during future shipments.</p>
                 </div>
-
-                <!-- Service List with Icons -->
-                <div class="col-md-6">
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>Mesures de Prévention des Pertes</h2>
                     <ul>
-                        <li>Tally Inspections and Supervisions</li>
-                        <li>Surveys (pre-loading, discharge and damage surveys)</li>
-                        <li>Risk Management</li>
-                        <li>P&I Claims Handling</li>
-                        <li>Loss Prevention Plans</li>
-                        <li>Fruit and Perishables</li>
-                        <li>Agrifood Sector</li>
+                        <li><i class="fas fa-ship"></i> Choix du type de navire adapté au chargement et à la route</li>
+                        <li><i class="fas fa-box"></i> Exigences de chargement et d’arrimage selon le type de cargo</li>
+                        <li><i class="fas fa-dolly-flatbed"></i> Recommandations pour levage, saisissage et stowage des projets/Heavy-lifts</li>
+                        <li><i class="fas fa-thermometer-half"></i> Soins pendant la traversée: température, ventilation, fumigation</li>
+                        <li><i class="fas fa-crane"></i> Méthodes de déchargement, engins de levage et camions sous palan</li>
+                        <li><i class="fas fa-tools"></i> Procédures terrain pour limiter avaries de manutention et vols</li>
+                        <li><i class="fas fa-lock"></i> Mesures de sécurité pour cargaisons sensibles (cigarettes, alcool, etc.)</li>
                     </ul>
+                    <div class="row lp-feature-cards">
+                        <div class="col-md-4 mb-3">
+                            <div class="lp-feature-card">
+                                <span class="icon"><i class="fas fa-anchor"></i></span>
+                                <h3>Conformité portuaire</h3>
+                                <p>Pratiques validées avec les autorités et les opérateurs locaux.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="lp-feature-card">
+                                <span class="icon"><i class="fas fa-life-ring"></i></span>
+                                <h3>Réponse aux incidents</h3>
+                                <p>Interventions immédiates et gestion des sinistres (Casualty).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="lp-feature-card">
+                                <span class="icon"><i class="fas fa-route"></i></span>
+                                <h3>Traçabilité</h3>
+                                <p>Suivi du cargo du quai au dépôt avec reporting dédié.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="lp-highlight">
+                        <b>Plan officiel de Prévention des Pertes</b><br><br>
+                        Lorsqu’exigé, les plans sont élaborés en concertation avec toutes les parties et validés formellement par chacun.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="lp-gallery" aria-label="Galerie maritime">
+                        <figure>
+                            <img src="img/risk-1.jpg" alt="Arrimage en cale et contrôle de sécurité">
+                            <figcaption>Contrôles d’arrimage et sécurité en cale</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/risk-2.jpg" alt="Chargement en terminal avec équipements de levage">
+                            <figcaption>Chargement en terminal – levage maîtrisé</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/risk-3.jpg" alt="Inspection pont et manutention cargo">
+                            <figcaption>Inspection pont et manutention</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/portfolio-4.jpg" alt="Navire à quai prêt pour opérations de déchargement">
+                            <figcaption>Navire à quai – préparation déchargement</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/portfolio-5.jpg" alt="Saisissage project cargo sur navire">
+                            <figcaption>Saisissage project cargo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/portfolio-6.jpg" alt="Remorquage et assistance portuaire">
+                            <figcaption>Assistance portuaire et remorquage</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/carousel-1.jpg" alt="Manœuvre portuaire et sécurité des quais">
+                            <figcaption>Manœuvres portuaires sécurisées</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/carousel-2.jpg" alt="Opérations cargo en zone portuaire">
+                            <figcaption>Opérations cargo en zone portuaire</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-    <!--Section loss-prevention banner End-->
-    <!--Section loss-prevention Start-->
-    <style>
-        /* Custom CSS */
-        .nautical-section {
-            padding: 4rem 0;
-            background-color: #f8f9fa;
-            /* Light grey background */
-        }
-
-        .nautical-heading {
-            font-size: 2rem;
-            color: #fd7e14;
-            /* Orange color */
-            margin-bottom: 1.5rem;
-        }
-
-        .nautical-list {
-            margin-bottom: 2rem;
-        }
-
-        .nautical-image {
-            max-width: 100%;
-            /* Ensure image doesn't overflow */
-            border-radius: 10px;
-            /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* Light shadow */
-        }
-    </style>
-
-
-    <div class="container">
-        <div class="row align-items-center nautical-section">
-            <!-- Left column for text -->
-            <div class="col-md-6">
-                <h2 class="nautical-heading">Nautical Surveys</h2>
-                <ul class="nautical-list">
-                    <li>Ship Condition Surveys</li>
-                    <li>Cargo Surveys</li>
-                    <li>Marine Casualty Investigations</li>
-                    <li>Offshore Structure Inspections</li>
-                </ul>
-                <p>Our team of expert surveyors specializes in providing comprehensive nautical surveys and
-                    investigations, ensuring safety and compliance in maritime operations.</p>
-            </div>
-
-            <!-- Right column for image -->
-            <div class="col-md-6">
-                <div id="approachCarousel" class="carousel slide" data-bs-ride="carousel" role="region"
-                    aria-label="Our approach to P&I claims handling">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/carousel-1.jpg" class="d-block w-100"
-                                alt="Professional claims handling team reviewing maritime documentation" loading="lazy">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel-2.jpg" class="d-block w-100"
-                                alt="Advanced technology and data analytics for claims processing" loading="lazy">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel-3.jpg" class="d-block w-100"
-                                alt="Real-time client updates and communication systems" loading="lazy">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#approachCarousel"
-                        data-bs-slide="prev" aria-label="Previous approach image">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#approachCarousel"
-                        data-bs-slide="next" aria-label="Next approach image">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                        The advantage of sending our in-house surveyors to attend the job rather than subcontracting, is
-                        to
-                        be much
-                        faster, much more technical and to the point, and cheaper.</p>
-                    <p>
-                        Our in-house surveyors are highly qualified and experienced professionals, who have been working
-                        for
-                        us
-                        for many years. They are well trained and know the local conditions, the local authorities, the
-                        local
-                        port and the local shipping companies. They are also well aware of the local customs and
-                        practices,
-                        which is a great advantage when it comes to dealing with local authorities and shipping
-                        companies.
-                    </p>
-
-                    <p>
-                        Our claims handlers will instruct the in-house  surveyor to look at all those aspects of the
-                        case
-                        which will
-                        be relevant for the further handling of the case.
-                    </p>
-
-                    <p>
-                        All necessary information will be collected and all necessary “official” documents (e.g. Letters
-                        of
-                        Protest,
-                        Letters of Invitations to Joint Survey etc) will be issued on the spot by the in-house surveyor.
-                    </p>
-                </div>
-            </div>
-
-            <!--Section Surveys1 End-->
-            <!--Section Survey2 Start-->
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Our Approach</h5>
-                    <p>We take a proactive approach to P&I claims handling, ensuring that all parties are kept informed
-                        throughout the process.</p>
-                    <p>Our team of experts is dedicated to resolving claims efficiently and effectively, minimizing
-                        disruption to our clients' operations.</p>
-                    <p>We leverage technology and data analytics to streamline the claims process and provide real-time
-                        updates to our clients.</p>
-                    <p>We are committed to continuous improvement and regularly review our processes to ensure we are
-                        providing the best possible service.</p>
-                </div>
-                <div class="col-md-6">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/carousel-1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carousel-2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carousel-3.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Key Features</h5>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/carousel-1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carousel-2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carousel-3.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-6 pt-5">
-                    <h5>Benefits</h5>
-                    <ul>
-                        <li>Pre-Loading Surveys</li>
-                        <li>Discharge Surveys</li>
-                        <li>Damage Surveys</li>
-                        <li>Improved Claims Outcomes</li>
-                        <li>Reduced Claims Processing Time</li>
-                        <li>Enhanced Client Satisfaction</li>
-                        <li>Access to Expert Resources</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mt-5">
-                    <h5>Key Features</h5>
-                    <ul>
-                        <li>24/7 Claims Support</li>
-                        <li>Dedicated Claims Manager</li>
-                        <li>Real-time Claims Tracking</li>
-                        <li>Comprehensive Reporting</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 mt-5">
-                    <h5>Our Expertise</h5>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/carousel-1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carousel-2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carousel-3.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h5>Contact Us</h5>
-                    <p>If you have any questions or would like to learn more about our P&I claims handling services,
-                        please
-                        contact us at:</p>
-                    <p>Email: <a href="mailto:info@agecosco.com">info@agecosco.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Suppression des sections répétitives : carrousels, listes et blocs similaires -->
 
 
     <!--Section loss-prevention End-->
@@ -908,8 +748,12 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

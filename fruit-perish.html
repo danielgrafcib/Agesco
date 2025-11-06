@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fruit & Perishables Services - GROUP AGECOSCO | Fresh Produce Maritime Inspection</title>
+    <title data-i18n="fruit_perish.header.title">Fruit & Perishables Services - GROUP AGECOSCO | Fresh Produce Maritime Inspection</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="fruit perishables inspection, fresh produce maritime services, cargo temperature monitoring, quality assessment, damage surveys, GROUP AGECOSCO fruit services, perishable goods handling, maritime fruit inspection, West Africa fresh produce"
@@ -65,10 +65,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+        <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https://cdn.jsdelivr.net;">
 </head>
 
 <body>
@@ -76,7 +77,7 @@
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only" data-i18n="common.loading">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -90,13 +91,13 @@
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
                         <small class="fa fa-map-marker-alt text-white"></small>
                     </div>
-                    <small>Rue du CYRUS Ablogame N°1,Lomé, TOGO</small>
+                    <small data-i18n="fruit_perish.topbar.address">Rue du CYRUS Ablogame N°1,Lomé, TOGO</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
                         <small class="fa fa-envelope-open text-white"></small>
                     </div>
-                    <small>agecosco@gmail.com</small>
+                    <small data-i18n="fruit_perish.topbar.email">agecosco@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-end">
@@ -104,14 +105,14 @@
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
                         <small class="fa fa-phone-alt text-white"></small>
                     </div>
-                    <small>Tél. : (228) 90-05-74-66
+                    <small data-i18n="fruit_perish.topbar.phone">Tél. : (228) 90-05-74-66
                         Cél. : (228) 98-24-64-83</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
                         <small class="far fa-clock text-white"></small>
                     </div>
-                    <small>Lun-Vend:9H-18H/ Sam:9H-12H</small>
+                    <small data-i18n="fruit_perish.topbar.hours">Lun-Vend:9H-18H/ Sam:9H-12H</small>
                 </div>
             </div>
         </div>
@@ -120,74 +121,100 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
+            <h2 class="m-0 text-primary" data-i18n="nav.home">GROUP AGECOSCO</h2>
             <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
-                        <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
+                        <a href="./quality-policy.html" class="dropdown-item" data-i18n="nav.about.quality_policy">Quality and policy</a>
+                        <a href="team.html" class="dropdown-item" data-i18n="nav.aboutDropdown.team">Our Team</a>
+                        <a href="./health-safety.html" class="dropdown-item" data-i18n="nav.about.health_safety">Health and Safety</a>
+                        <a href="./general-conditions.html" class="dropdown-item" data-i18n="nav.about.general_conditions">General conditions of the Service</a>
                     </div>
                 </div>
-                <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                    <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                    <a href="team.html" class="dropdown-item">General conditions of the Service</a>
-
-                </div>-->
-                <a href="branches.html" class="nav-item nav-link">Branches</a>
-                <!--<a href="project.html" class="nav-item nav-link">Activities</a>-->
+                <a href="branches.html" data-i18n="nav.branches">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
-                        <a href="survey.html" class="dropdown-item">Surveys</a>
-                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                        <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
-                        <a href="risk.html" class="dropdown-item">Risk and management</a>
-                        <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
-                        <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
+                        <a href="tally-inspection.html" class="dropdown-item" data-i18n="nav.servicesDropdown.tally">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" class="dropdown-item" data-i18n="nav.services.surveys">Surveys</a>
+                        <a href="./p-i-claims-handling.html" class="dropdown-item" data-i18n="nav.servicesDropdown.claims">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" class="dropdown-item" data-i18n="nav.services.loss_prevention">Loss prevention plans</a>
+                        <a href="risk.html" class="dropdown-item" data-i18n="nav.services.risk_management">Risk and management</a>
+                        <a href="fruit-perish.html" class="dropdown-item" data-i18n="nav.services.fruit_perishables">Fruit and perishables</a>
+                        <a href="agri-food.html" class="dropdown-item" data-i18n="nav.services.agrifood_sector">Agrifood sector</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span data-i18n="nav.fr">Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span data-i18n="nav.en">English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Skip to Content Link -->
-    <a href="#main-content" class="skip-to-content visually-hidden-focusable">Skip to main content</a>
+    <a href="#main-content" class="skip-to-content visually-hidden-focusable" data-i18n="common.skip_to_content">Skip to main content</a>
 
     <!-- Enhanced Page Header Start -->
     <header class="container-fluid page-header py-5 mb-5" role="banner">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Fruit & Perishables Services</h1>
-                    <p class="lead text-white-50 mb-4 animated slideInDown" data-wow-delay="0.2s">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown" data-i18n="fruit_perish.header.title">Fruit & Perishables Services</h1>
+                    <p class="lead text-white-50 mb-4 animated slideInDown" data-wow-delay="0.2s" data-i18n="fruit_perish.header.description">
                         Expert maritime inspection and quality assessment services for fresh produce and perishable
                         goods.
                         Comprehensive temperature monitoring, damage surveys, and specialized handling across West
@@ -215,14 +242,14 @@
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
                         <a class="text-white text-decoration-none" href="index.html" aria-label="Go to homepage">
-                            <i class="fas fa-home me-1" aria-hidden="true"></i>Home
+                            <i class="fas fa-home me-1" aria-hidden="true"></i><span data-i18n="nav.home">Home</span>
                         </a>
                     </li>
                     <li class="breadcrumb-item">
                         <a class="text-white text-decoration-none" href="service.html"
                             aria-label="Go to services page">Services</a>
                     </li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Fruit & Perishables</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" data-i18n="fruit_perish.breadcrumb.current">Fruit & Perishables</li>
                 </ol>
             </nav>
         </div>
@@ -243,8 +270,8 @@
                             </span>
                         </nav>
 
-                        <h2 id="banner-heading" class="display-4 text-primary mb-4 fw-bold">
-                            Fruit & <br>Perishables Services
+                        <h2 id="banner-heading" class="display-4 text-primary mb-4 fw-bold" data-i18n="fruit_perish.service_banner.perishables">
+                            <span data-i18n="fruit_perish.service_banner.perishables">Fruit & <br>Perishables Services</span>
                         </h2>
 
                         <p class="lead text-muted mb-4">
@@ -260,25 +287,25 @@
                                 <div class="col-sm-6">
                                     <div class="highlight-item d-flex align-items-center">
                                         <i class="fas fa-thermometer-half text-primary me-3" aria-hidden="true"></i>
-                                        <span class="fw-semibold">Temperature Control</span>
+                                        <span class="fw-semibold" data-i18n="fruit_perish.highlights.temp_control">Temperature Control</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="highlight-item d-flex align-items-center">
                                         <i class="fas fa-search text-primary me-3" aria-hidden="true"></i>
-                                        <span class="fw-semibold">Quality Assessment</span>
+                                        <span class="fw-semibold" data-i18n="fruit_perish.highlights.quality_assessment">Quality Assessment</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="highlight-item d-flex align-items-center">
                                         <i class="fas fa-clock text-primary me-3" aria-hidden="true"></i>
-                                        <span class="fw-semibold">24/7 Monitoring</span>
+                                        <span class="fw-semibold" data-i18n="fruit_perish.highlights.monitoring_24_7">24/7 Monitoring</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="highlight-item d-flex align-items-center">
                                         <i class="fas fa-certificate text-primary me-3" aria-hidden="true"></i>
-                                        <span class="fw-semibold">Expert Certification</span>
+                                        <span class="fw-semibold" data-i18n="fruit_perish.highlights.expert_certification">Expert Certification</span>
                                     </div>
                                 </div>
                             </div>
@@ -289,9 +316,9 @@
                 <!-- Related Services Navigation -->
                 <div class="col-lg-6">
                     <div class="related-services-card bg-white rounded-4 p-4 shadow-sm">
-                        <h3 class="h5 text-primary mb-4">
+                        <h3 class="h5 text-primary mb-4" data-i18n="fruit_perish.service_banner.portfolio">
                             <i class="fas fa-list-ul me-2" aria-hidden="true"></i>
-                            Our Complete Service Portfolio
+                            <span data-i18n="fruit_perish.service_banner.portfolio">Our Complete Service Portfolio</span>
                         </h3>
 
                         <nav aria-label="Related services navigation">
@@ -301,7 +328,7 @@
                                         class="text-decoration-none d-flex align-items-center service-link">
                                         <i class="fas fa-check-circle text-success me-3" aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-semibold text-dark">Tally Inspections and
+                                            <span class="fw-semibold text-dark" data-i18n="fruit_perish.related_services.tally">Tally Inspections and
                                                 Supervisions</span>
                                             <small class="d-block text-muted">Comprehensive cargo tallying
                                                 services</small>
@@ -313,7 +340,7 @@
                                         class="text-decoration-none d-flex align-items-center service-link">
                                         <i class="fas fa-search text-info me-3" aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-semibold text-dark">Surveys & Damage Assessment</span>
+                                            <span class="fw-semibold text-dark" data-i18n="fruit_perish.related_services.surveys">Surveys & Damage Assessment</span>
                                             <small class="d-block text-muted">Pre-loading, discharge and damage
                                                 surveys</small>
                                         </div>
@@ -324,7 +351,7 @@
                                         class="text-decoration-none d-flex align-items-center service-link">
                                         <i class="fas fa-shield-alt text-warning me-3" aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-semibold text-dark">Risk Management</span>
+                                            <span class="fw-semibold text-dark" data-i18n="fruit_perish.related_services.risk">Risk Management</span>
                                             <small class="d-block text-muted">Comprehensive risk assessment and
                                                 mitigation</small>
                                         </div>
@@ -335,7 +362,7 @@
                                         class="text-decoration-none d-flex align-items-center service-link">
                                         <i class="fas fa-gavel text-danger me-3" aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-semibold text-dark">P&I Claims Handling</span>
+                                            <span class="fw-semibold text-dark" data-i18n="fruit_perish.related_services.claims">P&I Claims Handling</span>
                                             <small class="d-block text-muted">Professional claims management
                                                 services</small>
                                         </div>
@@ -347,7 +374,7 @@
                                         <i class="fas fa-exclamation-triangle text-secondary me-3"
                                             aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-semibold text-dark">Loss Prevention Plans</span>
+                                            <span class="fw-semibold text-dark" data-i18n="fruit_perish.related_services.loss">Loss Prevention Plans</span>
                                             <small class="d-block text-muted">Proactive loss prevention
                                                 strategies</small>
                                         </div>
@@ -357,7 +384,7 @@
                                     <span class="d-flex align-items-center current-service">
                                         <i class="fas fa-apple-alt text-primary me-3" aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-bold text-primary">Fruit and Perishables</span>
+                                            <span class="fw-bold text-primary" data-i18n="fruit_perish.service_banner.perishables">Fruit and Perishables</span>
                                             <small class="d-block text-muted">Current service - specialized fresh
                                                 produce handling</small>
                                         </div>
@@ -368,7 +395,7 @@
                                         class="text-decoration-none d-flex align-items-center service-link">
                                         <i class="fas fa-seedling text-success me-3" aria-hidden="true"></i>
                                         <div>
-                                            <span class="fw-semibold text-dark">Agrifood Sector</span>
+                                            <span class="fw-semibold text-dark" data-i18n="fruit_perish.related_services.agrifood">Agrifood Sector</span>
                                             <small class="d-block text-muted">Agricultural and food industry
                                                 services</small>
                                         </div>
@@ -392,10 +419,10 @@
                         <header class="text-center mb-5">
                             <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" aria-hidden="true">
                             </div>
-                            <h2 id="intro-heading" class="display-6 mb-4 text-primary fw-bold">
-                                Why Choose Our Fruit & Perishables Services?
+                            <h2 id="intro-heading" class="display-6 mb-4 text-primary fw-bold" data-i18n="fruit_perish.content.why_choose">
+                                <span data-i18n="fruit_perish.content.why_choose">Why Choose Our Fruit & Perishables Services?</span>
                             </h2>
-                            <p class="lead text-muted mb-4">
+                            <p class="lead text-muted mb-4" data-i18n="fruit_perish.intro.description">
                                 Our in-house surveyors are highly qualified and experienced professionals, well-versed
                                 in local
                                 conditions, authorities, and shipping companies. We ensure technical precision, speed,
@@ -414,7 +441,7 @@
                 <div class="row align-items-center bg-light rounded-4 p-4 shadow-sm">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <header class="mb-4">
-                            <h3 id="approach-heading" class="h2 text-primary fw-bold mb-4">Our Professional Approach
+                            <h3 id="approach-heading" class="h2 text-primary fw-bold mb-4" data-i18n="fruit_perish.approach.heading">Our Professional Approach
                             </h3>
                         </header>
                         <ul class="list-unstyled fs-5 mb-4">
@@ -427,18 +454,18 @@
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-users text-primary me-3 mt-1" aria-hidden="true"></i>
-                                <div>Expert team dedicated to efficient, disruption-free claim resolution</div>
+                                <div data-i18n="fruit_perish.content.expert_team">Expert team dedicated to efficient, disruption-free claim resolution</div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-chart-line text-info me-3 mt-1" aria-hidden="true"></i>
-                                <div>Advanced technology and analytics for streamlined processes</div>
+                                <div data-i18n="fruit_perish.content.advanced_tech">Advanced technology and analytics for streamlined processes</div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-sync-alt text-warning me-3 mt-1" aria-hidden="true"></i>
-                                <div>Continuous improvement for the best possible service</div>
+                                <div data-i18n="fruit_perish.content.continuous_improvement">Continuous improvement for the best possible service</div>
                             </li>
                         </ul>
-                        <a href="p-i-claims-handling.html" class="btn btn-primary btn-lg">
+                        <a href="p-i-claims-handling.html" class="btn btn-primary btn-lg" data-i18n-value="fruit_perish.approach.learn_more_btn">
                             <i class="fas fa-arrow-right me-2" aria-hidden="true"></i>
                             Learn More About P&I Claims
                         </a>
@@ -489,33 +516,33 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <header class="mb-4">
-                            <h3 id="surveys-heading" class="h2 text-primary fw-bold">Specialized Fruit & Perishables
+                            <h3 id="surveys-heading" class="h2 text-primary fw-bold" data-i18n="fruit_perish.surveys.heading">Specialized Fruit & Perishables
                                 Surveys</h3>
                         </header>
                         <ul class="list-unstyled fs-5 mb-4">
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-search text-primary me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.surveys.damage">
                                     <strong>Damage surveys</strong> to fruits and perishables with detailed assessment
                                     reports
                                 </div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-clipboard-check text-success me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.surveys.quality">
                                     <strong>Quality and condition assessment</strong> using industry-standard protocols
                                 </div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-thermometer-half text-info me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.surveys.temperature">
                                     <strong>Temperature and storage monitoring</strong> throughout the supply chain
                                 </div>
                             </li>
                         </ul>
-                        <a href="survey.html" class="btn btn-outline-primary btn-lg">
+                        <a href="survey.html" class="btn btn-outline-primary btn-lg" data-i18n="fruit_perish.surveys.see_all">
                             <i class="fas fa-eye me-2" aria-hidden="true"></i>
-                            See All Survey Services
+                            <span data-i18n="fruit_perish.surveys.see_all">See All Survey Services</span>
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -564,41 +591,41 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <header class="mb-4">
-                            <h3 id="features-heading" class="h2 text-primary fw-bold">Key Features & Capabilities</h3>
+                            <h3 id="features-heading" class="h2 text-primary fw-bold" data-i18n="fruit_perish.features.heading">Key Features & Capabilities</h3>
                         </header>
                         <ul class="list-unstyled fs-5 mb-4">
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-clock text-warning me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.features.claims_support">
                                     <strong>24/7 Claims Support</strong> — Always available for urgent needs and
                                     emergency situations
                                 </div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-user-tie text-success me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.features.dedicated_manager">
                                     <strong>Dedicated Claims Manager</strong> — Personalized assistance and expert
                                     guidance for every client
                                 </div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-chart-bar text-info me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.features.real_time_tracking">
                                     <strong>Real-time Claims Tracking</strong> — Transparent updates and progress
                                     monitoring at every stage
                                 </div>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <i class="fas fa-file-chart-line text-primary me-3 mt-1" aria-hidden="true"></i>
-                                <div>
+                                <div data-i18n="fruit_perish.features.comprehensive_reporting">
                                     <strong>Comprehensive Reporting</strong> — Detailed insights and analytics for
                                     better decision-making
                                 </div>
                             </li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary btn-lg">
+                        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="fruit_perish.features.request_consultation">
                             <i class="fas fa-calendar-check me-2" aria-hidden="true"></i>
-                            Request a Consultation
+                            <span data-i18n="fruit_perish.features.request_consultation">Request a Consultation</span>
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -653,7 +680,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <header class="mb-4">
-                            <h3 id="benefits-heading" class="h2 text-primary fw-bold">Client Benefits & Advantages</h3>
+                            <h3 id="benefits-heading" class="h2 text-primary fw-bold" data-i18n="fruit_perish.benefits.heading">Client Benefits & Advantages</h3>
                         </header>
                         <ul class="list-unstyled fs-5 mb-4">
                             <li class="mb-3 d-flex align-items-start">
@@ -730,8 +757,9 @@
     <section class="team-section container-xxl py-5" aria-labelledby="team-heading">
         <div class="container">
             <header class="text-center mb-5">
-                <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" aria-hidden="true"></div>
-                <h2 id="team-heading" class="display-5 mb-4 text-primary fw-bold">Our Expert Team</h2>
+                <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" aria-hidden="true">
+                </div>
+                <h2 id="team-heading" class="display-5 mb-4 text-primary fw-bold" data-i18n="fruit_perish.team.heading">Our Expert Team</h2>
                 <p class="lead text-muted mb-0">
                     Meet our experienced professionals dedicated to providing exceptional fruit and perishables
                     inspection services
@@ -770,8 +798,8 @@
                             </div>
                         </div>
                         <div class="team-info text-center p-4">
-                            <h3 class="h5 mb-2 text-dark fw-bold">TOSSOU Messan</h3>
-                            <p class="text-primary mb-0 fw-semibold">Chief Executive Officer</p>
+                            <h3 class="h5 mb-2 text-dark fw-bold" data-i18n="fruit_perish.team.tossou_name">TOSSOU Messan</h3>
+                            <p class="text-primary mb-0 fw-semibold" data-i18n="fruit_perish.team.ceo">Chief Executive Officer</p>
                         </div>
                     </article>
                 </div>
@@ -807,8 +835,8 @@
                             </div>
                         </div>
                         <div class="team-info text-center p-4">
-                            <h3 class="h5 mb-2 text-dark fw-bold">TOSSOU Ekoue Alex</h3>
-                            <p class="text-primary mb-0 fw-semibold">Operations Manager</p>
+                            <h3 class="h5 mb-2 text-dark fw-bold" data-i18n="fruit_perish.team.ekoue_name">TOSSOU Ekoue Alex</h3>
+                            <p class="text-primary mb-0 fw-semibold" data-i18n="fruit_perish.team.operations">Operations Manager</p>
                         </div>
                     </article>
                 </div>
@@ -844,8 +872,8 @@
                             </div>
                         </div>
                         <div class="team-info text-center p-4">
-                            <h3 class="h5 mb-2 text-dark fw-bold">NTOMBA MOÏSE</h3>
-                            <p class="text-primary mb-0 fw-semibold">Senior Manager</p>
+                            <h3 class="h5 mb-2 text-dark fw-bold" data-i18n="fruit_perish.team.ntomba_name">NTOMBA MOÏSE</h3>
+                            <p class="text-primary mb-0 fw-semibold" data-i18n="fruit_perish.team.senior">Senior Manager</p>
                         </div>
                     </article>
                 </div>
@@ -881,8 +909,8 @@
                             </div>
                         </div>
                         <div class="team-info text-center p-4">
-                            <h3 class="h5 mb-2 text-dark fw-bold">AHLONSOU Emmanuel</h3>
-                            <p class="text-primary mb-0 fw-semibold">Project Manager</p>
+                            <h3 class="h5 mb-2 text-dark fw-bold" data-i18n="fruit_perish.team.ahlonsou_name">AHLONSOU Emmanuel</h3>
+                            <p class="text-primary mb-0 fw-semibold" data-i18n="fruit_perish.team.project">Project Manager</p>
                         </div>
                     </article>
                 </div>
@@ -976,18 +1004,17 @@
                     <!-- Contact Information -->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-section">
-                            <h3 id="footer-heading" class="h5 text-light mb-4 fw-bold">
+                            <h3 id="footer-heading" class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.contact_info">
                                 <i class="fas fa-map-marker-alt me-2 text-primary" aria-hidden="true"></i>
-                                Contact Information
+                                <span data-i18n="fruit_perish.footer.contact_info">Contact Information</span>
                             </h3>
                             <address class="mb-4" itemscope itemtype="https://schema.org/PostalAddress">
                                 <div class="contact-item mb-3 d-flex align-items-start">
                                     <i class="fas fa-building text-primary me-3 mt-1" aria-hidden="true"></i>
                                     <div>
-                                        <span itemprop="streetAddress">Rue du CYRUS-Ablogame N°1<br>Villa N°140 - Zone
-                                            Portuaire</span><br>
-                                        <span itemprop="addressLocality">Lomé</span>, <span
-                                            itemprop="addressCountry">TOGO</span>
+                                        <span itemprop="streetAddress" data-i18n="fruit_perish.footer.address_line1">Rue du CYRUS-Ablogame N°1</span><br><span data-i18n="fruit_perish.footer.address_line2">Villa N°140 - Zone Portuaire</span><br>
+                                        <span itemprop="addressLocality" data-i18n="fruit_perish.footer.address_city">Lomé</span>, <span
+                                            itemprop="addressCountry" data-i18n="fruit_perish.footer.address_city">TOGO</span>
                                     </div>
                                 </div>
                             </address>
@@ -997,24 +1024,24 @@
                                     <i class="fas fa-phone text-primary me-3" aria-hidden="true"></i>
                                     <div>
                                         <a href="tel:+22890057466" class="text-light text-decoration-none"
-                                            aria-label="Call main office">Tél: (228) 90-05-74-66</a><br>
+                                            aria-label="Call main office" data-i18n="fruit_perish.footer.phone">Tél: (228) 90-05-74-66</a><br>
                                         <a href="tel:+22898246483" class="text-light text-decoration-none"
-                                            aria-label="Call mobile">Cél: (228) 98-24-64-83</a>
+                                            aria-label="Call mobile" data-i18n="fruit_perish.footer.cell">Cél: (228) 98-24-64-83</a>
                                     </div>
                                 </div>
                                 <div class="contact-item mb-4 d-flex align-items-center">
                                     <i class="fas fa-envelope text-primary me-3" aria-hidden="true"></i>
                                     <div>
                                         <a href="mailto:agecosco@gmail.com" class="text-light text-decoration-none"
-                                            aria-label="Send email to main address">agecosco@gmail.com</a><br>
+                                            aria-label="Send email to main address" data-i18n="fruit_perish.topbar.email">agecosco@gmail.com</a><br>
                                         <a href="mailto:info@agecosco.com" class="text-light text-decoration-none"
-                                            aria-label="Send email to info address">info@agecosco.com</a>
+                                            aria-label="Send email to info address" data-i18n="fruit_perish.footer.email">info@agecosco.com</a>
                                     </div>
                                 </div>
                             </div>
 
                             <nav class="social-media-nav" aria-label="Social media links">
-                                <h4 class="visually-hidden">Follow us on social media</h4>
+                                <h4 class="visually-hidden" data-i18n="fruit_perish.footer.social_media">Follow us on social media</h4>
                                 <div class="d-flex gap-2">
                                     <a class="btn btn-outline-primary btn-sm rounded-circle" href="#"
                                         onclick="return false;" aria-label="Follow us on Twitter (link not available)"
@@ -1044,9 +1071,9 @@
                     <!-- Services Links -->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-section">
-                            <h3 class="h5 text-light mb-4 fw-bold">
+                            <h3 class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.services">
                                 <i class="fas fa-cogs me-2 text-primary" aria-hidden="true"></i>
-                                Our Services
+                                <span data-i18n="fruit_perish.footer.services">Our Services</span>
                             </h3>
                             <nav aria-label="Services navigation">
                                 <ul class="list-unstyled footer-links">
@@ -1054,42 +1081,42 @@
                                         <a href="tally-inspection.html"
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-check-circle text-primary me-2" aria-hidden="true"></i>
-                                            Tally Inspections
+                                            <span data-i18n="footer.services.tally">Tally Inspections</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="survey.html"
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-search text-primary me-2" aria-hidden="true"></i>
-                                            Surveys & Assessments
+                                            <span data-i18n="footer.services.surveys">Surveys & Assessments</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="p-i-claims-handling.html"
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-gavel text-primary me-2" aria-hidden="true"></i>
-                                            P&I Claims Handling
+                                            <span data-i18n="footer.services.pi_claims">P&I Claims Handling</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="fruit-perish.html"
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-apple-alt text-primary me-2" aria-hidden="true"></i>
-                                            Fruit and Perishables
+                                            <span data-i18n="footer.services.fruit_perishables">Fruit and Perishables</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="agri-food.html"
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-seedling text-primary me-2" aria-hidden="true"></i>
-                                            Agrifood Sector
+                                            <span data-i18n="footer.services.agrifood">Agrifood Sector</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="loss-prevent.html"
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-shield-alt text-primary me-2" aria-hidden="true"></i>
-                                            Loss Prevention Plans
+                                            <span data-i18n="footer.services.loss_prevention">Loss Prevention Plans</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
@@ -1097,7 +1124,7 @@
                                             class="text-light text-decoration-none d-flex align-items-center">
                                             <i class="fas fa-exclamation-triangle text-primary me-2"
                                                 aria-hidden="true"></i>
-                                            Risk Management
+                                            <span data-i18n="footer.services.risk">Risk Management</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1108,52 +1135,52 @@
                     <!-- Quick Links -->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-section">
-                            <h3 class="h5 text-light mb-4 fw-bold">
+                            <h3 class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.quick_links">
                                 <i class="fas fa-link me-2 text-primary" aria-hidden="true"></i>
-                                Quick Links
+                                <span data-i18n="fruit_perish.footer.quick_links">Quick Links</span>
                             </h3>
                             <nav aria-label="Quick navigation">
                                 <ul class="list-unstyled footer-links">
                                     <li class="mb-2">
                                         <a href="index.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
+                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.home">
                                             <i class="fas fa-home text-primary me-2" aria-hidden="true"></i>
-                                            Home
+                                            <span data-i18n="fruit_perish.footer.home">Home</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="about.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
+                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.about">
                                             <i class="fas fa-info-circle text-primary me-2" aria-hidden="true"></i>
-                                            About Us
+                                            <span data-i18n="fruit_perish.footer.about">About Us</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="service.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
+                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.our_services">
                                             <i class="fas fa-concierge-bell text-primary me-2" aria-hidden="true"></i>
-                                            Our Services
+                                            <span data-i18n="fruit_perish.footer.our_services">Our Services</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="branches.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
+                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.branches">
                                             <i class="fas fa-map-marked-alt text-primary me-2" aria-hidden="true"></i>
-                                            Branches
+                                            <span data-i18n="fruit_perish.footer.branches">Branches</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="team.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
+                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.team">
                                             <i class="fas fa-users text-primary me-2" aria-hidden="true"></i>
-                                            Our Team
+                                            <span data-i18n="fruit_perish.footer.team">Our Team</span>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="contact.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
+                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.contact">
                                             <i class="fas fa-envelope text-primary me-2" aria-hidden="true"></i>
-                                            Contact Us
+                                            <span data-i18n="fruit_perish.footer.contact">Contact Us</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1164,21 +1191,21 @@
                     <!-- Newsletter Subscription -->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-section">
-                            <h3 class="h5 text-light mb-4 fw-bold">
+                            <h3 class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.newsletter">
                                 <i class="fas fa-newspaper me-2 text-primary" aria-hidden="true"></i>
-                                Newsletter
+                                <span data-i18n="fruit_perish.footer.newsletter">Newsletter</span>
                             </h3>
-                            <p class="text-light mb-4">Stay updated with our latest announcements and industry insights
+                            <p class="text-light mb-4" data-i18n="fruit_perish.footer.newsletter_desc">Stay updated with our latest announcements and industry insights
                             </p>
 
                             <form class="newsletter-form" aria-label="Newsletter subscription" novalidate>
                                 <div class="position-relative mb-3">
-                                    <label for="newsletter-email" class="visually-hidden">Email address for
+                                    <label for="newsletter-email" class="visually-hidden" data-i18n="fruit_perish.footer.email_placeholder">Email address for
                                         newsletter</label>
                                     <input type="email" id="newsletter-email"
                                         class="form-control bg-transparent border-secondary text-light py-3 ps-4 pe-5"
                                         placeholder="Enter your email address" required
-                                        aria-describedby="email-help email-error">
+                                        aria-describedby="email-help email-error" data-i18n-placeholder="fruit_perish.footer.email_placeholder">
                                     <button type="submit"
                                         class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
                                         aria-label="Subscribe to newsletter">
@@ -1186,11 +1213,11 @@
                                         Subscribe
                                     </button>
                                 </div>
-                                <div id="email-help" class="form-text text-muted small">
-                                    We respect your privacy. Unsubscribe at any time.
+                                <div id="email-help" class="form-text text-muted small" data-i18n="fruit_perish.footer.privacy">
+                                    <span data-i18n="fruit_perish.footer.privacy">We respect your privacy. Unsubscribe at any time.</span>
                                 </div>
-                                <div id="email-error" class="invalid-feedback" role="alert" aria-live="polite">
-                                    Please enter a valid email address.
+                                <div id="email-error" class="invalid-feedback" role="alert" aria-live="polite" data-i18n="fruit_perish.footer.email_error">
+                                    <span data-i18n="fruit_perish.footer.email_error">Please enter a valid email address.</span>
                                 </div>
                             </form>
                         </div>
@@ -1205,13 +1232,13 @@
         <div class="container-fluid py-4" style="background: #000000;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">Copyright
-                        &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0"><span data-i18n="fruit_perish.footer.copyright">Copyright
+                        &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">EDX Design Web
-                            Studio</a><br>Distributed By
+                        <span data-i18n="fruit_perish.footer.designed_by">Designed By</span> <a class="border-bottom" href="https://htmlcodex.com">EDX Design Web
+                            Studio</a><br><span data-i18n="fruit_perish.footer.distributed_by">Distributed By</span>
                         <a class="border-bottom" href="https://themewagon.com/">E-Deal Express Sarl</a>
                     </div>
                 </div>
@@ -1227,7 +1254,11 @@
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>

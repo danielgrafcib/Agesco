@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Language System - AGECOSCO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0d6efd;
+            border-bottom: 3px solid #0d6efd;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #0d6efd;
+            border-radius: 8px;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .status.done {
+            background: #28a745;
+            color: white;
+        }
+        .status.pending {
+            background: #ffc107;
+            color: #000;
+        }
+        .code-block {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .code-block pre {
+            margin: 0;
+        }
+        .instruction {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Guide d'Application du Système Multilingue</h1>
+        
+        <div class="success-box">
+            <h3>✅ Système Créé avec Succès!</h3>
+            <p>Les fichiers suivants ont été créés:</p>
+            <ul>
+                <li><strong>js/translations.js</strong> - Toutes les traductions FR/EN</li>
+                <li><strong>js/language-manager.js</strong> - Gestionnaire de langue</li>
+                <li><strong>css/style.css</strong> - Styles mis à jour</li>
+                <li><strong>index.html</strong> - ✅ DÉJÀ APPLIQUÉ</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📄 Pages à Mettre à Jour</h2>
+            <ul class="file-list">
+                <li class="file-item">
+                    <span>index.html</span>
+                    <span class="status done">✅ FAIT</span>
+                </li>
+                <li class="file-item">
+                    <span>about.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>service.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>contact.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>team.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>branches.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>tally-inspection.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>survey.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>p-i-claims-handling.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>loss-prevent.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>risk.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>fruit-perish.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>agri-food.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>quality-policy.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>health-safety.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+                <li class="file-item">
+                    <span>general-conditions.html</span>
+                    <span class="status pending">⏳ À FAIRE</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Étapes d'Application (pour CHAQUE page)</h2>
+            
+            <div class="instruction">
+                <h3>ÉTAPE 1: Ajouter les scripts dans le &lt;head&gt;</h3>
+                <p>Trouvez cette ligne dans le &lt;head&gt;:</p>
+                <div class="code-block">
+                    <pre>&lt;link href="css/style.css" rel="stylesheet"&gt;</pre>
+                </div>
+                <p>Ajoutez JUSTE APRÈS:</p>
+                <div class="code-block">
+                    <pre>&lt;!-- Language System --&gt;
+&lt;script src="js/translations.js"&gt;&lt;/script&gt;
+&lt;script src="js/language-manager.js"&gt;&lt;/script&gt;</pre>
+                </div>
+            </div>
+
+            <div class="instruction">
+                <h3>ÉTAPE 2: Remplacer le Sélecteur de Langue dans la Navbar</h3>
+                <p>Trouvez ce code (ou similaire) dans la navbar:</p>
+                <div class="code-block">
+                    <pre>&lt;div class="nav-item dropdown"&gt;
+    &lt;a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"&gt;Languages&lt;/a&gt;
+    &lt;div class="dropdown-menu rounded-0 rounded-bottom m-0"&gt;
+        &lt;a href="index.html#french" class="dropdown-item"&gt;Fran&amp;#231;ais&lt;/a&gt;
+        &lt;a href="./lang/en/index.html#english" class="dropdown-item"&gt;English&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+                <p>Remplacez-le par:</p>
+                <div class="code-block">
+                    <pre>&lt;div class="nav-item dropdown"&gt;
+    &lt;a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu"&gt;
+        &lt;i class="fas fa-globe me-2"&gt;&lt;/i&gt;Languages
+    &lt;/a&gt;
+    &lt;div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options"&gt;
+        &lt;a href="#" class="dropdown-item" data-lang="fr" lang="fr"&gt;
+            &lt;i class="fas fa-check me-2 text-primary" style="opacity: 0;"&gt;&lt;/i&gt;
+            &lt;span&gt;Français&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a href="#" class="dropdown-item" data-lang="en" lang="en"&gt;
+            &lt;i class="fas fa-check me-2 text-primary" style="opacity: 0;"&gt;&lt;/i&gt;
+            &lt;span&gt;English&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>✅ Vérification</h2>
+            <p>Après avoir appliqué les modifications à une page:</p>
+            <ol>
+                <li>Ouvrez la page dans votre navigateur</li>
+                <li>Vérifiez que le sélecteur de langue apparaît avec l'icône globe</li>
+                <li>Cliquez sur "English" - le contenu doit changer instantanément</li>
+                <li>Un checkmark doit apparaître à côté de la langue active</li>
+                <li>Rechargez la page - la langue doit persister</li>
+                <li>Ouvrez la console (F12) - aucune erreur ne doit apparaître</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>📞 Test Rapide</h2>
+            <p>Dans la console développeur, tapez:</p>
+            <div class="code-block">
+                <pre>// Doit retourner 'fr' ou 'en'
+console.log(window.languageManager.getCurrentLanguage());
+
+// Test de changement
+window.languageManager.setLanguage('en');
+window.languageManager.setLanguage('fr');
+
+// Test de traduction
+console.log(window.languageManager.t('nav.home'));</pre>
+            </div>
+        </div>
+
+        <div class="success-box">
+            <h3>🎯 Objectif</h3>
+            <p>Une fois toutes les pages mises à jour, le système multilingue sera actif sur <strong>TOUTES</strong> les pages du site AGECOSCO!</p>
+        </div>
+    </div>
+
+    <script>
+        console.log('%c🌍 Guide d\'Application du Système Multilingue', 'color: #0d6efd; font-size: 20px; font-weight: bold;');
+        console.log('%cSuivez les étapes ci-dessus pour chaque page HTML', 'color: #28a745; font-size: 14px;');
+    </script>
+</body>
+</html>

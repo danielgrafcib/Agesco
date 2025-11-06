@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>P&I Claims Handling - GROUP AGECOSCO | Professional Maritime Claims Management</title>
+    <title data-i18n="pi_claims.header.title">P&I Claims Handling - GROUP AGECOSCO | Professional Maritime Claims Management</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="P&I claims handling, maritime claims management, protection indemnity, marine insurance claims, GROUP AGECOSCO, Togo, West Africa, claims processing, maritime legal services, ship insurance"
@@ -65,6 +65,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -172,10 +173,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">About</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
@@ -183,42 +185,59 @@
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <a href="branches.html" class="nav-item nav-link">Branches</a>
+                <a href="branches.html" data-i18n="nav.branches">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
-                        <a href="p-i-claims-handling.html" class="dropdown-item" aria-current="page">P&I Claims
-                            Handling</a>
+                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
                         <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
                         <a href="risk.html" class="dropdown-item">Risk and management</a>
                         <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
                         <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/agecosco" aria-label="Follow us on Facebook" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.twitter.com/agecosco" aria-label="Follow us on Twitter" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
                     <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.linkedin.com/company/agecosco" aria-label="Connect with us on LinkedIn"
-                    target="_blank" rel="noopener noreferrer">
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-0"
-                    href="https://www.instagram.com/agecosco" aria-label="Follow us on Instagram" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
@@ -231,7 +250,7 @@
     <main id="main-content">
         <section class="container-fluid page-header py-5 mb-5" role="banner">
             <div class="container py-5">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">P&I Claims Handling</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown" data-i18n="pi_claims.header.title">P&amp;I Claims Handling</h1>
                 <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -244,7 +263,7 @@
                                 <span class="visually-hidden">Navigate to </span>Services
                             </a>
                         </li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">
+                        <li class="breadcrumb-item text-white active" aria-current="page" data-i18n="pi_claims.breadcrumb.current">
                             P&I Claims Handling
                         </li>
                     </ol>
@@ -327,19 +346,19 @@
                 <!-- Title -->
                 <div class="col-md-6">
                     <small class="text-muted">Services</small>
-                    <h1>P&I Claims<br>Handling</h1>
+                    <h1 data-i18n="pi_claims.banner.title">P&I Claims<br>Handling</h1>
                 </div>
 
                 <!-- Service List with Icons -->
                 <div class="col-md-6">
                     <ul>
-                        <li>Tally Inspections and Supervisions</li>
-                        <li>Surveys (pre-loading, discharge and damage surveys)</li>
-                        <li>Risk Management</li>
-                        <li>P&I Claims Handling</li>
-                        <li>Loss Prevention Plans</li>
-                        <li>Fruit and Perishables</li>
-                        <li>Agrifood Sector</li>
+                        <li data-i18n="pi_claims.banner.service1">Tally Inspections and Supervisions</li>
+                        <li data-i18n="pi_claims.banner.service2">Surveys (pre-loading, discharge and damage surveys)</li>
+                        <li data-i18n="pi_claims.banner.service3">Risk Management</li>
+                        <li data-i18n="pi_claims.banner.service4">P&I Claims Handling</li>
+                        <li data-i18n="pi_claims.banner.service5">Loss Prevention Plans</li>
+                        <li data-i18n="pi_claims.banner.service6">Forensic Investigations</li>
+                        <li data-i18n="pi_claims.banner.service7">Crisis Control Interventions (Casualty Management)</li>
                     </ul>
                 </div>
             </div>
@@ -354,11 +373,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <p>
-                    The advantage of sending our in-house surveyors to attend the job rather than subcontracting, is to
+                <p data-i18n="pi_claims.paragraph1">The advantage of sending our in-house surveyors to attend the job rather than subcontracting, is to
                     be much
                     faster, much more technical and to the point, and cheaper.</p>
-                <p>
+                <p data-i18n="pi_claims.paragraph2">
                     Our in-house surveyors are highly qualified and experienced professionals, who have been working for
                     us
                     for many years. They are well trained and know the local conditions, the local authorities, the
@@ -367,13 +385,13 @@
                     which is a great advantage when it comes to dealing with local authorities and shipping companies.
                 </p>
 
-                <p>
+                <p data-i18n="pi_claims.paragraph3">
                     Our claims handlers will instruct the in-house  surveyor to look at all those aspects of the case
                     which will
                     be relevant for the further handling of the case.
                 </p>
 
-                <p>
+                <p data-i18n="pi_claims.paragraph4">
                     All necessary information will be collected and all necessary “official” documents (e.g. Letters of
                     Protest,
                     Letters of Invitations to Joint Survey etc) will be issued on the spot by the in-house surveyor.
@@ -385,14 +403,14 @@
         <!--Section Survey2 Start-->
         <div class="row">
             <div class="col-md-6">
-                <h5>Our Approach</h5>
-                <p>We take a proactive approach to P&I claims handling, ensuring that all parties are kept informed
+                <h5 data-i18n="pi_claims.approach.heading">Our Approach</h5>
+                <p data-i18n="pi_claims.approach.paragraph1">We take a proactive approach to P&amp;I claims handling, ensuring that all parties are kept informed
                     throughout the process.</p>
-                <p>Our team of experts is dedicated to resolving claims efficiently and effectively, minimizing
+                <p data-i18n="pi_claims.approach.paragraph2">Our team of experts is dedicated to resolving claims efficiently and effectively, minimizing
                     disruption to our clients' operations.</p>
-                <p>We leverage technology and data analytics to streamline the claims process and provide real-time
+                <p data-i18n="pi_claims.approach.paragraph3">We leverage technology and data analytics to streamline the claims process and provide real-time
                     updates to our clients.</p>
-                <p>We are committed to continuous improvement and regularly review our processes to ensure we are
+                <p data-i18n="pi_claims.approach.paragraph4">We are committed to continuous improvement and regularly review our processes to ensure we are
                     providing the best possible service.</p>
             </div>
             <div class="col-md-6">
@@ -427,7 +445,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h5>Key Features</h5>
+                <h5 data-i18n="pi_claims.key_features.heading">Key Features</h5>
                 <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel" role="region"
                     aria-label="Key features of our P&I claims handling">
                     <div class="carousel-inner">
@@ -457,30 +475,30 @@
                 </div>
             </div>
             <div class="col-md-6 pt-5">
-                <h5>Benefits</h5>
+                <h5 data-i18n="pi_claims.benefits.heading">Benefits</h5>
                 <ul>
-                    <li>Pre-Loading Surveys</li>
-                    <li>Discharge Surveys</li>
-                    <li>Damage Surveys</li>
-                    <li>Improved Claims Outcomes</li>
-                    <li>Reduced Claims Processing Time</li>
-                    <li>Enhanced Client Satisfaction</li>
-                    <li>Access to Expert Resources</li>
+                    <li data-i18n="pi_claims.benefits.benefit1"><strong>Pre-Loading Surveys:</strong> Comprehensive evaluation before cargo loading</li>
+                    <li data-i18n="pi_claims.benefits.benefit2"><strong>Discharge Surveys:</strong> Detailed analysis during cargo discharge</li>
+                    <li data-i18n="pi_claims.benefits.benefit3"><strong>Damage Surveys:</strong> Rapid assessment of damage scenarios</li>
+                    <li data-i18n="pi_claims.benefits.benefit4"><strong>Improved Claims Outcomes:</strong> Better recovery and dispute resolution</li>
+                    <li data-i18n="pi_claims.benefits.benefit5"><strong>Reduced Claims Processing Time:</strong> Faster documentation and settlement</li>
+                    <li data-i18n="pi_claims.benefits.benefit6"><strong>Enhanced Client Satisfaction:</strong> Clear communication and proactive handling</li>
+                    <li data-i18n="pi_claims.benefits.benefit7"><strong>Access to Expert Resources:</strong> In-house surveyors and claims specialists</li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 mt-5">
-                <h5>Key Features</h5>
+                <h5 data-i18n="pi_claims.key_features.heading">Key Features</h5>
                 <ul>
-                    <li>24/7 Claims Support</li>
-                    <li>Dedicated Claims Manager</li>
-                    <li>Real-time Claims Tracking</li>
-                    <li>Comprehensive Reporting</li>
+                    <li data-i18n="pi_claims.key_features.feature1"><strong>24/7 Claims Support:</strong> Round-the-clock availability for urgent incidents</li>
+                    <li data-i18n="pi_claims.key_features.feature2"><strong>Dedicated Claims Manager:</strong> Single point of contact for each case</li>
+                    <li data-i18n="pi_claims.key_features.feature3"><strong>Real-time Claims Tracking:</strong> Live status updates and milestones</li>
+                    <li data-i18n="pi_claims.key_features.feature4"><strong>Comprehensive Reporting:</strong> Clear documentation and evidence packages</li>
                 </ul>
             </div>
             <div class="col-md-6 mt-5">
-                <h5>Our Expertise</h5>
+                <h5 data-i18n="pi_claims.expertise.heading">Our Expertise</h5>
                 <div id="expertiseCarousel" class="carousel slide" data-bs-ride="carousel" role="region"
                     aria-label="Our expertise in P&I claims handling">
                     <div class="carousel-inner">
@@ -510,11 +528,11 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <h4>Contact Us</h4>
-                <p>If you have any questions or would like to learn more about our P&I claims handling services,
+                <h4 data-i18n="pi_claims.contact_us.heading">Contact Us</h4>
+                <p data-i18n="pi_claims.contact_us.paragraph">If you have any questions or would like to learn more about our P&I claims handling services,
                     please contact us at:</p>
-                <p>Email: <a href="mailto:info@agecosco.com" class="text-decoration-none">info@agecosco.com</a></p>
-                <p>Phone: <a href="tel:+22890057466" class="text-decoration-none">(228) 90-05-74-66</a></p>
+                <p data-i18n="pi_claims.contact_us.email">Email: <a href="mailto:info@agecosco.com" class="text-decoration-none">info@agecosco.com</a></p>
+                <p data-i18n="pi_claims.contact_us.phone">Phone: <a href="tel:+22890057466" class="text-decoration-none">(228) 90-05-74-66</a></p>
             </div>
         </div>
         </section>
@@ -525,7 +543,7 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" aria-hidden="true"></div>
-                    <h2 id="team-section" class="display-5 mb-5">Our Team</h2>
+                    <h2 id="team-section" class="display-5 mb-5" data-i18n="team.heading">Our Team</h2>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -742,7 +760,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
+                    <h5 class="text-light mb-4" data-i18n="footer.contact_info">Contact Information</h5>
                     <address class="mb-0">
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i>
@@ -820,7 +838,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Follow us through our announcements</p>
+                    <p data-i18n="newsletter.description">Follow us through our announcements</p>
                     <form class="newsletter-form" id="newsletter-form-pi-claims" novalidate>
                         <div class="position-relative w-100">
                             <label for="newsletter-email-pi-claims" class="visually-hidden">Email address for
@@ -830,17 +848,17 @@
                                 required aria-describedby="email-error-pi-claims newsletter-description-pi-claims">
                             <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
                                 aria-describedby="newsletter-description-pi-claims">
-                                SignUp
+                                <span data-i18n-value="newsletter.signup_btn">SignUp</span>
                             </button>
                         </div>
                         <div id="email-error-pi-claims" class="invalid-feedback mt-2" role="alert" aria-live="polite">
                         </div>
                         <div id="newsletter-success-pi-claims" class="text-success mt-2 d-none" role="alert"
                             aria-live="polite">
-                            Thank you for subscribing to our newsletter!
+                            <span data-i18n="newsletter.success_message">Thank you for subscribing to our newsletter!</span>
                         </div>
                         <small id="newsletter-description-pi-claims" class="text-muted">
-                            We respect your privacy. Unsubscribe at any time.
+                            <span data-i18n="newsletter.consent_label">We respect your privacy. Unsubscribe at any time.</span>
                         </small>
                     </form>
                 </div>
@@ -856,15 +874,15 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <p class="mb-0 text-light">
-                        Copyright &copy; <time datetime="2025">2025</time>
-                        <a class="border-bottom text-light" href="index.html">GROUP AGECOSCO</a>, All Rights Reserved.
+                        <span data-i18n="footer.copyright">Copyright &copy; <time datetime="2025">2025</time></span>
+                        <a class="border-bottom text-light" href="index.html" data-i18n="footer.company_name">GROUP AGECOSCO</a>, <span data-i18n="footer.all_rights">All Rights Reserved.</span>
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <p class="mb-0 text-light">
-                        Designed By <a class="border-bottom text-light" href="https://htmlcodex.com" target="_blank"
+                        <span data-i18n="footer.designed_by">Designed By</span> <a class="border-bottom text-light" href="https://htmlcodex.com" target="_blank"
                             rel="noopener noreferrer">EDX Design Web Studio</a><br>
-                        Distributed By <a class="border-bottom text-light" href="https://themewagon.com/"
+                        <span data-i18n="footer.distributed_by">Distributed By</span> <a class="border-bottom text-light" href="https://themewagon.com/"
                             target="_blank" rel="noopener noreferrer">E-Deal Express Sarl</a>
                     </p>
                 </div>
@@ -882,8 +900,12 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -919,12 +941,12 @@
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
                     if (!email) {
-                        showError('Please enter your email address.');
+                        showError('<span data-i18n="newsletter.error_empty_email">Please enter your email address.</span>');
                         return;
                     }
 
                     if (!emailRegex.test(email)) {
-                        showError('Please enter a valid email address.');
+                        showError('<span data-i18n="newsletter.error_invalid_email">Please enter a valid email address.</span>');
                         return;
                     }
 

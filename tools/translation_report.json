@@ -1,0 +1,13 @@
+{
+  "used_key_count": 405,
+  "dictionary_key_count": 895,
+  "missing_in_dictionary_count": 1,
+  "missing_in_dictionary": {
+    "footer.newsletter_text": [
+      "survey.html",
+      "tally-inspection.html"
+    ]
+  },
+  "fr_empty_count": 0,
+  "fr_empty_keys_sample": []
+}

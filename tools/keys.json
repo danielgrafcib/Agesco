@@ -1,0 +1,3304 @@
+{
+  "nav.home": {
+    "examples": [
+      "Home"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\fruit-perish.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\loss-prevent.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\quality-policy.html",
+      "E:\\Agecosco\\risk.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\survey.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.about": {
+    "examples": [
+      "About",
+      "About Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\fruit-perish.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\loss-prevent.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\quality-policy.html",
+      "E:\\Agecosco\\risk.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\survey.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.about.quality_policy": {
+    "examples": [
+      "Quality and policy",
+      "Quality\n                                            Policy",
+      "Quality Policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.about.our_team": {
+    "examples": [
+      "Our Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.about.health_safety": {
+    "examples": [
+      "Health and Safety"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.about.general_conditions": {
+    "examples": [
+      "General conditions of the Service"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.branches": {
+    "examples": [
+      "Branches",
+      "Our\n                                            Branches",
+      "Our Branches"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\fruit-perish.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\loss-prevent.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\quality-policy.html",
+      "E:\\Agecosco\\risk.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\survey.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services": {
+    "examples": [
+      "Services",
+      "Activities",
+      "Our Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\fruit-perish.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\loss-prevent.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\quality-policy.html",
+      "E:\\Agecosco\\risk.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\survey.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.tally_inspections": {
+    "examples": [
+      "Tally Inspections and Supervisions",
+      "Tally\n                                            Inspections & Supervisions",
+      "Tally Inspections & Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.surveys": {
+    "examples": [
+      "Surveys",
+      "Marine\n                                            Surveys",
+      "Marine Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.pi_claims": {
+    "examples": [
+      "P&I Claims Handling",
+      "P&I\n                                            Claims Handling",
+      "P&I Claims"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.loss_prevention": {
+    "examples": [
+      "Loss prevention plans",
+      "Loss\n                                            Prevention Plans",
+      "Loss Prevention Plans"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.risk_management": {
+    "examples": [
+      "Risk and management",
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.fruit_perishables": {
+    "examples": [
+      "Fruit and perishables",
+      "Fruit and\n                                            Perishables",
+      "Fruit and Perishables"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.services.agrifood_sector": {
+    "examples": [
+      "Agrifood sector",
+      "Agrifood\n                                            Sector",
+      "Agrifood Sector"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.languages": {
+    "examples": [
+      "Languages",
+      "Français",
+      "English"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "nav.fr": {
+    "examples": [
+      "Français"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "nav.en": {
+    "examples": [
+      "English"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "nav.contact": {
+    "examples": [
+      "Contact Us",
+      "Contact"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\fruit-perish.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\loss-prevent.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\quality-policy.html",
+      "E:\\Agecosco\\risk.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\survey.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "about.heading": {
+    "examples": [
+      "About Us",
+      "About"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.heading": {
+    "examples": [
+      "Nos Services Principaux"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.service1.title": {
+    "examples": [
+      "Tally Inspections and Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.service1.description": {
+    "examples": [
+      "It consists of accurately checking and recording the quantities of goods loaded or unloaded from a ship, ensuring precise cargo documentation and inventory management."
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.service2.title": {
+    "examples": [
+      "Surveys (pre-loading, discharge and damage surveys)"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.service2.description": {
+    "examples": [
+      "It guarantees the integrity and conformity of goods before, during and after sea transport, providing comprehensive assessment and documentation of cargo conditions."
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.service3.title": {
+    "examples": [
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "services.service3.description": {
+    "examples": [
+      "Responding to accidents, fires, marine pollution or other critical incidents affecting maritime operations, providing expert crisis management and emergency response services."
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.title": {
+    "examples": [
+      "About Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.paragraph1": {
+    "examples": [
+      "AGECOSCO is an international marine inspection company, founded in 1999 and accredited to"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.paragraph2": {
+    "examples": [
+      "Our team of qualified engineers and experts has over"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.paragraph3": {
+    "examples": [
+      "Thanks to our wide range of services, including inspection, control and surveillance,"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.stats.clients": {
+    "examples": [
+      "Nos Statistiques de Performance",
+      "Happy Clients"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.stats.projects": {
+    "examples": [
+      "Projects Done"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "about.btnMore": {
+    "examples": [
+      "Explore More"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "team.heading": {
+    "examples": [
+      "Our Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html",
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "team.ceo": {
+    "examples": [
+      "CEO"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "team.manager": {
+    "examples": [
+      "Manager"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.heading": {
+    "examples": [
+      "Informations de contact et liens utiles"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.address": {
+    "examples": [
+      "Address"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.servicesTitle": {
+    "examples": [
+      "Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.services.tally": {
+    "examples": [
+      "Tally Inspections and Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.services.crisis": {
+    "examples": [
+      "Crisis Control Interventions"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.services.forensic": {
+    "examples": [
+      "Forensic Investigations"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.services.loss": {
+    "examples": [
+      "Loss Prevention Plans"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.services.risk": {
+    "examples": [
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.menuTitle": {
+    "examples": [
+      "Quick Links"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.menu.services": {
+    "examples": [
+      "Our Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.menu.branches": {
+    "examples": [
+      "Branches"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.menu.contact": {
+    "examples": [
+      "Contact Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.newsletterTitle": {
+    "examples": [
+      "Newsletter"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.newsletterDescription": {
+    "examples": [
+      "Follow us through our announcements and stay informed about our latest news."
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.newsletterPlaceholder": {
+    "examples": [
+      "Your email address"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "footer.newsletterBtn": {
+    "examples": [
+      "SignUp"
+    ],
+    "files": [
+      "E:\\Agecosco\\about.html"
+    ]
+  },
+  "branches.header.title": {
+    "examples": [
+      "Our Branches & Offices"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html"
+    ]
+  },
+  "topbar.address": {
+    "examples": [
+      "Rue du CYRUS Ablogame N°1,Lomé, TOGO"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "topbar.email": {
+    "examples": [
+      "agecosco@gmail.com"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "topbar.phone": {
+    "examples": [
+      "Tél. : (228) 90-05-74-66 Cél. : (228) 98-24-64-83"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "topbar.hours": {
+    "examples": [
+      "Lun - Ven : 9H - 18H"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "branches.header.description": {
+    "examples": [
+      "Discover our extensive network of strategically located offices across West Africa,\n                        providing comprehensive maritime inspection and consultancy services at major ports."
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html"
+    ]
+  },
+  "branches.breadcrumb.current": {
+    "examples": [
+      "Branches"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html"
+    ]
+  },
+  "footer.phone_tel": {
+    "examples": [
+      "Tél: (228) 90-05-74-66"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.phone_cel": {
+    "examples": [
+      "Cél: (228) 98-24-64-83"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.email_info": {
+    "examples": [
+      "info@agecosco.com"
+    ],
+    "files": [
+      "E:\\Agecosco\\branches.html",
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "contact.header.title": {
+    "examples": [
+      "Contact Us - GROUP AGECOSCO | Get in Touch with Maritime Inspection Experts",
+      "Contact Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.breadcrumb.current": {
+    "examples": [
+      "Contact"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.section_heading": {
+    "examples": [
+      "Contact Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.section_description": {
+    "examples": [
+      "Get in touch with GROUP AGECOSCO for professional maritime inspection services. We'd love to hear from you and discuss how we can assist with your cargo survey and marine consulting needs."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.name_label": {
+    "examples": [
+      "Your Name *"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.email_label": {
+    "examples": [
+      "Your Email *"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.phone_label": {
+    "examples": [
+      "Your Phone (Optional)"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.service_tally": {
+    "examples": [
+      "Tally Inspections"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.service_surveys": {
+    "examples": [
+      "Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.service_crisis_control": {
+    "examples": [
+      "Crisis Control"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.service_risk_management": {
+    "examples": [
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.service_other": {
+    "examples": [
+      "Other Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.service_label": {
+    "examples": [
+      "Service Interest"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.subject_label": {
+    "examples": [
+      "Subject *"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.message_label": {
+    "examples": [
+      "Message *"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.message_counter": {
+    "examples": [
+      "0/1000\n                                                characters"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.privacy_agree": {
+    "examples": [
+      "I agree to the"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.privacy_policy_link": {
+    "examples": [
+      "Privacy Policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.privacy_consent": {
+    "examples": [
+      "and consent to the processing of\n                                                my personal data *"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.success_message": {
+    "examples": [
+      "Thank you! Your message has been sent successfully. We'll get back to you soon."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.error_message": {
+    "examples": [
+      "There was an error sending your message. Please try\n                                        again."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.info_heading": {
+    "examples": [
+      "Get In Touch"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.info_description": {
+    "examples": [
+      "Ready to discuss your maritime inspection needs? Our expert team is here to\n                                provide professional cargo survey and marine consulting services across West Africa."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.info_office_title": {
+    "examples": [
+      "Our Office"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.info_phone_title": {
+    "examples": [
+      "Phone Numbers"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.info_email_title": {
+    "examples": [
+      "Email Address"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.info_hours_title": {
+    "examples": [
+      "Business Hours"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_title": {
+    "examples": [
+      "Our Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_description": {
+    "examples": [
+      "We provide comprehensive maritime inspection and cargo survey services to ensure the\n                                    safety and quality of your shipments."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_tally_title": {
+    "examples": [
+      "Tally Inspections"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_tally_description": {
+    "examples": [
+      "Comprehensive cargo counting and condition assessment\n                                                services."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_surveys_title": {
+    "examples": [
+      "Marine Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_surveys_description": {
+    "examples": [
+      "Professional vessel and cargo condition surveys."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_pi_claims_title": {
+    "examples": [
+      "P&I Claims"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_pi_claims_description": {
+    "examples": [
+      "Protection and indemnity claims handling and support."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_perishables_title": {
+    "examples": [
+      "Perishables"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_perishables_description": {
+    "examples": [
+      "Specialized inspection of fruits and perishable goods."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_risk_management_title": {
+    "examples": [
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_risk_management_description": {
+    "examples": [
+      "Comprehensive risk assessment and management\n                                                solutions."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_agrifood_sector_title": {
+    "examples": [
+      "Agrifood Sector"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_agrifood_sector_description": {
+    "examples": [
+      "Specialized services for agricultural and food\n                                                products."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.services_view_all": {
+    "examples": [
+      "View All Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "footer.contact_info_title": {
+    "examples": [
+      "Contact Information"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "footer.address_full": {
+    "examples": [
+      "Rue du CYRUS-Ablogame N°1, Villa N°140-Zone Portuaire, Lomé, TOGO"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.email_general": {
+    "examples": [
+      "agecosco@gmail.com"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.hours_mon_fri": {
+    "examples": [
+      "Mon-Fri: 9:00 AM - 6:00 PM"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.hours_sat": {
+    "examples": [
+      "Saturday: 9:00 AM - 12:00 PM"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.services_title": {
+    "examples": [
+      "Our Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.quick_links_title": {
+    "examples": [
+      "Quick Links"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.newsletter_title": {
+    "examples": [
+      "Stay Updated",
+      "Our Team Expertise"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.newsletter_description": {
+    "examples": [
+      "Subscribe to our newsletter for the latest updates on maritime inspection\n                                services and industry news.",
+      "Follow us through our announcements",
+      "Follow us through our announcements.",
+      "Subscribe to our newsletter for the latest updates on maritime inspection services and industry news."
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.newsletter_privacy_agree": {
+    "examples": [
+      "I agree to receive marketing communications and accept the"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.privacy_policy": {
+    "examples": [
+      "Privacy Policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.certifications_title": {
+    "examples": [
+      "Certifications & Memberships"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "footer.copyright": {
+    "examples": [
+      "Copyright &copy; Agecosco 2025, All Right Reserved.",
+      "Copyright &copy;"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.designed_by": {
+    "examples": [
+      "Designed By"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.edx_design_web_studio": {
+    "examples": [
+      "EDX Design Web Studio",
+      "EDX Design Web\n                            Studio",
+      "EDX Design Web"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.distributed_by": {
+    "examples": [
+      "Distributed By"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "footer.e_deal_express_sarl": {
+    "examples": [
+      "E-Deal Express Sarl\n                            Department"
+    ],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "contact.form.submit_button": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\contact.html"
+    ]
+  },
+  "footer.newsletter_subscribe_btn": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\contact.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "fruit_perish.header.title": {
+    "examples": [
+      "Fruit & Perishables Services - GROUP AGECOSCO | Fresh Produce Maritime Inspection",
+      "Fruit & Perishables Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.header.description": {
+    "examples": [
+      "Expert maritime inspection and quality assessment services for fresh produce and perishable\n                        goods.\n                        Comprehensive temperature monitoring, damage surveys, and specialized handling across West\n                        African ports."
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.breadcrumb.current": {
+    "examples": [
+      "Fruit & Perishables"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.banner.heading": {
+    "examples": [
+      "Fruit &"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.highlights.temp_control": {
+    "examples": [
+      "Temperature Control"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.highlights.quality_assessment": {
+    "examples": [
+      "Quality Assessment"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.highlights.monitoring_24_7": {
+    "examples": [
+      "24/7 Monitoring"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.highlights.expert_certification": {
+    "examples": [
+      "Expert Certification"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.related_services.title": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.intro.heading": {
+    "examples": [
+      "Why Choose Our Fruit & Perishables Services?"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.intro.description": {
+    "examples": [
+      "Our in-house surveyors are highly qualified and experienced professionals, well-versed\n                                in local\n                                conditions, authorities, and shipping companies. We ensure technical precision, speed,\n                                and\n                                cost-effectiveness by handling all aspects of the case directly, collecting all\n                                necessary\n                                information and issuing official documents on the spot."
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.approach.heading": {
+    "examples": [
+      "Our Professional Approach"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.surveys.heading": {
+    "examples": [
+      "Specialized Fruit & Perishables\n                                Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.features.heading": {
+    "examples": [
+      "Key Features & Capabilities"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.benefits.heading": {
+    "examples": [
+      "Client Benefits & Advantages"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "fruit_perish.team.heading": {
+    "examples": [
+      "Our Expert Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "footer.contact_info": {
+    "examples": [
+      "Address",
+      "Contact Information"
+    ],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html",
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\p-i-claims-handling.html",
+      "E:\\Agecosco\\quality-policy.html",
+      "E:\\Agecosco\\service.html",
+      "E:\\Agecosco\\survey.html",
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "fruit_perish.approach.learn_more_btn": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\fruit-perish.html"
+    ]
+  },
+  "general_conditions.header.title": {
+    "examples": [
+      "General conditions of the Service - GROUP AGECOSCO | Maritime Survey & Inspection Services",
+      "General conditions of the Service"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "nav.general_conditions": {
+    "examples": [
+      "General conditions of the Service"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "general_conditions.breadcrumb.current": {
+    "examples": [
+      "General conditions of the Service"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.section_heading": {
+    "examples": [
+      "General terms and conditions of service"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.paragraph1": {
+    "examples": [
+      "Unless explicitly agreed otherwise between the parties,\n                            the following terms and conditions apply to our activities.\n                            Please note that these terms and conditions contain specific\n                            provisions to exclude or limit our liability in certain circumstances."
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.paragraph2": {
+    "examples": [
+      "These terms and conditions can be viewed and downloaded\n                            by clicking on the download buttons below in the Downloads section."
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.downloads_heading": {
+    "examples": [
+      "Downloads"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.download1.title": {
+    "examples": [
+      "DG-SCS-003"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.download1.description": {
+    "examples": [
+      "General terms and conditions of service (Rev. 5)"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.download2.title": {
+    "examples": [
+      "DG-SCS-004"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.download2.description": {
+    "examples": [
+      "General terms and conditions of service (Rev. 6)"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.pdf_viewer.heading": {
+    "examples": [
+      "Group Agecosco General Conditions"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.pdf_viewer.fallback_title": {
+    "examples": [
+      "PDF Viewer Not Supported"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "general_conditions.pdf_viewer.fallback_message": {
+    "examples": [
+      "Your browser doesn't support embedded PDF viewing. Please download the file to view it:"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html"
+    ]
+  },
+  "footer.services": {
+    "examples": [
+      "Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "footer.quick_links": {
+    "examples": [
+      "Quick Links"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "footer.newsletter": {
+    "examples": [
+      "Newsletter"
+    ],
+    "files": [
+      "E:\\Agecosco\\general-conditions.html",
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.header.title": {
+    "examples": [
+      "Health And Safety - GROUP AGECOSCO | Maritime Safety Standards & Compliance",
+      "Health And Safety"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "nav.health_safety": {
+    "examples": [
+      "Health and Safety"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html",
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "health_safety.breadcrumb.current": {
+    "examples": [
+      "Health And Safety"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.hse_approach_heading": {
+    "examples": [
+      "Our Health, Safety & Environmental Approach"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.hse_approach_paragraph": {
+    "examples": [
+      "Group Agecosco Maritime Company adopts a systematic approach to health, safety and\n                            environmental management, designed to ensure compliance with legislation and continuous\n                            improvement in performance."
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitments_heading": {
+    "examples": [
+      "Our Commitments:"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitment1": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitment2": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitment3": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitment4": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitment5": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.commitment6": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.company_stats_heading": {
+    "examples": [
+      "Company Statistics and Achievements"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.stat1_label": {
+    "examples": [
+      "Created in"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.stat1_desc": {
+    "examples": [
+      "GROUP AGECOSCO was created in 1998"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.stat2_label": {
+    "examples": [
+      "Alumni"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.stat2_desc": {
+    "examples": [
+      "We have 18,994 alumni from our operations"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.stat3_label": {
+    "examples": [
+      "Experts"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.stat3_desc": {
+    "examples": [
+      "Our team includes over 200 expert professionals"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.contact_us_btn": {
+    "examples": [
+      "Contact Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "health_safety.our_solutions_btn": {
+    "examples": [
+      "Our Solutions"
+    ],
+    "files": [
+      "E:\\Agecosco\\health-safety.html"
+    ]
+  },
+  "loss_prevent.header.title": {
+    "examples": [
+      "Loss Prevention"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.breadcrumb.current": {
+    "examples": [
+      "Loss Prevention"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.paragraph1": {
+    "examples": [
+      "The advantage of sending our in-house surveyors to attend the job rather than subcontracting, is\n                        to\n                        be much\n                        faster, much more technical and to the point, and cheaper."
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.approach.heading": {
+    "examples": [
+      "Our Approach"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.approach.paragraph1": {
+    "examples": [
+      "We take a proactive approach to P&I claims handling, ensuring that all parties are kept informed\n                        throughout the process."
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.key_features.heading": {
+    "examples": [
+      "Key Features"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.benefits.heading": {
+    "examples": [
+      "Benefits"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.our_expertise.heading": {
+    "examples": [
+      "Our Expertise"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.contact_us.heading": {
+    "examples": [
+      "Contact Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "loss_prevent.contact_us_paragraph": {
+    "examples": [
+      "If you have any questions or would like to learn more about our P&I claims handling services,\n                        please\n                        contact us at:"
+    ],
+    "files": [
+      "E:\\Agecosco\\loss-prevent.html"
+    ]
+  },
+  "pi_claims.header.title": {
+    "examples": [
+      "P&I Claims Handling - GROUP AGECOSCO | Professional Maritime Claims Management",
+      "P&amp;I Claims Handling"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.breadcrumb.current": {
+    "examples": [
+      "P&I Claims Handling"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.title": {
+    "examples": [
+      "P&I Claims"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service1": {
+    "examples": [
+      "Tally Inspections and Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service2": {
+    "examples": [
+      "Surveys (pre-loading, discharge and damage surveys)"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service3": {
+    "examples": [
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service4": {
+    "examples": [
+      "P&I Claims Handling"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service5": {
+    "examples": [
+      "Loss Prevention Plans"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service6": {
+    "examples": [
+      "Fruit and Perishables"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.banner.service7": {
+    "examples": [
+      "Agrifood Sector"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.paragraph1": {
+    "examples": [
+      "The advantage of sending our in-house surveyors to attend the job rather than subcontracting, is to\n                    be much\n                    faster, much more technical and to the point, and cheaper."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.paragraph2": {
+    "examples": [
+      "Our in-house surveyors are highly qualified and experienced professionals, who have been working for\n                    us\n                    for many years. They are well trained and know the local conditions, the local authorities, the\n                    local\n                    port and the local shipping companies. They are also well aware of the local customs and practices,\n                    which is a great advantage when it comes to dealing with local authorities and shipping companies."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.paragraph3": {
+    "examples": [
+      "Our claims handlers will instruct the in-house  surveyor to look at all those aspects of the case\n                    which will\n                    be relevant for the further handling of the case."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.paragraph4": {
+    "examples": [
+      "All necessary information will be collected and all necessary “official” documents (e.g. Letters of\n                    Protest,\n                    Letters of Invitations to Joint Survey etc) will be issued on the spot by the in-house surveyor."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.approach.heading": {
+    "examples": [
+      "Our Approach"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.approach.paragraph1": {
+    "examples": [
+      "We take a proactive approach to P&amp;I claims handling, ensuring that all parties are kept informed\n                    throughout the process."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.approach.paragraph2": {
+    "examples": [
+      "Our team of experts is dedicated to resolving claims efficiently and effectively, minimizing\n                    disruption to our clients' operations."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.approach.paragraph3": {
+    "examples": [
+      "We leverage technology and data analytics to streamline the claims process and provide real-time\n                    updates to our clients."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.approach.paragraph4": {
+    "examples": [
+      "We are committed to continuous improvement and regularly review our processes to ensure we are\n                    providing the best possible service."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.key_features.heading": {
+    "examples": [
+      "Key Features"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.heading": {
+    "examples": [
+      "Benefits"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit1": {
+    "examples": [
+      "Pre-Loading Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit2": {
+    "examples": [
+      "Discharge Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit3": {
+    "examples": [
+      "Damage Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit4": {
+    "examples": [
+      "Improved Claims Outcomes"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit5": {
+    "examples": [
+      "Reduced Claims Processing Time"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit6": {
+    "examples": [
+      "Enhanced Client Satisfaction"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.benefits.benefit7": {
+    "examples": [
+      "Access to Expert Resources"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.key_features.feature1": {
+    "examples": [
+      "24/7 Claims Support"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.key_features.feature2": {
+    "examples": [
+      "Dedicated Claims Manager"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.key_features.feature3": {
+    "examples": [
+      "Real-time Claims Tracking"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.key_features.feature4": {
+    "examples": [
+      "Comprehensive Reporting"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.expertise.heading": {
+    "examples": [
+      "Our Expertise"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.contact_us.heading": {
+    "examples": [
+      "Contact Us"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.contact_us.paragraph": {
+    "examples": [
+      "If you have any questions or would like to learn more about our P&I claims handling services,\n                    please contact us at:"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.contact_us.email": {
+    "examples": [
+      "Email:"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "pi_claims.contact_us.phone": {
+    "examples": [
+      "Phone:"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "newsletter.description": {
+    "examples": [
+      "Follow us through our announcements"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "newsletter.success_message": {
+    "examples": [
+      "Thank you for subscribing to our newsletter!"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "newsletter.consent_label": {
+    "examples": [
+      "We respect your privacy. Unsubscribe at any time."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "footer.company_name": {
+    "examples": [
+      "GROUP AGECOSCO"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "footer.all_rights": {
+    "examples": [
+      "All Rights Reserved."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "newsletter.error_empty_email": {
+    "examples": [
+      "Please enter your email address."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "newsletter.error_invalid_email": {
+    "examples": [
+      "Please enter a valid email address."
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "newsletter.signup_btn": {
+    "examples": [
+      "SignUp"
+    ],
+    "files": [
+      "E:\\Agecosco\\p-i-claims-handling.html"
+    ]
+  },
+  "quality_policy.header.title": {
+    "examples": [
+      "Quality and Policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.quality_policy": {
+    "examples": [
+      "Quality and policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.team": {
+    "examples": [
+      "Our Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.tally_inspection": {
+    "examples": [
+      "Tally Inspections and Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.survey": {
+    "examples": [
+      "Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.p_i_claims": {
+    "examples": [
+      "P&I Claims Handling"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.loss_prevent": {
+    "examples": [
+      "Loss prevention plans"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.risk": {
+    "examples": [
+      "Risk and management"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.fruit_perish": {
+    "examples": [
+      "Fruit and perishables"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "nav.agri_food": {
+    "examples": [
+      "Agrifood sector"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.breadcrumb.home": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.breadcrumb.about": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.breadcrumb.current": {
+    "examples": [
+      "Quality and Policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.banner.heading": {
+    "examples": [
+      "Quality and Policy"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment_intro": {
+    "examples": [
+      "The Senior Management of"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment1": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment2": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment3": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment4": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment5": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.commitment6": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.heading": {
+    "examples": [
+      "Quality Management System"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.paragraph1": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.paragraph2": {
+    "examples": [
+      "Our quality framework is built on the foundation of"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.features_heading": {
+    "examples": [
+      "Key Quality Features:"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.feature1": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.feature2": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.feature3": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_management.feature4": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.heading": {
+    "examples": [
+      "Our Quality Standards"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.description": {
+    "examples": [
+      "Committed to excellence in every aspect of our service delivery"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.iso_certified.title": {
+    "examples": [
+      "ISO/IEC 17020 Certified"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.iso_certified.description": {
+    "examples": [
+      "Our operations are fully compliant with international inspection standards,\n                                ensuring reliability and credibility in all our services."
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.technical_excellence.title": {
+    "examples": [
+      "Technical Excellence"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.technical_excellence.description": {
+    "examples": [
+      "Our team of qualified professionals brings extensive technical expertise\n                                to every inspection and certification project."
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.client_satisfaction.title": {
+    "examples": [
+      "Client Satisfaction"
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "quality_policy.quality_standards.client_satisfaction.description": {
+    "examples": [
+      "We prioritize client needs and maintain transparent communication\n                                throughout the entire service delivery process."
+    ],
+    "files": [
+      "E:\\Agecosco\\quality-policy.html"
+    ]
+  },
+  "risk.header.title": {
+    "examples": [
+      "Risk Management Services - GROUP AGECOSCO | Professional Risk Assessment & Mitigation",
+      "Risk Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "risk.expertise_list.item1": {
+    "examples": [
+      "Local conditions and regulatory environment"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "risk.expertise_list.item2": {
+    "examples": [
+      "Local authorities and compliance requirements"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "risk.expertise_list.item3": {
+    "examples": [
+      "Port operations and maritime protocols"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "risk.expertise_list.item4": {
+    "examples": [
+      "Local shipping companies and practices"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "risk.expertise_list.item5": {
+    "examples": [
+      "Cultural customs and business practices"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "risk.expertise_list.item6": {
+    "examples": [
+      "Legal frameworks and dispute resolution"
+    ],
+    "files": [
+      "E:\\Agecosco\\risk.html"
+    ]
+  },
+  "service.page_title": {
+    "examples": [
+      "Our Services - GROUP AGECOSCO | Professional Maritime Inspection Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.header.title": {
+    "examples": [
+      "Our Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.breadcrumb.current": {
+    "examples": [
+      "Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.section_heading": {
+    "examples": [
+      "Our Professional Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.section_description": {
+    "examples": [
+      "GROUP AGECOSCO provides comprehensive maritime inspection and cargo\n                        survey services to ensure the safety, quality, and compliance of your maritime operations across\n                        West Africa."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.tally.title": {
+    "examples": [
+      "Tally Inspections & Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.tally.description": {
+    "examples": [
+      "Professional cargo counting, condition assessment, and supervision\n                                    services including charter-party disputes, bunker disputes, and stevedore operations\n                                    management."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.tally.feature1": {
+    "examples": [
+      "Cargo counting and tallying"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.tally.feature2": {
+    "examples": [
+      "Loading/discharge supervision"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.tally.feature3": {
+    "examples": [
+      "Charter-party dispute resolution"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.survey.title": {
+    "examples": [
+      "Marine Surveys & Average Adjustments"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.survey.description": {
+    "examples": [
+      "Comprehensive marine surveys, transport recommendations, and supervision\n                                    of project cargoes including road surveys and average adjustment services."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.survey.feature1": {
+    "examples": [
+      "Vessel\n                                        condition surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.survey.feature2": {
+    "examples": [
+      "Cargo damage\n                                        assessments"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.survey.feature3": {
+    "examples": [
+      "Average\n                                        adjustment calculations"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.crisis.title": {
+    "examples": [
+      "Crisis Control & Emergency Response"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.crisis.description": {
+    "examples": [
+      "Rapid response crisis control interventions with dedicated professionals\n                                    providing expert emergency maritime assistance and incident management."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.crisis.feature1": {
+    "examples": [
+      "24/7 emergency\n                                        response"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.crisis.feature2": {
+    "examples": [
+      "Incident\n                                        investigation"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.crisis.feature3": {
+    "examples": [
+      "Crisis\n                                        management support"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.risk.title": {
+    "examples": [
+      "Risk Management & Prevention"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.risk.description": {
+    "examples": [
+      "Specialized risk management services focusing on pest prevention and\n                                    control for vessels, cargo, port facilities, and offshore platforms."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.risk.feature1": {
+    "examples": [
+      "Risk assessment\n                                        and analysis"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.risk.feature2": {
+    "examples": [
+      "Pest prevention\n                                        programs"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.risk.feature3": {
+    "examples": [
+      "Safety\n                                        compliance audits"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.additional_services.title": {
+    "examples": [
+      "Need a Custom Solution?"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.additional_services.description": {
+    "examples": [
+      "Our experienced team can provide tailored maritime inspection\n                                        services to meet your specific requirements. Contact us to discuss your unique\n                                        needs and challenges."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "service.additional_services.cta_get_quote": {
+    "examples": [
+      "Get Custom Quote"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.section_heading": {
+    "examples": [
+      "Legal Documents & General Conditions"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.section_description": {
+    "examples": [
+      "Review our comprehensive general conditions and legal framework that\n                        govern our maritime inspection services."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_header.title": {
+    "examples": [
+      "GROUP AGECOSCO General Conditions"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_header.subtitle": {
+    "examples": [
+      "Legal framework and terms of service"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_loading.message": {
+    "examples": [
+      "Loading PDF document..."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_error.title": {
+    "examples": [
+      "PDF Viewer Not Available"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_error.description": {
+    "examples": [
+      "Your browser doesn't support embedded PDF viewing. Please\n                                        download the document to view it."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.document_type": {
+    "examples": [
+      "Document Information"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.document_type_value": {
+    "examples": [
+      "Document Type: Legal General Conditions"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.language": {
+    "examples": [
+      "Language: English/French"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.last_updated": {
+    "examples": [
+      "Last Updated: January 2025"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.key_sections": {
+    "examples": [
+      "Key Sections"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.terms_of_service": {
+    "examples": [
+      "• Terms of Service"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.liability_and_insurance": {
+    "examples": [
+      "• Liability and Insurance"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.payment_terms": {
+    "examples": [
+      "• Payment Terms"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.pdf_info.dispute_resolution": {
+    "examples": [
+      "• Dispute Resolution"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.compliance_title": {
+    "examples": [
+      "Legal Compliance"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.compliance_description": {
+    "examples": [
+      "All our services are conducted in accordance with\n                                                international maritime law and local regulations."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "legal.legal_inquiries": {
+    "examples": [
+      "Legal Inquiries"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.section_heading": {
+    "examples": [
+      "Certifications & Accreditations"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.section_description": {
+    "examples": [
+      "GROUP AGECOSCO maintains the highest industry standards through\n                        internationally recognized certifications and accreditations."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_togo.title": {
+    "examples": [
+      "GAFTA Approved"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_togo.subtitle": {
+    "examples": [
+      "Togo Operations"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_togo.description": {
+    "examples": [
+      "Grain and Feed Trade Association approved surveyor for comprehensive\n                                    agricultural commodity inspections in Togo."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_togo.certification_body": {
+    "examples": [
+      "Certification Body: GAFTA"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_togo.scope": {
+    "examples": [
+      "Scope: Agricultural Commodities"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_togo.valid_until": {
+    "examples": [
+      "Valid Until: December 2025"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.iso9001.title": {
+    "examples": [
+      "ISO 9001:2015"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.iso9001.subtitle": {
+    "examples": [
+      "Quality Management System"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.iso9001.description": {
+    "examples": [
+      "International standard for quality management systems ensuring\n                                    consistent service delivery and continuous improvement."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.iso9001.certification_body": {
+    "examples": [
+      "Certification Body: ISO"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.iso9001.scope": {
+    "examples": [
+      "Scope: Quality Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.iso9001.valid_until": {
+    "examples": [
+      "Valid Until: March 2026"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_benin.title": {
+    "examples": [
+      "GAFTA Approved"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_benin.subtitle": {
+    "examples": [
+      "Benin Operations"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_benin.description": {
+    "examples": [
+      "Extended GAFTA approval for agricultural commodity inspections and\n                                    surveys across Benin maritime facilities."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_benin.certification_body": {
+    "examples": [
+      "Certification Body: GAFTA"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_benin.scope": {
+    "examples": [
+      "Scope: Agricultural Commodities"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.gafta_benin.valid_until": {
+    "examples": [
+      "Valid Until: December 2025"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.certifications_info.title": {
+    "examples": [
+      "Commitment to Excellence"
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "accreditations.certifications_info.description": {
+    "examples": [
+      "Our certifications demonstrate our unwavering commitment to\n                                        maintaining the highest standards in maritime inspection services. We\n                                        continuously invest in training, technology, and quality assurance to exceed\n                                        industry expectations."
+    ],
+    "files": [
+      "E:\\Agecosco\\service.html"
+    ]
+  },
+  "survey.header.title": {
+    "examples": [
+      "Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.service_portfolio_heading": {
+    "examples": [
+      "Our Service Portfolio"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.overview_heading": {
+    "examples": [
+      "Professional Survey\n                                Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.overview_desc": {
+    "examples": [
+      "Comprehensive marine, cargo, nautical, and technical surveys with\n                                expert assessment capabilities"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.types_heading": {
+    "examples": [
+      "Our Survey Specializations"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.types_desc": {
+    "examples": [
+      "Expert survey services across multiple maritime and technical\n                                domains"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.cargo_surveys.heading": {
+    "examples": [
+      "Cargo Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.cargo_surveys.description": {
+    "examples": [
+      "Comprehensive cargo assessment services ensuring the integrity and condition\n                                    of goods throughout the transportation process."
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.nautical_surveys.heading": {
+    "examples": [
+      "Nautical Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.nautical_surveys.description": {
+    "examples": [
+      "Specialized nautical survey services covering maritime incidents, environmental\n                                    issues, and vessel-related assessments."
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.technical_surveys.heading": {
+    "examples": [
+      "Technical Surveys"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.technical_surveys.description": {
+    "examples": [
+      "Advanced technical survey services covering complex machinery, vessels,\n                                    and specialized equipment assessments."
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.heading": {
+    "examples": [
+      "Why Choose Our Survey\n                                        Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.description": {
+    "examples": [
+      "Professional expertise and comprehensive coverage for all\n                                        your survey needs"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.certified_professionals.title": {
+    "examples": [
+      "Certified Professionals"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.certified_professionals.description": {
+    "examples": [
+      "Our survey team consists of certified professionals with extensive\n                                        experience in maritime and technical assessments."
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.rapid_response.title": {
+    "examples": [
+      "Rapid Response"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.rapid_response.description": {
+    "examples": [
+      "Quick deployment of survey teams to minimize delays and ensure\n                                        timely assessment and reporting."
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.detailed_reporting.title": {
+    "examples": [
+      "Detailed Reporting"
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "survey.benefits.detailed_reporting.description": {
+    "examples": [
+      "Comprehensive survey reports with detailed findings, recommendations,\n                                        and photographic evidence."
+    ],
+    "files": [
+      "E:\\Agecosco\\survey.html"
+    ]
+  },
+  "tally.header": {
+    "examples": [
+      "Tally Inspections and Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\tally-inspection.html"
+    ]
+  },
+  "tally.section": {
+    "examples": [
+      "Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\tally-inspection.html"
+    ]
+  },
+  "tally.subheader": {
+    "examples": [
+      "Tally Inspections & Supervisions"
+    ],
+    "files": [
+      "E:\\Agecosco\\tally-inspection.html"
+    ]
+  },
+  "tally.overview": {
+    "examples": [
+      "Professional Tally Inspection Services"
+    ],
+    "files": [
+      "E:\\Agecosco\\tally-inspection.html"
+    ]
+  },
+  "tally.overview_desc": {
+    "examples": [
+      "Comprehensive cargo tally, loading supervision, and discharge inspection services with expert oversight"
+    ],
+    "files": [
+      "E:\\Agecosco\\tally-inspection.html"
+    ]
+  },
+  "team.header.title": {
+    "examples": [
+      "Our Professional Team - GROUP AGECOSCO | Maritime Inspection Experts",
+      "Our Professional Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "skip_to_content": {
+    "examples": [
+      "Skip to main content"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.header.description": {
+    "examples": [
+      "Meet our experienced maritime inspection experts, surveyors, and claims handlers who provide comprehensive marine services across West Africa with decades of combined experience."
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.stats.members": {
+    "examples": [
+      "Team Members",
+      "Maritime Inspection"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.stats.experience": {
+    "examples": [
+      "Years Experience",
+      "Operations Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.breadcrumb.home": {
+    "examples": [],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.breadcrumb.about": {
+    "examples": [
+      "About"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.breadcrumb.current": {
+    "examples": [
+      "Our Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.section_heading": {
+    "examples": [
+      "Our Professional Team"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.section_description": {
+    "examples": [
+      "Our experienced team of maritime inspection experts, surveyors, and claims handlers brings decades of combined experience to provide comprehensive marine services across West Africa."
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing_director_tab": {
+    "examples": [
+      "Managing Director"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.operations_management_tab": {
+    "examples": [
+      "Operations Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.administration_management_tab": {
+    "examples": [
+      "Administration Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.navigation_help_desktop": {
+    "examples": [
+      "Click tabs to view different departments"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.navigation_help_mobile": {
+    "examples": [
+      "Tap to view departments"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.navigation_help_keyboard": {
+    "examples": [
+      "• Use arrow keys to navigate"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing.member1.name": {
+    "examples": [
+      "TOSSOU Messan Romeo"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing.member1.role": {
+    "examples": [
+      "Managing Director"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing.member1.description": {
+    "examples": [
+      "Enthusiastic and self-motivated Chartered Accountant with 10 years of valuable experience in maritime inspection and financial management."
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing.member1.expertise1": {
+    "examples": [
+      "Financial Management"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing.member1.expertise2": {
+    "examples": [
+      "Maritime Law"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  },
+  "team.managing.member1.expertise3": {
+    "examples": [
+      "Strategic Planning"
+    ],
+    "files": [
+      "E:\\Agecosco\\team.html"
+    ]
+  }
+}

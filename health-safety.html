@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Health and Safety - GROUP AGECOSCO | Maritime Safety Standards & Compliance</title>
+    <title data-i18n="health_safety.header.title">Health And Safety - GROUP AGECOSCO | Maritime Safety Standards & Compliance</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="health and safety, maritime safety, HSE management, safety standards, GROUP AGECOSCO, Togo, West Africa, marine safety, occupational health, safety compliance, accident prevention"
@@ -65,6 +65,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
@@ -314,21 +315,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">About</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item" aria-current="page">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
+                        <a href="./health-safety.html" data-i18n="nav.health_safety" class="dropdown-item">Health and Safety</a>
+                        <a href="./general-conditions.html" data-i18n="nav.general_conditions" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <a href="branches.html" class="nav-item nav-link">Branches</a>
+                <a href="branches.html" data-i18n="nav.branches" class="nav-item nav-link">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
@@ -339,27 +342,44 @@
                         <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/agecosco" aria-label="Follow us on Facebook" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.twitter.com/agecosco" aria-label="Follow us on Twitter" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
                     <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.linkedin.com/company/agecosco" aria-label="Connect with us on LinkedIn"
-                    target="_blank" rel="noopener noreferrer">
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-0"
-                    href="https://www.instagram.com/agecosco" aria-label="Follow us on Instagram" target="_blank"
-                    rel="noopener noreferrer">
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
@@ -372,7 +392,7 @@
     <main id="main-content">
         <section class="container-fluid page-header py-5" role="banner">
             <div class="container py-5">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Health And Safety</h1>
+                <h1 data-i18n="health_safety.header.title" class="display-3 text-white mb-3 animated slideInDown">Health And Safety</h1>
                 <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -385,7 +405,7 @@
                                 <span class="visually-hidden">Navigate to </span>About
                             </a>
                         </li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">
+                        <li class="breadcrumb-item text-white active" aria-current="page" data-i18n="health_safety.breadcrumb.current">
                             Health And Safety
                         </li>
                     </ol>
@@ -411,37 +431,37 @@
 
                 <!-- Right: Text + Buttons -->
                 <div class="col-md-6 cta-text">
-                    <h2 id="hse-approach-heading" class="h3 mb-4">Our Health, Safety & Environmental Approach</h2>
+                    <h2 id="hse-approach-heading" data-i18n="health_safety.hse_approach_heading" class="h3 mb-4">Our Health, Safety & Environmental Approach</h2>
                     <div class="hse-content">
-                        <p class="lead">
+                        <p data-i18n="health_safety.hse_approach_paragraph" class="lead">
                             Group Agecosco Maritime Company adopts a systematic approach to health, safety and
                             environmental management, designed to ensure compliance with legislation and continuous
                             improvement in performance.
                         </p>
 
-                        <h3 class="h5 mt-4 mb-3">Our Commitments:</h3>
+                        <h3 data-i18n="health_safety.commitments_heading" class="h5 mt-4 mb-3">Our Commitments:</h3>
                         <ul class="hse-commitments list-unstyled">
-                            <li class="mb-2">
+                            <li data-i18n="health_safety.commitment1" class="mb-2">
                                 <i class="bi bi-shield-check text-primary me-2" aria-hidden="true"></i>
                                 Protect staff, customers, suppliers and third parties from health hazards and risks
                             </li>
-                            <li class="mb-2">
+                            <li data-i18n="health_safety.commitment2" class="mb-2">
                                 <i class="bi bi-people text-primary me-2" aria-hidden="true"></i>
                                 Promote awareness of safe practices, believing all accidents are preventable
                             </li>
-                            <li class="mb-2">
+                            <li data-i18n="health_safety.commitment3" class="mb-2">
                                 <i class="bi bi-graph-up text-primary me-2" aria-hidden="true"></i>
                                 Promote individual responsibility for accident prevention
                             </li>
-                            <li class="mb-2">
+                            <li data-i18n="health_safety.commitment4" class="mb-2">
                                 <i class="bi bi-search text-primary me-2" aria-hidden="true"></i>
                                 Analyze accidents and incidents with significant consequences
                             </li>
-                            <li class="mb-2">
+                            <li data-i18n="health_safety.commitment5" class="mb-2">
                                 <i class="bi bi-clipboard-data text-primary me-2" aria-hidden="true"></i>
                                 Investigate and report all HSE incidents and near-misses
                             </li>
-                            <li class="mb-2">
+                            <li data-i18n="health_safety.commitment6" class="mb-2">
                                 <i class="bi bi-target text-primary me-2" aria-hidden="true"></i>
                                 Set improvement targets with continuous evaluation and reporting
                             </li>
@@ -460,11 +480,11 @@
                 <div class="row justify-content-center">
                     <div class="col-auto">
                         <div class="d-flex gap-3 flex-wrap justify-content-center">
-                            <a href="contact.html" class="btn btn-hse-primary px-4 py-2"
+                            <a href="contact.html" data-i18n-value="health_safety.contact_us_btn" class="btn btn-hse-primary px-4 py-2"
                                 aria-label="Contact us about our health and safety services">
                                 Contact Us <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                             </a>
-                            <a href="service.html" class="btn btn-hse-outline px-4 py-2"
+                            <a href="service.html" data-i18n-value="health_safety.our_solutions_btn" class="btn btn-hse-outline px-4 py-2"
                                 aria-label="Learn more about our safety solutions">
                                 Our Solutions <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
                             </a>
@@ -477,7 +497,7 @@
         <!-- Statistics Section -->
         <section class="hse-stats-section py-5" aria-labelledby="company-stats-heading">
             <div class="container-fluid">
-                <h2 id="company-stats-heading" class="visually-hidden">Company Statistics and Achievements</h2>
+                <h2 id="company-stats-heading" data-i18n="health_safety.company_stats_heading" class="visually-hidden">Company Statistics and Achievements</h2>
                 <div class="row g-0">
                     <!-- Stat 1 -->
                     <div class="col-12 col-md-4">
@@ -485,8 +505,8 @@
                             <div class="hse-stats-number" aria-label="Created in 1998">
                                 <time datetime="1998">1998</time>
                             </div>
-                            <div id="stat-1-label" class="hse-stats-label">Created in</div>
-                            <p class="visually-hidden">GROUP AGECOSCO was created in 1998</p>
+                            <div id="stat-1-label" data-i18n="health_safety.stat1_label" class="hse-stats-label">Created in</div>
+                            <p class="visually-hidden" data-i18n="health_safety.stat1_desc">GROUP AGECOSCO was created in 1998</p>
                         </div>
                     </div>
 
@@ -496,8 +516,8 @@
                             <div class="hse-stats-number" aria-label="18,994 alumni">
                                 <span data-counter="18994">18,994</span>
                             </div>
-                            <div id="stat-2-label" class="hse-stats-label">Alumni</div>
-                            <p class="visually-hidden">We have 18,994 alumni from our operations</p>
+                            <div id="stat-2-label" data-i18n="health_safety.stat2_label" class="hse-stats-label">Alumni</div>
+                            <p class="visually-hidden" data-i18n="health_safety.stat2_desc">We have 18,994 alumni from our operations</p>
                         </div>
                     </div>
 
@@ -507,8 +527,8 @@
                             <div class="hse-stats-number" aria-label="Over 200 experts">
                                 <span data-counter="200">200+</span>
                             </div>
-                            <div id="stat-3-label" class="hse-stats-label">Experts</div>
-                            <p class="visually-hidden">Our team includes over 200 expert professionals</p>
+                            <div id="stat-3-label" data-i18n="health_safety.stat3_label" class="hse-stats-label">Experts</div>
+                            <p class="visually-hidden" data-i18n="health_safety.stat3_desc">Our team includes over 200 expert professionals</p>
                         </div>
                     </div>
                 </div>
@@ -535,7 +555,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
+                    <h5 data-i18n="footer.contact_info" class="text-light mb-4">Address</h5>
                     <address class="mb-0">
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i>
@@ -585,7 +605,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Services</h5>
+                    <h5 data-i18n="footer.services" class="text-light mb-4">Services</h5>
                     <nav aria-label="Services links">
                         <a class="btn btn-link text-secondary" href="tally-inspection.html">Tally Inspections</a>
                         <a class="btn btn-link text-secondary" href="survey.html">Surveys</a>
@@ -597,7 +617,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <h5 data-i18n="footer.quick_links" class="text-light mb-4">Quick Links</h5>
                     <nav aria-label="Quick navigation links">
                         <a class="btn btn-link text-secondary" href="index.html">Home</a>
                         <a class="btn btn-link text-secondary" href="about.html">About Us</a>
@@ -612,8 +632,8 @@
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Follow us through our announcements.</p>
+                    <h5 data-i18n="footer.newsletter" class="text-light mb-4">Newsletter</h5>
+                    <p data-i18n="footer.newsletter_description">Follow us through our announcements.</p>
                     <form class="newsletter-form" id="newsletter-form" novalidate>
                         <div class="position-relative w-100">
                             <label for="newsletter-email" class="visually-hidden">Email address for newsletter</label>
@@ -672,7 +692,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -684,6 +704,11 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
 
     <!-- Page-specific JavaScript -->
     <script>

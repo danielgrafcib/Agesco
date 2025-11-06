@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Quality Policy & Standards - GROUP AGECOSCO | ISO/IEC 17020 Certified Inspection Services</title>
+    <title data-i18n="quality_policy.header.title">Quality and Policy</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="quality policy, ISO 17020, inspection services, certification standards, GROUP AGECOSCO, marine surveys, quality management, inspection procedures, TOGO"
@@ -70,6 +70,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -155,59 +156,85 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
+            <!--<img src="img/logo.png" alt="GROUP AGECOSCO Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
-                        <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
+                        <a href="./quality-policy.html" data-i18n="nav.quality_policy">Quality and policy</a>
+                        <a href="team.html" data-i18n="nav.team">Our Team</a>
+                        <a href="./health-safety.html" data-i18n="nav.health_safety">Health and Safety</a>
+                        <a href="./general-conditions.html" data-i18n="nav.general_conditions">General conditions of the Service</a>
                     </div>
                 </div>
-                <!--<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                    <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                    <a href="team.html" class="dropdown-item">General conditions of the Service</a>
-
-                </div>-->
-                <a href="branches.html" class="nav-item nav-link">Branches</a>
-                <!--<a href="project.html" class="nav-item nav-link">Activities</a>-->
+                <a href="branches.html" data-i18n="nav.branches">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
-                        <a href="survey.html" class="dropdown-item">Surveys</a>
-                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                        <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
-                        <a href="risk.html" class="dropdown-item">Risk and management</a>
-                        <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
-                        <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
+                        <a href="tally-inspection.html" data-i18n="nav.tally_inspection">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" data-i18n="nav.survey">Surveys</a>
+                        <a href="./p-i-claims-handling.html" data-i18n="nav.p_i_claims">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" data-i18n="nav.loss_prevent">Loss prevention plans</a>
+                        <a href="risk.html" data-i18n="nav.risk">Risk and management</a>
+                        <a href="fruit-perish.html" data-i18n="nav.fruit_perish">Fruit and perishables</a>
+                        <a href="agri-food.html" data-i18n="nav.agri_food">Agrifood sector</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -217,12 +244,12 @@
     <!-- Page Header Start -->
     <header class="container-fluid page-header py-5 mb-5" role="banner">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Quality and Policy</h1>
+            <h1 data-i18n="quality_policy.header.title" class="display-3 text-white mb-3 animated slideInDown">Quality and Policy</h1>
             <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="index.html" rel="home">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="about.html">About</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Quality and Policy</li>
+                    <li class="breadcrumb-item" data-i18n="quality_policy.breadcrumb.home"><a class="text-white" href="index.html" rel="home">Home</a></li>
+                    <li class="breadcrumb-item" data-i18n="quality_policy.breadcrumb.about"><a class="text-white" href="about.html">About</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" data-i18n="quality_policy.breadcrumb.current">Quality and Policy</li>
                 </ol>
             </nav>
         </div>
@@ -237,41 +264,41 @@
                 <div class="row align-items-start">
                     <div class="col-md-6">
                         <span class="text-muted d-block mb-2">About Us</span>
-                        <h2 id="quality-policy-heading" class="display-4 fw-bold text-primary mb-4">Quality and Policy
+                        <h2 id="quality-policy-heading" data-i18n="quality_policy.banner.heading" class="display-4 fw-bold text-primary mb-4">Quality and Policy
                         </h2>
                     </div>
                     <div class="col-md-6">
                         <div class="quality-commitment">
-                            <p class="lead mb-4">The Senior Management of <strong>GROUP AGECOSCO</strong> is committed
+                            <p data-i18n="quality_policy.commitment_intro" class="lead mb-4">The Senior Management of <strong>GROUP AGECOSCO</strong> is committed
                                 to:</p>
 
                             <ul class="quality-list list-unstyled">
-                                <li class="mb-3">
+                                <li data-i18n="quality_policy.commitment1" class="mb-3">
                                     <i class="fas fa-check-circle text-primary me-3" aria-hidden="true"></i>
                                     <strong>Reliable Service:</strong> Offer inspection and certification services in a
                                     reliable, transparent, safe and professional manner.
                                 </li>
-                                <li class="mb-3">
+                                <li data-i18n="quality_policy.commitment2" class="mb-3">
                                     <i class="fas fa-certificate text-primary me-3" aria-hidden="true"></i>
                                     <strong>ISO/IEC 17020 Compliance:</strong> Meet the requirements of both customers
                                     and applicable legal and regulatory requirements.
                                 </li>
-                                <li class="mb-3">
+                                <li data-i18n="quality_policy.commitment3" class="mb-3">
                                     <i class="fas fa-balance-scale text-primary me-3" aria-hidden="true"></i>
                                     <strong>Impartial Performance:</strong> Ensure IMPARTIAL and INDEPENDENT performance
                                     of the Organization and its members.
                                 </li>
-                                <li class="mb-3">
+                                <li data-i18n="quality_policy.commitment4" class="mb-3">
                                     <i class="fas fa-graduation-cap text-primary me-3" aria-hidden="true"></i>
                                     <strong>Competent Staff:</strong> Keep inspection staff technically TRAINED and
                                     COMPETENT to carry out their activities.
                                 </li>
-                                <li class="mb-3">
+                                <li data-i18n="quality_policy.commitment5" class="mb-3">
                                     <i class="fas fa-shield-alt text-primary me-3" aria-hidden="true"></i>
                                     <strong>Confidentiality:</strong> Make CONFIDENTIAL use of all information obtained
                                     and generated during the process.
                                 </li>
-                                <li class="mb-3">
+                                <li data-i18n="quality_policy.commitment6" class="mb-3">
                                     <i class="fas fa-chart-line text-primary me-3" aria-hidden="true"></i>
                                     <strong>Continuous Improvement:</strong> Continuously improve our management system
                                     to consolidate as a reference for quality services.
@@ -313,38 +340,38 @@
                     <!-- Text Content Right Column -->
                     <div class="col-md-6">
                         <article class="quality-content">
-                            <h3 id="quality-management-heading" class="h2 text-primary mb-4">Quality Management System
+                            <h3 id="quality-management-heading" data-i18n="quality_policy.quality_management.heading" class="h2 text-primary mb-4">Quality Management System
                             </h3>
                             <div class="content-body">
-                                <p class="mb-4">
+                                <p data-i18n="quality_policy.quality_management.paragraph1" class="mb-4">
                                     <strong>GROUP AGECOSCO</strong> has established a comprehensive Quality Management
                                     System
                                     to ensure consistent delivery of high-standard inspection and certification services
                                     across all our operations in West Africa.
                                 </p>
 
-                                <p class="mb-4">
+                                <p data-i18n="quality_policy.quality_management.paragraph2" class="mb-4">
                                     Our quality framework is built on the foundation of <strong>ISO/IEC 17020</strong>
                                     standards, ensuring that every aspect of our service delivery meets international
                                     best practices and regulatory requirements.
                                 </p>
 
                                 <div class="quality-features">
-                                    <h4 class="h5 text-primary mb-3">Key Quality Features:</h4>
+                                    <h4 data-i18n="quality_policy.quality_management.features_heading" class="h5 text-primary mb-3">Key Quality Features:</h4>
                                     <ul class="list-unstyled">
-                                        <li class="mb-2">
+                                        <li data-i18n="quality_policy.quality_management.feature1" class="mb-2">
                                             <i class="fas fa-cog text-primary me-2" aria-hidden="true"></i>
                                             Standardized inspection procedures
                                         </li>
-                                        <li class="mb-2">
+                                        <li data-i18n="quality_policy.quality_management.feature2" class="mb-2">
                                             <i class="fas fa-users text-primary me-2" aria-hidden="true"></i>
                                             Qualified and certified personnel
                                         </li>
-                                        <li class="mb-2">
+                                        <li data-i18n="quality_policy.quality_management.feature3" class="mb-2">
                                             <i class="fas fa-clipboard-check text-primary me-2" aria-hidden="true"></i>
                                             Regular quality audits and reviews
                                         </li>
-                                        <li class="mb-2">
+                                        <li data-i18n="quality_policy.quality_management.feature4" class="mb-2">
                                             <i class="fas fa-sync-alt text-primary me-2" aria-hidden="true"></i>
                                             Continuous improvement processes
                                         </li>
@@ -364,9 +391,9 @@
                 <div class="row">
                     <div class="col-12">
                         <header class="text-center mb-5">
-                            <h3 id="quality-standards-heading" class="display-5 text-primary mb-3">Our Quality Standards
+                            <h3 id="quality-standards-heading" data-i18n="quality_policy.quality_standards.heading" class="display-5 text-primary mb-3">Our Quality Standards
                             </h3>
-                            <p class="lead text-muted">Committed to excellence in every aspect of our service delivery
+                            <p data-i18n="quality_policy.quality_standards.description" class="lead text-muted">Committed to excellence in every aspect of our service delivery
                             </p>
                         </header>
                     </div>
@@ -378,8 +405,8 @@
                             <div class="quality-icon mb-3">
                                 <i class="fas fa-award fa-3x text-primary" aria-hidden="true"></i>
                             </div>
-                            <h4 class="h5 text-primary mb-3">ISO/IEC 17020 Certified</h4>
-                            <p class="mb-0">
+                            <h4 data-i18n="quality_policy.quality_standards.iso_certified.title" class="h5 text-primary mb-3">ISO/IEC 17020 Certified</h4>
+                            <p data-i18n="quality_policy.quality_standards.iso_certified.description" class="mb-0">
                                 Our operations are fully compliant with international inspection standards,
                                 ensuring reliability and credibility in all our services.
                             </p>
@@ -391,8 +418,8 @@
                             <div class="quality-icon mb-3">
                                 <i class="fas fa-microscope fa-3x text-primary" aria-hidden="true"></i>
                             </div>
-                            <h4 class="h5 text-primary mb-3">Technical Excellence</h4>
-                            <p class="mb-0">
+                            <h4 data-i18n="quality_policy.quality_standards.technical_excellence.title" class="h5 text-primary mb-3">Technical Excellence</h4>
+                            <p data-i18n="quality_policy.quality_standards.technical_excellence.description" class="mb-0">
                                 Our team of qualified professionals brings extensive technical expertise
                                 to every inspection and certification project.
                             </p>
@@ -404,8 +431,8 @@
                             <div class="quality-icon mb-3">
                                 <i class="fas fa-handshake fa-3x text-primary" aria-hidden="true"></i>
                             </div>
-                            <h4 class="h5 text-primary mb-3">Client Satisfaction</h4>
-                            <p class="mb-0">
+                            <h4 data-i18n="quality_policy.quality_standards.client_satisfaction.title" class="h5 text-primary mb-3">Client Satisfaction</h4>
+                            <p data-i18n="quality_policy.quality_standards.client_satisfaction.description" class="mb-0">
                                 We prioritize client needs and maintain transparent communication
                                 throughout the entire service delivery process.
                             </p>
@@ -425,7 +452,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Contact Information</h5>
+                    <h5 data-i18n="footer.contact_info" class="text-light mb-4">Contact Information</h5>
                     <address class="mb-0">
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i>
@@ -548,7 +575,11 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

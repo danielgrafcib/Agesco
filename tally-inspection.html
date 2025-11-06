@@ -70,6 +70,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -176,39 +177,36 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
+            <!--<img src="img/logo.png" alt="GROUP AGECOSCO Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
+                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                    <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                    <a href="team.html" class="dropdown-item">General conditions of the Service</a>
-
-                </div>-->
-                <!--<a href="service.html" class="nav-item nav-link">Service</a>-->
                 <a href="branches.html" class="nav-item nav-link">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="service.html" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
                         <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
@@ -218,86 +216,160 @@
                         <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
-    <!-- Page Header Start -->
-    <header class="container-fluid page-header py-5 mb-5" role="banner">
-        <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Tally Inspections and Supervisions</h1>
-            <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="index.html" rel="home">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="service.html">Services</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Tally Inspections and Supervisions
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <!-- Page Header End -->
+    <!-- Bannière unifiée Start -->
+    <style>
+        /* Bannière Tally unifiée */
+        .banner.hero {
+            position: relative;
+            background: url('img/carousel-2.jpg') center/cover no-repeat;
+            padding: 5rem 0;
+            color: #fff;
+        }
+        .banner.hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 35, 70, 0.55);
+        }
+        .banner.hero .container { position: relative; z-index: 1; }
+        .banner.hero .breadcrumb { --bs-breadcrumb-divider: '›'; }
+        .banner.hero .breadcrumb .breadcrumb-item a { color: #fff; text-decoration: none; }
+        .banner.hero .breadcrumb .breadcrumb-item.active { color: #fff; opacity: 0.9; }
+        .banner.hero .service-list i { color: #fff; }
+        .banner.hero .text-muted { color: rgba(255,255,255,0.85)!important; }
+
+        /* Galerie en carreaux façon Loss Prevention */
+        .tally-gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        @media (max-width: 992px) {
+            .tally-gallery .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 576px) {
+            .tally-gallery .gallery-grid { grid-template-columns: 1fr; }
+        }
+        .tally-gallery figure {
+            background: #f8f9fa;
+            border-radius: .5rem;
+            overflow: hidden;
+            margin: 0;
+        }
+        .tally-gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .tally-gallery figcaption {
+            padding: .5rem .75rem;
+            font-size: .9rem;
+            color: #6c757d;
+        }
+    </style>
+    <!-- Bannière unifiée End -->
 
     <!-- Tally Inspection Services Content Start -->
     <main id="main-content" role="main">
-        <!-- Banner Section -->
-        <section class="banner" aria-labelledby="tally-heading">
+        <!-- Banner Section (Unifiée avec l'en-tête) -->
+        <section class="banner hero" aria-labelledby="tally-heading" role="banner">
             <div class="container">
+                <!-- Breadcrumb intégré -->
+                <nav aria-label="Breadcrumb navigation" class="mb-3">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" rel="home">Home</a></li>
+                        <li class="breadcrumb-item"><a href="service.html">Services</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tally Inspections and Supervisions</li>
+                    </ol>
+                </nav>
                 <div class="row">
                     <!-- Title -->
                     <div class="col-md-6">
-                        <span class="text-muted d-block mb-2">Services</span>
-                        <h2 id="tally-heading" class="display-4 fw-bold text-primary mb-4">Tally Inspections<br>&
-                            Supervisions</h2>
+                        <span class="text-muted d-block mb-2" data-i18n="tally.section">Services</span>
+                        <h2 id="tally-heading" class="display-4 fw-bold mb-4" data-i18n="tally.subheader">Tally Inspections & Supervisions</h2>
                     </div>
 
                     <!-- Service List with Icons -->
                     <div class="col-md-6">
                         <nav aria-label="Related services">
-                            <h3 class="h5 mb-3 text-primary">Our Service Portfolio</h3>
+                            <h3 class="h5 mb-3">Our Service Portfolio</h3>
                             <ul class="list-unstyled service-list">
                                 <li class="mb-2">
-                                    <i class="fas fa-clipboard-check text-primary me-2" aria-hidden="true"></i>
+                                    <i class="fas fa-clipboard-check me-2" aria-hidden="true"></i>
                                     <span class="fw-bold">Tally Inspections and Supervisions</span>
                                 </li>
                                 <li class="mb-2">
-                                    <i class="fas fa-search text-primary me-2" aria-hidden="true"></i>
+                                    <i class="fas fa-search me-2" aria-hidden="true"></i>
                                     <a href="survey.html" class="text-decoration-none">Surveys (pre-loading, discharge
                                         and damage surveys)</a>
                                 </li>
                                 <li class="mb-2">
-                                    <i class="fas fa-shield-alt text-primary me-2" aria-hidden="true"></i>
+                                    <i class="fas fa-shield-alt me-2" aria-hidden="true"></i>
                                     <a href="risk.html" class="text-decoration-none">Risk Management</a>
                                 </li>
                                 <li class="mb-2">
-                                    <i class="fas fa-file-contract text-primary me-2" aria-hidden="true"></i>
+                                    <i class="fas fa-file-contract me-2" aria-hidden="true"></i>
                                     <a href="p-i-claims-handling.html" class="text-decoration-none">P&I Claims
                                         Handling</a>
                                 </li>
                                 <li class="mb-2">
-                                    <i class="fas fa-exclamation-triangle text-primary me-2" aria-hidden="true"></i>
+                                    <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>
                                     <a href="loss-prevent.html" class="text-decoration-none">Loss Prevention Plans</a>
                                 </li>
                                 <li class="mb-2">
-                                    <i class="fas fa-apple-alt text-primary me-2" aria-hidden="true"></i>
-                                    <a href="fruit-perish.html" class="text-decoration-none">Fruit and Perishables</a>
+                                    <i class="fas fa-apple-alt me-2" aria-hidden="true"></i>
+                                    <span>Forensic Investigations</span>
                                 </li>
                                 <li class="mb-2">
-                                    <i class="fas fa-seedling text-primary me-2" aria-hidden="true"></i>
-                                    <a href="agri-food.html" class="text-decoration-none">Agrifood Sector</a>
+                                    <i class="fas fa-seedling me-2" aria-hidden="true"></i>
+                                    <span>Crisis Control Interventions (Casualty Management)</span>
                                 </li>
                             </ul>
                         </nav>
@@ -312,238 +384,81 @@
                 <div class="row">
                     <div class="col-12">
                         <header class="text-center mb-5">
-                            <h3 id="tally-overview-heading" class="display-5 text-primary mb-3">Professional Tally
-                                Inspection Services</h3>
-                            <p class="lead text-muted">Comprehensive cargo tally, loading supervision, and discharge
-                                inspection services with expert oversight</p>
+                            <h3 id="tally-overview-heading" class="display-5 text-primary mb-3" data-i18n="tally.overview">Professional Tally Inspection Services</h3>
+                            <p class="lead text-muted" data-i18n="tally.overview_desc">Comprehensive cargo tally, loading supervision, and discharge inspection services with expert oversight</p>
                         </header>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Service Approach Section -->
+        <!-- Service Approach Section (texte regroupé) -->
         <section class="service-approach py-5 bg-light" aria-labelledby="approach-heading">
             <div class="container">
-                <article class="row align-items-center mb-5">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <header>
-                            <h4 id="approach-heading" class="h2 text-primary mb-4 fw-bold">Our Professional Approach
-                            </h4>
-                        </header>
-                        <div class="approach-content">
-                            <p class="lead mb-4">
-                                We take a comprehensive and proactive approach to tally inspections and supervisions,
-                                ensuring accuracy, compliance, and transparency throughout all cargo operations.
-                            </p>
-                            <ul class="list-unstyled approach-features">
-                                <li class="mb-3">
-                                    <i class="fas fa-check-circle text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Detailed Documentation:</strong> Comprehensive recording and reporting of
-                                    all cargo movements and conditions
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-users text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Expert Team:</strong> Dedicated professionals with extensive maritime and
-                                    cargo handling experience
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-clock text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Real-time Updates:</strong> Continuous monitoring and immediate reporting of
-                                    any issues or discrepancies
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-chart-line text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Continuous Improvement:</strong> Regular process reviews to ensure optimal
-                                    service delivery
-                                </li>
-                            </ul>
-                        </div>
+                <article class="text-block">
+                    <header>
+                        <h4 id="approach-heading" class="h2 text-primary mb-4 fw-bold">General Principle</h4>
+                    </header>
+                    <div class="approach-content">
+                        <p class="lead mb-4">Tally Inspections on soft commodities are mainly performed at discharge ports, to ascertain the quantity and quality of the cargo at the discharge port.</p>
+                        <p>This is usually where the insurance cover comes to an end. Depending on the terms and conditions of the insurance policy, cover ends upon arrival (even prior to discharging operations), under tackle, at entry warehouse, or sometimes upon delivery out of warehouse (eventually within a given time period).</p>
+                        <p>At the same time, this is where the contract of carriage comes to an end. Depending on the terms and conditions of the contract of carriage, discharging operations may be ordered and paid by the receivers (under “Free Out” terms).</p>
+                        <p>This implies that the receiver concludes a contract with the stevedores, and assumes responsibility towards the vessel for stevedore damage to the cargo during discharging operations. Unless the contract of carriage is on “Liner Terms”, in which case the carrier assumes responsibility for damage during discharging operations.</p>
+                        <p>Last but not least, it frequently happens that the cargo has not yet (fully) been paid by the receivers, and that the goods are being held under custody of the banks of the receivers, who are at that moment the physical holders of the Bills of Lading. Release of the cargo will only be done after payment has been received by the bank, who then orders the party appointed to perform the Collateral Management Agreement to release the corresponding quantity of goods to the person indicated by the bank. Consequently, the banks will be concerned about the warehousing conditions of the cargo after landing, until such time as the receiver has paid for the goods and can collect them from the warehouse.</p>
+                        <p>Therefore, these three or four different contracts are inter-linked, and it is important for the tally-supervisor to acknowledge the various stages and various parties involved in these three or four contracts, since they may not have the same interest.</p>
                     </div>
-                    <div class="col-md-6">
-                        <figure class="mb-0">
-                            <div id="carouselApproach" class="carousel slide shadow rounded" data-bs-ride="carousel">
-                                <div class="carousel-inner rounded">
-                                    <div class="carousel-item active">
-                                        <img src="img/carousel-1.jpg" class="d-block w-100"
-                                            alt="Professional tally inspection team conducting cargo count and documentation"
-                                            loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/carousel-2.jpg" class="d-block w-100"
-                                            alt="Cargo supervision specialist overseeing loading operations at port"
-                                            loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/carousel-3.jpg" class="d-block w-100"
-                                            alt="Maritime inspection team ensuring compliance during cargo operations"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselApproach"
-                                    data-bs-slide="prev" aria-label="Previous approach image">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselApproach"
-                                    data-bs-slide="next" aria-label="Next approach image">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </figure>
+
+                    <header class="mt-5">
+                        <h4 class="h2 text-primary mb-4 fw-bold">Working methods</h4>
+                    </header>
+                    <div class="features-content">
+                        <p class="lead mb-4">We believe that we can only perform correct jobs by having one tallyman positioned in each hold, and one on each truck under tackle.</p>
+                        <p>On top, we have always one supervisor on deck to supervise the tallymen in the holds and one on the quay to supervise the tallymen ashore.</p>
+                        <p>This is more expensive, but is the only way to be able to obtain reliable tally sheets. All other methods that limit the number of tallymen (and reduce the costs) are not reliable.</p>
+                        <p>The supervisors will report on a daily basis to their local office and to Operations Control Center in Antwerp, where all figures are constantly being reconciled. Any sudden increase in damage or loss will be notified by Operations Control Center to our Principals.</p>
+                    </div>
+
+                    <header class="mt-5">
+                        <h4 class="h2 text-primary mb-4 fw-bold">Joint Tallies</h4>
+                    </header>
+                    <div class="benefits-content">
+                        <p class="lead mb-4">It is important that these tally inspections are performed on a joint basis with all parties involved, to avoid any subsequent discussions.</p>
+                        <p>Operations Control Center will follow-up on a daily basis.</p>
                     </div>
                 </article>
 
-                <!-- Key Features Section -->
-                <article class="row align-items-center mb-5">
-                    <div class="col-md-6 order-2 order-md-1">
-                        <figure class="mb-0">
-                            <div id="carouselFeatures" class="carousel slide shadow rounded" data-bs-ride="carousel">
-                                <div class="carousel-inner rounded">
-                                    <div class="carousel-item active">
-                                        <img src="img/portfolio-1.jpg" class="d-block w-100"
-                                            alt="Advanced tally inspection equipment and technology in use"
-                                            loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/portfolio-2.jpg" class="d-block w-100"
-                                            alt="Professional cargo inspection team using modern counting systems"
-                                            loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/portfolio-3.jpg" class="d-block w-100"
-                                            alt="Digital documentation and reporting systems for tally inspections"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatures"
-                                    data-bs-slide="prev" aria-label="Previous features image">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatures"
-                                    data-bs-slide="next" aria-label="Next features image">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-                        <header>
-                            <h4 class="h2 text-primary mb-4 fw-bold">Key Service Features</h4>
-                        </header>
-                        <div class="features-content">
-                            <p class="lead mb-4">
-                                Our tally inspection services incorporate advanced technology and proven methodologies
-                                to deliver accurate, reliable, and comprehensive cargo oversight.
-                            </p>
-                            <ul class="list-unstyled service-features">
-                                <li class="mb-3">
-                                    <i class="fas fa-headset text-primary me-3" aria-hidden="true"></i>
-                                    <strong>24/7 Support:</strong> Round-the-clock availability for urgent inspections
-                                    and emergency situations
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-user-tie text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Dedicated Manager:</strong> Assigned inspection manager for consistent
-                                    service delivery
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-satellite-dish text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Real-time Tracking:</strong> Live monitoring and instant updates on
-                                    inspection progress
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-file-alt text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Comprehensive Reports:</strong> Detailed documentation with photographic
-                                    evidence and analysis
-                                </li>
-                            </ul>
+                <!-- Galerie en bas -->
+                <section class="tally-gallery py-5" aria-labelledby="tally-gallery-heading">
+                    <div class="container">
+                        <h3 id="tally-gallery-heading" class="h4 text-primary mb-4">Tally Operations Gallery</h3>
+                        <div class="gallery-grid">
+                            <figure>
+                                <img src="img/portfolio-1.jpg" alt="Advanced tally equipment in use" loading="lazy">
+                                <figcaption>Advanced tally equipment in use</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/portfolio-2.jpg" alt="Team counting cargo during discharge" loading="lazy">
+                                <figcaption>Team counting cargo during discharge</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/portfolio-3.jpg" alt="Digital documentation of tally results" loading="lazy">
+                                <figcaption>Digital documentation of tally results</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/portfolio-4.jpg" alt="Professional cargo assessment on quay" loading="lazy">
+                                <figcaption>Professional cargo assessment on quay</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/portfolio-5.jpg" alt="Quality and compliance supervision" loading="lazy">
+                                <figcaption>Quality and compliance supervision</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/portfolio-6.jpg" alt="Consolidated reporting for operations" loading="lazy">
+                                <figcaption>Consolidated reporting for operations</figcaption>
+                            </figure>
                         </div>
                     </div>
-                </article>
-
-                <!-- Service Benefits Section -->
-                <article class="row align-items-center">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <header>
-                            <h4 class="h2 text-primary mb-4 fw-bold">Service Benefits</h4>
-                        </header>
-                        <div class="benefits-content">
-                            <p class="lead mb-4">
-                                Our professional tally inspection and supervision services provide significant
-                                advantages for cargo operations and claims management.
-                            </p>
-                            <ul class="list-unstyled service-benefits">
-                                <li class="mb-3">
-                                    <i class="fas fa-search text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Pre-Loading Inspections:</strong> Thorough examination before cargo loading
-                                    operations
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-truck-loading text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Discharge Supervision:</strong> Professional oversight during cargo
-                                    discharge operations
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-exclamation-circle text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Damage Assessment:</strong> Expert evaluation of cargo condition and damage
-                                    documentation
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-chart-bar text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Improved Outcomes:</strong> Enhanced claims processing and reduced dispute
-                                    resolution time
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-smile text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Client Satisfaction:</strong> Increased confidence through transparent and
-                                    professional service
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-users-cog text-primary me-3" aria-hidden="true"></i>
-                                    <strong>Expert Resources:</strong> Access to specialized knowledge and industry
-                                    expertise
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <figure class="mb-0">
-                            <div id="carouselExpertise" class="carousel slide shadow rounded" data-bs-ride="carousel">
-                                <div class="carousel-inner rounded">
-                                    <div class="carousel-item active">
-                                        <img src="img/portfolio-4.jpg" class="d-block w-100"
-                                            alt="Expert tally inspection team demonstrating professional cargo assessment"
-                                            loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/portfolio-5.jpg" class="d-block w-100"
-                                            alt="Professional supervision of cargo operations ensuring quality and compliance"
-                                            loading="lazy">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/portfolio-6.jpg" class="d-block w-100"
-                                            alt="Comprehensive tally inspection documentation and reporting process"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExpertise"
-                                    data-bs-slide="prev" aria-label="Previous expertise image">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExpertise"
-                                    data-bs-slide="next" aria-label="Next expertise image">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </figure>
-                    </div>
-                </article>
+                </section>
 
                 <!-- Contact Information Section -->
                 <section class="contact-info py-5 mt-5" aria-labelledby="contact-heading">
@@ -552,28 +467,28 @@
                             <div class="col-12">
                                 <div class="contact-card bg-primary text-white rounded p-5 text-center">
                                     <header class="mb-4">
-                                        <h4 id="contact-heading" class="h2 mb-3">Get Professional Tally Inspection
+                                        <h4 id="contact-heading" class="h2 mb-3" data-i18n="tally.contact_heading">Get Professional Tally Inspection
                                             Services</h4>
                                         <p class="lead mb-0">
-                                            Contact us to learn more about our comprehensive tally inspection and
+                                            <span data-i18n="tally.contact_desc">Contact us to learn more about our comprehensive tally inspection and
                                             supervision services,
-                                            or to request a consultation for your specific cargo operations needs.
+                                            or to request a consultation for your specific cargo operations needs.</span>
                                         </p>
                                     </header>
                                     <div class="contact-details">
                                         <p class="mb-3">
                                             <i class="fas fa-envelope me-2" aria-hidden="true"></i>
-                                            Email: <a href="mailto:info@agecosco.com"
+                                            <span data-i18n="tally.contact_email_label">Email:</span> <a href="mailto:info@agecosco.com"
                                                 class="text-white text-decoration-underline">info@agecosco.com</a>
                                         </p>
                                         <p class="mb-3">
                                             <i class="fas fa-phone me-2" aria-hidden="true"></i>
-                                            Phone: <a href="tel:+22890057466"
+                                            <span data-i18n="tally.contact_phone_label">Phone:</span> <a href="tel:+22890057466"
                                                 class="text-white text-decoration-underline">(228) 90-05-74-66</a>
                                         </p>
                                         <a href="contact.html" class="btn btn-light btn-lg mt-3">
                                             <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>
-                                            Contact Us Today
+                                            <span data-i18n="tally.contact_us_button">Contact Us Today</span>
                                         </a>
                                     </div>
                                 </div>
@@ -594,7 +509,7 @@
             <div class="row g-5">
                 <!-- Contact Information -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Contact Information</h5>
+                    <h5 class="text-light mb-4" data-i18n="footer.contact_info">Contact Information</h5>
                     <address class="mb-0">
                         <div class="mb-3">
                             <i class="fa fa-map-marker-alt me-3 text-primary" aria-hidden="true"></i>
@@ -649,7 +564,7 @@
 
                 <!-- Services Links -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Our Services</h5>
+                    <h5 class="text-light mb-4" data-i18n="footer.services">Our Services</h5>
                     <nav aria-label="Services navigation">
                         <ul class="list-unstyled">
                             <li class="mb-2">
@@ -688,7 +603,7 @@
 
                 <!-- Quick Links -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <h5 class="text-light mb-4" data-i18n="footer.quick_links">Quick Links</h5>
                     <nav aria-label="Quick navigation">
                         <ul class="list-unstyled">
                             <li class="mb-2">
@@ -727,8 +642,8 @@
 
                 <!-- Newsletter Subscription -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter Subscription</h5>
-                    <p class="mb-4">Stay updated with our latest announcements and industry insights</p>
+                    <h5 class="text-light mb-4" data-i18n="footer.newsletter_title">Newsletter Subscription</h5>
+                    <p class="mb-4" data-i18n="footer.newsletter_text">Stay updated with our latest announcements and industry insights</p>
 
                     <form class="newsletter-form" id="newsletterForm" novalidate>
                         <div class="position-relative w-100 mb-3">
@@ -737,7 +652,7 @@
                                 type="email" id="newsletterEmail" name="email" placeholder="Enter your email address"
                                 required aria-describedby="emailHelp emailError">
                             <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                                aria-label="Subscribe to newsletter">
+                                aria-label="Subscribe to newsletter" data-i18n="footer.subscribe_button">
                                 Subscribe
                             </button>
                         </div>
@@ -788,7 +703,11 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

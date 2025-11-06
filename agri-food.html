@@ -64,10 +64,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https://cdn.jsdelivr.net;">
 
 </head>
 
@@ -120,39 +121,36 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
             <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
+                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                    <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                    <a href="team.html" class="dropdown-item">General conditions of the Service</a>
-
-                </div>-->
-                <a href="./branches.html" class="nav-item nav-link">Branches</a>
-                <!--<a href="project.html" class="nav-item nav-link">Activities</a>-->
+                <a href="branches.html" class="nav-item nav-link">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="service.html" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
                         <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
@@ -162,17 +160,46 @@
                         <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -1107,7 +1134,11 @@
 
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Language System -->
+<script src="js/translations.js"></script>
+<script src="js/dictionary.js"></script>
+<script src="js/language-manager.js"></script>
 <script src="lib/wow/wow.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>

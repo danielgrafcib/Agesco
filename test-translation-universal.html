@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Traduction Universelle - AGECOSCO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <!-- Language System: moved to page end after Bootstrap JS -->
+    
+    <style>
+        body {
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .test-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .test-title {
+            color: #00B98E;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00B98E;
+        }
+        .test-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #00B98E;
+        }
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .error {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .info-box {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center mb-5">
+            <h1 class="display-4 text-primary">🧪 Test de Traduction Universelle</h1>
+            <p class="lead">AGECOSCO - Système Multilingue</p>
+        </header>
+
+        <!-- Language Selector Test -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-globe"></i> Sélecteur de Langue
+            </h2>
+            <div class="info-box">
+                <strong>Instructions:</strong> Cliquez sur "Languages" ci-dessous, puis sélectionnez une langue. 
+                Tous les textes de cette page doivent changer!
+            </div>
+            
+            <div class="nav-item dropdown d-inline-block">
+                <a href="#" class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                    <i class="fas fa-globe me-2"></i>Languages
+                </a>
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                    <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                        <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                        <span>Français</span>
+                    </a>
+                    <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                        <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                        <span>English</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Links Test -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-bars"></i> Liens de Navigation
+            </h2>
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="branches.html" class="nav-item nav-link">Branches</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+
+        <!-- Dropdown Menus Test -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-caret-down"></i> Menus Déroulants
+            </h2>
+            
+            <h5>About Dropdown:</h5>
+            <div class="dropdown-menu position-static d-block mb-4">
+                <a href="quality-policy.html" class="dropdown-item">Quality and policy</a>
+                <a href="team.html" class="dropdown-item">Our Team</a>
+                <a href="health-safety.html" class="dropdown-item">Health and Safety</a>
+                <a href="general-conditions.html" class="dropdown-item">General conditions of the Service</a>
+            </div>
+
+            <h5>Services Dropdown:</h5>
+            <div class="dropdown-menu position-static d-block">
+                <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
+                <a href="survey.html" class="dropdown-item">Surveys</a>
+                <a href="p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
+                <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
+                <a href="risk.html" class="dropdown-item">Risk and management</a>
+                <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
+                <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
+            </div>
+        </div>
+
+        <!-- Buttons Test -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-hand-pointer"></i> Boutons
+            </h2>
+            <div class="test-item">
+                <button class="btn btn-primary m-2">Read More</button>
+                <button class="btn btn-success m-2">Learn More</button>
+                <button class="btn btn-info m-2">Get Quote</button>
+                <button class="btn btn-warning m-2">Contact Us</button>
+                <button class="btn btn-secondary m-2">
+                    <i class="fas fa-check"></i> Check
+                </button>
+            </div>
+        </div>
+
+        <!-- Topbar Hours Test -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-clock"></i> Heures d'Ouverture (Topbar)
+            </h2>
+            <div class="container-fluid bg-dark text-white p-3">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <div class="btn-sm-square rounded-circle bg-primary me-2">
+                        <small class="fas fa-clock text-white"></small>
+                    </div>
+                    <small>Lun - Vend : 9H - 18H</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Results -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-check-circle"></i> Résultats Attendus
+            </h2>
+            <div class="info-box">
+                <h5>✅ Quand vous cliquez sur "English":</h5>
+                <ul>
+                    <li>"Home" → reste "Home"</li>
+                    <li>"About" → reste "About"</li>
+                    <li>"Languages" → reste "Languages"</li>
+                    <li>"Quality and policy" → reste "Quality and policy"</li>
+                    <li>"Read More" → reste "Read More"</li>
+                    <li>"Lun - Vend : 9H - 18H" → "Mon-Fri:9AM-6PM/ Sat:9AM-12PM"</li>
+                </ul>
+                
+                <h5>✅ Quand vous cliquez sur "Français":</h5>
+                <ul>
+                    <li>"Home" → "Accueil"</li>
+                    <li>"About" → "À Propos"</li>
+                    <li>"Languages" → "Langues"</li>
+                    <li>"Quality and policy" → "Qualité et Politique"</li>
+                    <li>"Read More" → "En Savoir Plus"</li>
+                    <li>Hours → "Lun-Vend:9H-18H/ Sam:9H-12H"</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Console Log Test -->
+        <div class="test-section">
+            <h2 class="test-title">
+                <i class="fas fa-terminal"></i> Console JavaScript
+            </h2>
+            <div class="info-box">
+                <p><strong>Ouvrez la console du navigateur (F12)</strong> pour voir:</p>
+                <ul>
+                    <li>La langue actuelle détectée</li>
+                    <li>Les événements de changement de langue</li>
+                    <li>Tout message d'erreur éventuel</li>
+                </ul>
+                <button class="btn btn-dark" onclick="testLanguageSystem()">
+                    <i class="fas fa-bug"></i> Tester le Système
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Test function
+        function testLanguageSystem() {
+            console.log('🧪 TEST DU SYSTÈME DE TRADUCTION');
+            console.log('================================');
+            
+            if (typeof window.languageManager === 'undefined') {
+                console.error('❌ LanguageManager non initialisé!');
+                return;
+            }
+            
+            const currentLang = window.languageManager.getCurrentLanguage();
+            console.log('✅ Langue actuelle:', currentLang);
+            
+            console.log('✅ Traductions disponibles:', Object.keys(window.languageManager.translations));
+            
+            console.log('✅ Navigation FR:', window.languageManager.translations.fr.nav);
+            console.log('✅ Navigation EN:', window.languageManager.translations.en.nav);
+            
+            console.log('\n💡 Pour changer la langue manuellement:');
+            console.log('   window.languageManager.setLanguage("en")');
+            console.log('   window.languageManager.setLanguage("fr")');
+        }
+        
+        // Auto-test on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                console.log('🚀 Page de test chargée');
+                testLanguageSystem();
+            }, 1000);
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -123,7 +123,11 @@
 
     // Keyboard navigation for testimonials
     $(document).on('keydown', function (e) {
-        if ($('.testimonial-carousel').is(':focus-within')) {
+        // FIXED: Use jQuery.contains() instead of :focus-within pseudo-selector
+        const carouselElement = $('.testimonial-carousel')[0];
+        const hasFocus = carouselElement && (carouselElement.contains(document.activeElement) || carouselElement === document.activeElement);
+        
+        if (hasFocus) {
             if (e.key === 'ArrowLeft') {
                 e.preventDefault();
                 testimonialCarousel.trigger('prev.owl.carousel');
@@ -1035,10 +1039,11 @@ function showTooltip(element, message) {
 
 // Enhanced Error Handling for Batch 2
 window.addEventListener('error', function (e) {
-    console.error('JavaScript Error:', e.error);
-
-    // Show user-friendly error message for critical failures
+    // FIXED: Only log if there's an actual error with a message
     if (e.error && e.error.message) {
+        console.error('JavaScript Error:', e.error);
+
+        // Show user-friendly error message for critical failures
         const errorMessage = document.createElement('div');
         errorMessage.className = 'alert alert-warning alert-dismissible fade show position-fixed';
         errorMessage.style.cssText = 'top: 20px; right: 20px; z-index: 9999; max-width: 300px;';
@@ -1740,11 +1745,14 @@ function zoomOut() {
 
 // Enhanced Error Handling for Batch 3
 window.addEventListener('error', function (e) {
-    console.error('JavaScript error in Batch 3 functionality:', e.error);
+    // FIXED: Only log actual errors, prevent null error logging
+    if (e.error && e.error.message) {
+        console.error('JavaScript error in Batch 3 functionality:', e.error);
 
-    // Show user-friendly error message for critical failures
-    if (e.error && e.error.message.includes('PDF')) {
-        showNotification('PDF functionality is temporarily unavailable. Please try downloading the file directly.', 'error');
+        // Show user-friendly error message for PDF-related failures
+        if (e.error.message.includes('PDF')) {
+            showNotification('PDF functionality is temporarily unavailable. Please try downloading the file directly.', 'error');
+        }
     }
 });
 
@@ -2874,10 +2882,11 @@ function showDocumentViewer(title) {
 
 // Enhanced Error Handling for Batch 4
 window.addEventListener('error', function (e) {
-    console.error('JavaScript error in Batch 4 functionality:', e.error);
-
-    // Show user-friendly error message for critical failures
+    // FIXED: Only log actual errors with messages, prevent null error logging
     if (e.error && e.error.message) {
+        console.error('JavaScript error in Batch 4 functionality:', e.error);
+
+        // Show user-friendly error message for critical failures
         const errorType = e.error.message.toLowerCase();
         if (errorType.includes('modal') || errorType.includes('bootstrap')) {
             showBatch4Notification('Some interactive features may not be working properly. Please refresh the page.', 'warning');

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Our Services - GROUP AGECOSCO | Professional Maritime Inspection Services</title>
+    <title data-i18n="service.page_title">Our Services - GROUP AGECOSCO | Professional Maritime Inspection Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="maritime inspection services, cargo survey, tally inspections, marine surveys, P&I claims handling, risk management, crisis control, average adjustments, GROUP AGECOSCO services, West Africa maritime"
@@ -57,10 +57,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self'; object-src 'self';">
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self' https://cdn.jsdelivr.net; object-src 'self';">
 
 </head>
 
@@ -113,72 +114,86 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
+            <!--<img src="img/logo.png" alt="GROUP AGECOSCO Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <!--<div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                        <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                        <a href="team.html" class="dropdown-item">General conditions of the Service</a>
+                <a href="branches.html" data-i18n="nav.branches">Branches</a>
+                <div class="nav-item dropdown">
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
+                        <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" class="dropdown-item">Surveys</a>
+                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
+                        <a href="risk.html" class="dropdown-item">Risk and management</a>
+                        <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
+                        <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
-                </div>-->
-            </div>
-            <a href="branches.html" class="nav-item nav-link">Branches</a>
-            <!--<a href="project.html" class="nav-item nav-link">Activités</a>-->
-            <div class="nav-item dropdown">
-                <a href="service.html" class="nav-item nav-link dropdown-toggle active" aria-current="page">Services</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
-                    <a href="survey.html" class="dropdown-item">Surveys</a>
-                    <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                    <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
-                    <a href="risk.html" class="dropdown-item">Risk and management</a>
-                    <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
-                    <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-        </div>
-        <div class="h-100 d-lg-inline-flex align-items-center d-none">
-            <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://facebook.com/agecosco"
-                target="_blank" rel="noopener" aria-label="Follow us on Facebook">
-                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-            </a>
-            <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://twitter.com/agecosco"
-                target="_blank" rel="noopener" aria-label="Follow us on Twitter">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                href="https://linkedin.com/company/agecosco" target="_blank" rel="noopener"
-                aria-label="Connect with us on LinkedIn">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            </a>
-            <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://instagram.com/agecosco"
-                target="_blank" rel="noopener" aria-label="Follow us on Instagram">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-        </div>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -189,7 +204,7 @@
     <!-- Page Header Start -->
     <header class="container-fluid page-header py-5 mb-5" role="banner" aria-labelledby="page-title">
         <div class="container py-5">
-            <h1 id="page-title" class="display-3 text-white mb-3 animated slideInDown">Our Services</h1>
+            <h1 id="page-title" data-i18n="service.header.title">Our Services</h1>
             <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
                 <ol class="breadcrumb" role="list">
                     <li class="breadcrumb-item" role="listitem">
@@ -198,7 +213,7 @@
                     <li class="breadcrumb-item" role="listitem">
                         <a class="text-white" href="about.html" aria-label="Learn about our company">About</a>
                     </li>
-                    <li class="breadcrumb-item text-white active" aria-current="page" role="listitem">Services</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" role="listitem" data-i18n="service.breadcrumb.current">Services</li>
                 </ol>
             </nav>
         </div>
@@ -213,8 +228,8 @@
             <div class="container">
                 <header class="text-center mb-5">
                     <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" role="presentation"></div>
-                    <h2 id="services-section-heading" class="display-5 mb-4">Our Professional Services</h2>
-                    <p class="lead text-muted">GROUP AGECOSCO provides comprehensive maritime inspection and cargo
+                    <h2 id="services-section-heading" data-i18n="service.section_heading">Our Professional Services</h2>
+                    <p class="lead text-muted" data-i18n="service.section_description">GROUP AGECOSCO provides comprehensive maritime inspection and cargo
                         survey services to ensure the safety, quality, and compliance of your maritime operations across
                         West Africa.</p>
                 </header>
@@ -231,19 +246,16 @@
                                 </div>
                             </div>
                             <header class="service-header mb-3">
-                                <h3 class="h4 mb-3">Tally Inspections & Supervisions</h3>
+                                <h3 class="h4 mb-3" data-i18n="service.tally.title">Tally Inspections & Supervisions</h3>
                             </header>
                             <div class="service-content">
-                                <p class="mb-4">Professional cargo counting, condition assessment, and supervision
+                                <p class="mb-4" data-i18n="service.tally.description">Professional cargo counting, condition assessment, and supervision
                                     services including charter-party disputes, bunker disputes, and stevedore operations
                                     management.</p>
                                 <ul class="service-features list-unstyled mb-4">
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Cargo counting
-                                        and tallying</li>
-                                    <li><i class="fas fa-check text-primary me-2"
-                                            aria-hidden="true"></i>Loading/discharge supervision</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Charter-party
-                                        dispute resolution</li>
+                                    <li data-i18n="service.tally.feature1">Cargo counting and tallying</li>
+                                    <li data-i18n="service.tally.feature2">Loading/discharge supervision</li>
+                                    <li data-i18n="service.tally.feature3">Charter-party dispute resolution</li>
                                 </ul>
                                 <a class="btn btn-primary btn-sm" href="tally-inspection.html"
                                     aria-label="Learn more about Tally Inspections and Supervisions">
@@ -264,17 +276,17 @@
                                 </div>
                             </div>
                             <header class="service-header mb-3">
-                                <h3 class="h4 mb-3">Marine Surveys & Average Adjustments</h3>
+                                <h3 class="h4 mb-3" data-i18n="service.survey.title">Marine Surveys & Average Adjustments</h3>
                             </header>
                             <div class="service-content">
-                                <p class="mb-4">Comprehensive marine surveys, transport recommendations, and supervision
+                                <p class="mb-4" data-i18n="service.survey.description">Comprehensive marine surveys, transport recommendations, and supervision
                                     of project cargoes including road surveys and average adjustment services.</p>
                                 <ul class="service-features list-unstyled mb-4">
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Vessel
+                                    <li data-i18n="service.survey.feature1">Vessel
                                         condition surveys</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Cargo damage
+                                    <li data-i18n="service.survey.feature2">Cargo damage
                                         assessments</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Average
+                                    <li data-i18n="service.survey.feature3">Average
                                         adjustment calculations</li>
                                 </ul>
                                 <a class="btn btn-primary btn-sm" href="survey.html"
@@ -296,17 +308,17 @@
                                 </div>
                             </div>
                             <header class="service-header mb-3">
-                                <h3 class="h4 mb-3">Crisis Control & Emergency Response</h3>
+                                <h3 class="h4 mb-3" data-i18n="service.crisis.title">Crisis Control & Emergency Response</h3>
                             </header>
                             <div class="service-content">
-                                <p class="mb-4">Rapid response crisis control interventions with dedicated professionals
+                                <p class="mb-4" data-i18n="service.crisis.description">Rapid response crisis control interventions with dedicated professionals
                                     providing expert emergency maritime assistance and incident management.</p>
                                 <ul class="service-features list-unstyled mb-4">
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>24/7 emergency
+                                    <li data-i18n="service.crisis.feature1">24/7 emergency
                                         response</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Incident
+                                    <li data-i18n="service.crisis.feature2">Incident
                                         investigation</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Crisis
+                                    <li data-i18n="service.crisis.feature3">Crisis
                                         management support</li>
                                 </ul>
                                 <a class="btn btn-primary btn-sm" href="crisis-control.html"
@@ -327,17 +339,17 @@
                                 </div>
                             </div>
                             <header class="service-header mb-3">
-                                <h3 class="h4 mb-3">Risk Management & Prevention</h3>
+                                <h3 class="h4 mb-3" data-i18n="service.risk.title">Risk Management & Prevention</h3>
                             </header>
                             <div class="service-content">
-                                <p class="mb-4">Specialized risk management services focusing on pest prevention and
+                                <p class="mb-4" data-i18n="service.risk.description">Specialized risk management services focusing on pest prevention and
                                     control for vessels, cargo, port facilities, and offshore platforms.</p>
                                 <ul class="service-features list-unstyled mb-4">
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Risk assessment
+                                    <li data-i18n="service.risk.feature1">Risk assessment
                                         and analysis</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Pest prevention
+                                    <li data-i18n="service.risk.feature2">Pest prevention
                                         programs</li>
-                                    <li><i class="fas fa-check text-primary me-2" aria-hidden="true"></i>Safety
+                                    <li data-i18n="service.risk.feature3">Safety
                                         compliance audits</li>
                                 </ul>
                                 <a class="btn btn-primary btn-sm" href="risk.html"
@@ -355,15 +367,15 @@
                         <div class="additional-services bg-light rounded-3 p-4">
                             <div class="row align-items-center">
                                 <div class="col-lg-8">
-                                    <h3 class="h4 mb-3">Need a Custom Solution?</h3>
-                                    <p class="mb-0">Our experienced team can provide tailored maritime inspection
+                                    <h3 class="h4 mb-3" data-i18n="service.additional_services.title">Need a Custom Solution?</h3>
+                                    <p class="mb-0" data-i18n="service.additional_services.description">Our experienced team can provide tailored maritime inspection
                                         services to meet your specific requirements. Contact us to discuss your unique
                                         needs and challenges.</p>
                                 </div>
                                 <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
                                     <a href="contact.html" class="btn btn-primary btn-lg">
                                         <i class="fas fa-phone me-2" aria-hidden="true"></i>
-                                        Get Custom Quote
+                                        <span data-i18n="service.additional_services.cta_get_quote">Get Custom Quote</span>
                                     </a>
                                 </div>
                             </div>
@@ -377,8 +389,8 @@
             <div class="container">
                 <header class="text-center mb-5">
                     <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" role="presentation"></div>
-                    <h2 id="legal-documents-heading" class="display-5 mb-4">Legal Documents & General Conditions</h2>
-                    <p class="lead text-muted">Review our comprehensive general conditions and legal framework that
+                    <h2 id="legal-documents-heading" data-i18n="legal.section_heading">Legal Documents & General Conditions</h2>
+                    <p class="lead text-muted" data-i18n="legal.section_description">Review our comprehensive general conditions and legal framework that
                         govern our maritime inspection services.</p>
                 </header>
 
@@ -387,8 +399,8 @@
                         <div class="pdf-viewer-container bg-white rounded-3 shadow-sm p-4">
                             <div class="pdf-header d-flex justify-content-between align-items-center mb-4">
                                 <div>
-                                    <h3 class="h5 mb-2">GROUP AGECOSCO General Conditions</h3>
-                                    <p class="text-muted mb-0">Legal framework and terms of service</p>
+                                    <h3 class="h5 mb-2" data-i18n="legal.pdf_header.title">GROUP AGECOSCO General Conditions</h3>
+                                    <p class="text-muted mb-0" data-i18n="legal.pdf_header.subtitle">Legal framework and terms of service</p>
                                 </div>
                                 <div class="pdf-controls">
                                     <a href="files/GROUPGroup Agecosco Legal General Conditions.pdf" target="_blank"
@@ -412,7 +424,7 @@
                                         <div class="spinner-border text-primary mb-3" role="status">
                                             <span class="visually-hidden">Loading document...</span>
                                         </div>
-                                        <p class="mb-0 text-muted">Loading PDF document...</p>
+                                        <p class="mb-0 text-muted" data-i18n="legal.pdf_loading.message">Loading PDF document...</p>
                                     </div>
                                 </div>
 
@@ -426,8 +438,8 @@
                                 <!-- PDF Error Fallback -->
                                 <div id="pdf-error" class="pdf-error d-none text-center p-5">
                                     <i class="fas fa-file-pdf fa-3x text-muted mb-3" aria-hidden="true"></i>
-                                    <h4 class="h5 mb-3">PDF Viewer Not Available</h4>
-                                    <p class="mb-4 text-muted">Your browser doesn't support embedded PDF viewing. Please
+                                    <h4 class="h5 mb-3" data-i18n="legal.pdf_error.title">PDF Viewer Not Available</h4>
+                                    <p class="mb-4 text-muted" data-i18n="legal.pdf_error.description">Your browser doesn't support embedded PDF viewing. Please
                                         download the document to view it.</p>
                                     <div class="pdf-fallback-actions">
                                         <a href="files/GROUPGroup Agecosco Legal General Conditions.pdf" target="_blank"
@@ -447,20 +459,20 @@
                             <div class="pdf-info mt-4 p-3 bg-light rounded-3">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h4 class="h6 mb-2">Document Information</h4>
+                                        <h4 class="h6 mb-2" data-i18n="legal.pdf_info.document_type">Document Information</h4>
                                         <ul class="list-unstyled small mb-0">
-                                            <li><strong>Document Type:</strong> Legal General Conditions</li>
-                                            <li><strong>Language:</strong> English/French</li>
-                                            <li><strong>Last Updated:</strong> January 2025</li>
+                                            <li data-i18n="legal.pdf_info.document_type_value">Document Type: Legal General Conditions</li>
+                                            <li data-i18n="legal.pdf_info.language">Language: English/French</li>
+                                            <li data-i18n="legal.pdf_info.last_updated">Last Updated: January 2025</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <h4 class="h6 mb-2">Key Sections</h4>
+                                        <h4 class="h6 mb-2" data-i18n="legal.pdf_info.key_sections">Key Sections</h4>
                                         <ul class="list-unstyled small mb-0">
-                                            <li>• Terms of Service</li>
-                                            <li>• Liability and Insurance</li>
-                                            <li>• Payment Terms</li>
-                                            <li>• Dispute Resolution</li>
+                                            <li data-i18n="legal.pdf_info.terms_of_service">• Terms of Service</li>
+                                            <li data-i18n="legal.pdf_info.liability_and_insurance">• Liability and Insurance</li>
+                                            <li data-i18n="legal.pdf_info.payment_terms">• Payment Terms</li>
+                                            <li data-i18n="legal.pdf_info.dispute_resolution">• Dispute Resolution</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -481,8 +493,8 @@
                                             <i class="fas fa-balance-scale fa-2x text-primary" aria-hidden="true"></i>
                                         </div>
                                         <div>
-                                            <h3 class="h5 mb-1 text-primary">Legal Compliance</h3>
-                                            <p class="mb-0">All our services are conducted in accordance with
+                                            <h3 class="h5 mb-1 text-primary" data-i18n="legal.compliance_title">Legal Compliance</h3>
+                                            <p class="mb-0" data-i18n="legal.compliance_description">All our services are conducted in accordance with
                                                 international maritime law and local regulations.</p>
                                         </div>
                                     </div>
@@ -490,7 +502,7 @@
                                 <div class="col-md-4 text-md-end mt-3 mt-md-0">
                                     <a href="contact.html" class="btn btn-primary">
                                         <i class="fas fa-gavel me-2" aria-hidden="true"></i>
-                                        Legal Inquiries
+                                        <span data-i18n="legal.legal_inquiries">Legal Inquiries</span>
                                     </a>
                                 </div>
                             </div>
@@ -506,8 +518,8 @@
             <div class="container">
                 <header class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" role="presentation"></div>
-                    <h2 id="accreditations-heading" class="display-5 mb-4">Certifications & Accreditations</h2>
-                    <p class="lead text-muted">GROUP AGECOSCO maintains the highest industry standards through
+                    <h2 id="accreditations-heading" data-i18n="accreditations.section_heading">Certifications & Accreditations</h2>
+                    <p class="lead text-muted" data-i18n="accreditations.section_description">GROUP AGECOSCO maintains the highest industry standards through
                         internationally recognized certifications and accreditations.</p>
                 </header>
 
@@ -524,17 +536,17 @@
                                     class="img-fluid mx-auto d-block" style="max-height: 120px;">
                             </div>
                             <header class="accreditation-header mb-3">
-                                <h3 class="h4 mb-2">GAFTA Approved</h3>
-                                <p class="text-primary fw-bold mb-2">Togo Operations</p>
+                                <h3 class="h4 mb-2" data-i18n="accreditations.gafta_togo.title">GAFTA Approved</h3>
+                                <p class="text-primary fw-bold mb-2" data-i18n="accreditations.gafta_togo.subtitle">Togo Operations</p>
                             </header>
                             <div class="accreditation-content">
-                                <p class="mb-3">Grain and Feed Trade Association approved surveyor for comprehensive
+                                <p class="mb-3" data-i18n="accreditations.gafta_togo.description">Grain and Feed Trade Association approved surveyor for comprehensive
                                     agricultural commodity inspections in Togo.</p>
                                 <div class="accreditation-details">
                                     <ul class="list-unstyled small text-muted">
-                                        <li><strong>Certification Body:</strong> GAFTA</li>
-                                        <li><strong>Scope:</strong> Agricultural Commodities</li>
-                                        <li><strong>Valid Until:</strong> December 2025</li>
+                                        <li data-i18n="accreditations.gafta_togo.certification_body">Certification Body: GAFTA</li>
+                                        <li data-i18n="accreditations.gafta_togo.scope">Scope: Agricultural Commodities</li>
+                                        <li data-i18n="accreditations.gafta_togo.valid_until">Valid Until: December 2025</li>
                                     </ul>
                                 </div>
                             </div>
@@ -549,17 +561,17 @@
                                     class="img-fluid mx-auto d-block" style="max-height: 120px;">
                             </div>
                             <header class="accreditation-header mb-3">
-                                <h3 class="h4 mb-2">ISO 9001:2015</h3>
-                                <p class="text-primary fw-bold mb-2">Quality Management System</p>
+                                <h3 class="h4 mb-2" data-i18n="accreditations.iso9001.title">ISO 9001:2015</h3>
+                                <p class="text-primary fw-bold mb-2" data-i18n="accreditations.iso9001.subtitle">Quality Management System</p>
                             </header>
                             <div class="accreditation-content">
-                                <p class="mb-3">International standard for quality management systems ensuring
+                                <p class="mb-3" data-i18n="accreditations.iso9001.description">International standard for quality management systems ensuring
                                     consistent service delivery and continuous improvement.</p>
                                 <div class="accreditation-details">
                                     <ul class="list-unstyled small text-muted">
-                                        <li><strong>Certification Body:</strong> ISO</li>
-                                        <li><strong>Scope:</strong> Quality Management</li>
-                                        <li><strong>Valid Until:</strong> March 2026</li>
+                                        <li data-i18n="accreditations.iso9001.certification_body">Certification Body: ISO</li>
+                                        <li data-i18n="accreditations.iso9001.scope">Scope: Quality Management</li>
+                                        <li data-i18n="accreditations.iso9001.valid_until">Valid Until: March 2026</li>
                                     </ul>
                                 </div>
                             </div>
@@ -574,17 +586,17 @@
                                     class="img-fluid mx-auto d-block" style="max-height: 120px;">
                             </div>
                             <header class="accreditation-header mb-3">
-                                <h3 class="h4 mb-2">GAFTA Approved</h3>
-                                <p class="text-primary fw-bold mb-2">Benin Operations</p>
+                                <h3 class="h4 mb-2" data-i18n="accreditations.gafta_benin.title">GAFTA Approved</h3>
+                                <p class="text-primary fw-bold mb-2" data-i18n="accreditations.gafta_benin.subtitle">Benin Operations</p>
                             </header>
                             <div class="accreditation-content">
-                                <p class="mb-3">Extended GAFTA approval for agricultural commodity inspections and
+                                <p class="mb-3" data-i18n="accreditations.gafta_benin.description">Extended GAFTA approval for agricultural commodity inspections and
                                     surveys across Benin maritime facilities.</p>
                                 <div class="accreditation-details">
                                     <ul class="list-unstyled small text-muted">
-                                        <li><strong>Certification Body:</strong> GAFTA</li>
-                                        <li><strong>Scope:</strong> Agricultural Commodities</li>
-                                        <li><strong>Valid Until:</strong> December 2025</li>
+                                        <li data-i18n="accreditations.gafta_benin.certification_body">Certification Body: GAFTA</li>
+                                        <li data-i18n="accreditations.gafta_benin.scope">Scope: Agricultural Commodities</li>
+                                        <li data-i18n="accreditations.gafta_benin.valid_until">Valid Until: December 2025</li>
                                     </ul>
                                 </div>
                             </div>
@@ -610,8 +622,8 @@
                         <div class="certifications-info bg-primary bg-opacity-10 rounded-3 p-4">
                             <div class="row align-items-center">
                                 <div class="col-lg-8">
-                                    <h3 class="h5 mb-3">Commitment to Excellence</h3>
-                                    <p class="mb-0">Our certifications demonstrate our unwavering commitment to
+                                    <h3 class="h5 mb-3" data-i18n="accreditations.certifications_info.title">Commitment to Excellence</h3>
+                                    <p class="mb-0" data-i18n="accreditations.certifications_info.description">Our certifications demonstrate our unwavering commitment to
                                         maintaining the highest standards in maritime inspection services. We
                                         continuously invest in training, technology, and quality assurance to exceed
                                         industry expectations.</p>
@@ -639,35 +651,33 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <section aria-labelledby="contact-info-heading">
-                            <h5 id="contact-info-heading" class="text-light mb-4">Contact Information</h5>
+                            <h5 id="contact-info-heading" data-i18n="footer.contact_info">Contact Information</h5>
                             <address class="mb-0">
                                 <div class="contact-item mb-3">
                                     <i class="fas fa-map-marker-alt me-3 text-primary" aria-hidden="true"></i>
-                                    <span>Rue du CYRUS-Ablogame N°1, Villa N°140-Zone Portuaire, Lomé, TOGO</span>
+                                    <span data-i18n="footer.address_full">Rue du CYRUS-Ablogame N°1, Villa N°140-Zone Portuaire, Lomé, TOGO</span>
                                 </div>
                                 <div class="contact-item mb-3">
                                     <i class="fas fa-phone-alt me-3 text-primary" aria-hidden="true"></i>
                                     <div>
-                                        <a href="tel:+22890057466" class="text-secondary text-decoration-none">Tél:
-                                            (228) 90-05-74-66</a><br>
-                                        <a href="tel:+22898246483" class="text-secondary text-decoration-none">Cél:
-                                            (228) 98-24-64-83</a>
+                                        <a href="tel:+22890057466" class="text-secondary text-decoration-none" data-i18n="footer.phone_tel">Tél: (228) 90-05-74-66</a><br>
+                                        <a href="tel:+22898246483" class="text-secondary text-decoration-none" data-i18n="footer.phone_cel">Cél: (228) 98-24-64-83</a>
                                     </div>
                                 </div>
                                 <div class="contact-item mb-3">
                                     <i class="fas fa-envelope me-3 text-primary" aria-hidden="true"></i>
                                     <div>
                                         <a href="mailto:agecosco@gmail.com"
-                                            class="text-secondary text-decoration-none">agecosco@gmail.com</a><br>
+                                            class="text-secondary text-decoration-none" data-i18n="footer.email_general">agecosco@gmail.com</a><br>
                                         <a href="mailto:info@agecosco.com"
-                                            class="text-secondary text-decoration-none">info@agecosco.com</a>
+                                            class="text-secondary text-decoration-none" data-i18n="footer.email_info">info@agecosco.com</a>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="fas fa-clock me-3 text-primary" aria-hidden="true"></i>
                                     <div>
-                                        <span>Mon-Fri: 9:00 AM - 6:00 PM</span><br>
-                                        <span>Saturday: 9:00 AM - 12:00 PM</span>
+                                        <span data-i18n="footer.hours_mon_fri">Mon-Fri: 9:00 AM - 6:00 PM</span><br>
+                                        <span data-i18n="footer.hours_sat">Saturday: 9:00 AM - 12:00 PM</span>
                                     </div>
                                 </div>
                             </address>
@@ -699,22 +709,22 @@
 
                     <div class="col-lg-3 col-md-6">
                         <section aria-labelledby="services-heading">
-                            <h5 id="services-heading" class="text-light mb-4">Our Services</h5>
+                            <h5 id="services-heading" data-i18n="footer.services_title">Our Services</h5>
                             <nav aria-label="Services navigation">
                                 <ul class="list-unstyled footer-links">
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="tally-inspection.html">Tally
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="tally-inspection.html" data-i18n="nav.services.tally_inspections">Tally
                                             Inspections & Supervisions</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="survey.html">Marine
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="survey.html" data-i18n="nav.services.surveys">Marine
                                             Surveys</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="p-i-claims-handling.html">P&I
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="p-i-claims-handling.html" data-i18n="nav.services.pi_claims">P&I
                                             Claims Handling</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="fruit-perish.html">Fruit and
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="fruit-perish.html" data-i18n="nav.services.fruit_perishables">Fruit and
                                             Perishables</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="agri-food.html">Agrifood
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="agri-food.html" data-i18n="nav.services.agrifood_sector">Agrifood
                                             Sector</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="loss-prevent.html">Loss
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="loss-prevent.html" data-i18n="nav.services.loss_prevention">Loss
                                             Prevention Plans</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="risk.html">Risk Management</a>
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="risk.html" data-i18n="nav.services.risk_management">Risk Management</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -723,19 +733,19 @@
 
                     <div class="col-lg-3 col-md-6">
                         <section aria-labelledby="quick-links-heading">
-                            <h5 id="quick-links-heading" class="text-light mb-4">Quick Links</h5>
+                            <h5 id="quick-links-heading" data-i18n="footer.quick_links_title">Quick Links</h5>
                             <nav aria-label="Quick navigation">
                                 <ul class="list-unstyled footer-links">
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="index.html">Home</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="about.html">About Us</a></li>
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="index.html" data-i18n="nav.home">Home</a></li>
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="about.html" data-i18n="nav.about">About Us</a></li>
                                     <li><a class="btn btn-link text-start p-0 mb-2" href="service.html"
-                                            aria-current="page">Our Services</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="branches.html">Our
+                                            aria-current="page" data-i18n="nav.services">Our Services</a></li>
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="branches.html" data-i18n="nav.branches">Our
                                             Branches</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="team.html">Our Team</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="quality-policy.html">Quality
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="team.html" data-i18n="nav.about.our_team">Our Team</a></li>
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="quality-policy.html" data-i18n="nav.about.quality_policy">Quality
                                             Policy</a></li>
-                                    <li><a class="btn btn-link text-start p-0 mb-2" href="contact.html">Contact Us</a>
+                                    <li><a class="btn btn-link text-start p-0 mb-2" href="contact.html" data-i18n="nav.contact">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -744,15 +754,15 @@
 
                     <div class="col-lg-3 col-md-6">
                         <section aria-labelledby="newsletter-heading">
-                            <h5 id="newsletter-heading" class="text-light mb-4">Stay Updated</h5>
-                            <p class="mb-4">Subscribe to our newsletter for the latest updates on maritime inspection
+                            <h5 id="newsletter-heading" data-i18n="footer.newsletter_title">Stay Updated</h5>
+                            <p class="mb-4" data-i18n="footer.newsletter_description">Subscribe to our newsletter for the latest updates on maritime inspection
                                 services and industry news.</p>
 
                             <form class="newsletter-form" aria-label="Newsletter subscription form" novalidate>
                                 <div class="position-relative w-100 mb-3">
                                     <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5"
                                         type="email" placeholder="Enter your email address"
-                                        aria-label="Email address for newsletter subscription" required>
+                                        aria-label="Email address for newsletter subscription" required data-i18n-placeholder="footer.newsletter_placeholder">
                                     <button type="submit"
                                         class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
                                         aria-label="Subscribe to newsletter">
@@ -765,14 +775,14 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="newsletter-privacy" required>
                                     <label class="form-check-label small" for="newsletter-privacy">
-                                        I agree to receive marketing communications and accept the
+                                        <span data-i18n="footer.newsletter_privacy_agree">I agree to receive marketing communications and accept the</span>
                                         <a href="privacy-policy.html" class="text-primary">Privacy Policy</a>
                                     </label>
                                 </div>
                             </form>
 
                             <div class="mt-4">
-                                <h6 class="text-light mb-3">Certifications & Memberships</h6>
+                                <h6 class="text-light mb-3" data-i18n="footer.certifications_title">Certifications & Memberships</h6>
                                 <div class="certifications d-flex flex-wrap gap-2">
                                     <span class="badge bg-primary">ISO 9001:2015</span>
                                     <span class="badge bg-primary">GAFTA Approved</span>
@@ -791,11 +801,12 @@
         <div class="container-fluid py-4" style="background: #000000;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">Copyright
-                        &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span data-i18n="footer.copyright">Copyright &copy; Agecosco 2025, All Right Reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        Designed By <a class="border-bottom" href="https://edealexpress.com">EDX Design Web
+                        <span data-i18n="footer.designed_by">Designed By</span>
+                        <a class="border-bottom" href="https://edealexpress.com" data-i18n="footer.edx_design_web_studio">EDX Design Web
                             Studio</a>
                     </div>
                 </div>
@@ -811,7 +822,11 @@
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>

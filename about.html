@@ -57,10 +57,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self';">
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self' https://cdn.jsdelivr.net;">
 
 </head>
 
@@ -112,68 +113,85 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
             <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
-                        <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
+                    <a href="about.html" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        data-i18n="nav.about" aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
+                        <a href="./quality-policy.html" class="dropdown-item" data-i18n="nav.about.quality_policy">Quality and policy</a>
+                        <a href="team.html" class="dropdown-item" data-i18n="nav.about.our_team">Our Team</a>
+                        <a href="./health-safety.html" class="dropdown-item" data-i18n="nav.about.health_safety">Health and Safety</a>
+                        <a href="./general-conditions.html" class="dropdown-item" data-i18n="nav.about.general_conditions">General conditions of the Service</a>
                     </div>
                 </div>
-                <!--<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                        <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                        <a href="team.html" class="dropdown-item">General conditions of the Service</a>
-                    </div>
-                </div>-->
-            </div>
-            <!--<a href="service.html" class="nav-item nav-link">Equipe</a>-->
-            <a href="branches.html" class="nav-item nav-link">Branches</a>
-            <div class="nav-item dropdown">
-                <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
-                    <a href="survey.html" class="dropdown-item">Surveys</a>
-                    <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                    <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
-                    <a href="risk.html" class="dropdown-item">Risk and management</a>
-                    <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
-                    <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
+                <a href="branches.html" class="nav-item nav-link" data-i18n="nav.branches">Branches</a>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        data-i18n="nav.services" aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
+                        <a href="tally-inspection.html" class="dropdown-item" data-i18n="nav.services.tally_inspections">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" class="dropdown-item" data-i18n="nav.services.surveys">Surveys</a>
+                        <a href="./p-i-claims-handling.html" class="dropdown-item" data-i18n="nav.services.pi_claims">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" class="dropdown-item" data-i18n="nav.services.loss_prevention">Loss prevention plans</a>
+                        <a href="risk.html" class="dropdown-item" data-i18n="nav.services.risk_management">Risk and management</a>
+                        <a href="fruit-perish.html" class="dropdown-item" data-i18n="nav.services.fruit_perishables">Fruit and perishables</a>
+                        <a href="agri-food.html" class="dropdown-item" data-i18n="nav.services.agrifood_sector">Agrifood sector</a>
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Languages</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="index.html#french" class="dropdown-item">Fran&#231;ais</a>
-                    <a href="./lang/en/index.html#english" class="dropdown-item">English</a>
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i><span data-i18n="nav.languages">Languages</span>
+                </a>
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                    <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                        <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span data-i18n="nav.fr">Français</span>
+                    </a>
+                    <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                        <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span data-i18n="nav.en">English</span>
+                    </a>
+                    </div>
                 </div>
+                <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contact Us</a>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <div class="h-100 d-lg-inline-flex align-items-center d-none">
-            <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                    class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                    class="fab fa-twitter"></i></a>
-            <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                    class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
         </div>
         </div>
     </nav>
@@ -186,16 +204,16 @@
     <!-- Page Header Start -->
     <header class="container-fluid page-header py-5 mb-5" role="banner" aria-labelledby="page-title">
         <div class="container py-5">
-            <h1 id="page-title" class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+            <h1 id="page-title" class="display-3 text-white mb-3 animated slideInDown" data-i18n="about.heading">About Us</h1>
             <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
                 <ol class="breadcrumb" role="list">
                     <li class="breadcrumb-item" role="listitem">
-                        <a class="text-white" href="index.html" aria-label="Return to homepage">Home</a>
+                        <a class="text-white" href="index.html" aria-label="Return to homepage" data-i18n="nav.home">Home</a>
                     </li>
                     <li class="breadcrumb-item" role="listitem">
-                        <a class="text-white" href="index.html#services" aria-label="View our activities">Activities</a>
+                        <a class="text-white" href="index.html#services" aria-label="View our activities" data-i18n="nav.services">Activities</a>
                     </li>
-                    <li class="breadcrumb-item text-white active" aria-current="page" role="listitem">About</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page" role="listitem" data-i18n="about.heading">About</li>
                 </ol>
             </nav>
         </div>
@@ -208,7 +226,7 @@
         <!-- Facts Start -->
         <section class="container-xxl py-5" aria-labelledby="core-services-heading">
             <div class="container">
-                <h2 id="core-services-heading" class="visually-hidden">Nos Services Principaux</h2>
+                <h2 id="core-services-heading" class="visually-hidden" data-i18n="services.heading">Nos Services Principaux</h2>
                 <div class="row g-4">
                     <article class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
                         <div class="h-100 bg-dark p-4 p-xl-5" role="region" aria-labelledby="service-1-title">
@@ -223,11 +241,9 @@
                                 <div class="display-1 mb-0" style="color: #000000;" aria-label="Service numéro 1">01
                                 </div>
                             </header>
-                            <h3 id="service-1-title" class="h5 text-white">Tally Inspections and Supervisions</h3>
+                            <h3 id="service-1-title" class="h5 text-white" data-i18n="services.service1.title">Tally Inspections and Supervisions</h3>
                             <hr class="w-25" role="presentation">
-                            <p class="text-light">It consists of accurately checking and recording the quantities of
-                                goods loaded or unloaded from a ship, ensuring precise cargo documentation and inventory
-                                management.</p>
+                            <p class="text-light" data-i18n="services.service1.description">It consists of accurately checking and recording the quantities of goods loaded or unloaded from a ship, ensuring precise cargo documentation and inventory management.</p>
                         </div>
                     </article>
                     <article class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
@@ -243,12 +259,9 @@
                                 <div class="display-1 mb-0" style="color: #000000;" aria-label="Service numéro 2">02
                                 </div>
                             </header>
-                            <h3 id="service-2-title" class="h5 text-white">Surveys (pre-loading, discharge and damage
-                                surveys)</h3>
+                            <h3 id="service-2-title" class="h5 text-white" data-i18n="services.service2.title">Surveys (pre-loading, discharge and damage surveys)</h3>
                             <hr class="w-25" role="presentation">
-                            <p class="text-light">It guarantees the integrity and conformity of goods before, during and
-                                after sea transport, providing comprehensive assessment and documentation of cargo
-                                conditions.</p>
+                            <p class="text-light" data-i18n="services.service2.description">It guarantees the integrity and conformity of goods before, during and after sea transport, providing comprehensive assessment and documentation of cargo conditions.</p>
                         </div>
                     </article>
                     <article class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
@@ -264,11 +277,9 @@
                                 <div class="display-1 mb-0" style="color: #000000;" aria-label="Service numéro 3">03
                                 </div>
                             </header>
-                            <h3 id="service-3-title" class="h5 text-white">Risk Management</h3>
+                            <h3 id="service-3-title" class="h5 text-white" data-i18n="services.service3.title">Risk Management</h3>
                             <hr class="w-25" role="presentation">
-                            <p class="text-light">Responding to accidents, fires, marine pollution or other critical
-                                incidents affecting maritime operations, providing expert crisis management and
-                                emergency response services.</p>
+                            <p class="text-light" data-i18n="services.service3.description">Responding to accidents, fires, marine pollution or other critical incidents affecting maritime operations, providing expert crisis management and emergency response services.</p>
                         </div>
                     </article>
                 </div>
@@ -292,23 +303,15 @@
                     <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                         <article class="p-lg-5 pe-lg-0">
                             <div class="bg-primary mb-3" style="width: 60px; height: 2px;" role="presentation"></div>
-                            <h2 id="about-content-heading" class="display-5 mb-4">About Us</h2>
-                            <p class="mb-4 pb-2">AGECOSCO is an international marine inspection company, founded in 1999
-                                and accredited to <strong>ISO 17020</strong> by the Togo Accreditation Agency. As the
-                                only national accreditation body recognized by the Togolese government, we are proud of
-                                our affiliation with the Ministry of Foreign Affairs.</p>
+                            <h2 id="about-content-heading" class="display-5 mb-4" data-i18n="about.title">About Us</h2>
+                            <p class="mb-4 pb-2" data-i18n="about.paragraph1">AGECOSCO is an international marine inspection company, founded in 1999 and accredited to <strong>ISO 17020</strong> by the Togo Accreditation Agency. As the only national accreditation body recognized by the Togolese government, we are proud of our affiliation with the Ministry of Foreign Affairs.</p>
 
-                            <p class="mb-4">Our team of qualified engineers and experts has over <strong>25
-                                    years</strong> of combined experience in marine inspection. We are committed to
-                                ensuring that our assessment bodies comply with national and international standards,
-                                providing unparalleled expertise in maritime operations.</p>
+                            <p class="mb-4" data-i18n="about.paragraph2">Our team of qualified engineers and experts has over <strong>25 years</strong> of combined experience in marine inspection. We are committed to ensuring that our assessment bodies comply with national and international standards, providing unparalleled expertise in maritime operations.</p>
 
-                            <p class="mb-4">Thanks to our wide range of services, including inspection, control and
-                                surveillance, <strong>GROUP AGECOSCO</strong> is your trusted partner for all your
-                                maritime operations across West Africa.</p>
+                            <p class="mb-4" data-i18n="about.paragraph3">Thanks to our wide range of services, including inspection, control and surveillance, <strong>GROUP AGECOSCO</strong> is your trusted partner for all your maritime operations across West Africa.</p>
 
                             <div class="row g-4 mb-4 pb-3" role="region" aria-labelledby="statistics-heading">
-                                <h3 id="statistics-heading" class="visually-hidden">Nos Statistiques de Performance</h3>
+                                <h3 id="statistics-heading" class="visually-hidden" data-i18n="about.stats.clients">Nos Statistiques de Performance</h3>
                                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                     <div class="d-flex align-items-center">
                                         <div class="btn-square bg-white rounded-circle"
@@ -323,7 +326,7 @@
                                                 <span class="h2 mb-1">1234</span>
                                                 <noscript><span class="h2 mb-1">1234</span></noscript>
                                             </div>
-                                            <p class="fw-medium text-primary mb-0">Happy Clients</p>
+                                            <p class="fw-medium text-primary mb-0" data-i18n="about.stats.clients">Happy Clients</p>
                                         </div>
                                     </div>
                                 </div>
@@ -342,13 +345,12 @@
                                                 <span class="h2 mb-1">950</span>
                                                 <noscript><span class="h2 mb-1">950</span></noscript>
                                             </div>
-                                            <p class="fw-medium text-primary mb-0">Projects Done</p>
+                                            <p class="fw-medium text-primary mb-0" data-i18n="about.stats.projects">Projects Done</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="service.html" class="btn btn-primary rounded-pill py-3 px-5"
-                                aria-label="Découvrir nos services d'inspection maritime">Explore More</a>
+                            <a href="service.html" class="btn btn-primary rounded-pill py-3 px-5" aria-label="Découvrir nos services d'inspection maritime" data-i18n="about.btnMore">Explore More</a>
                         </article>
                     </div>
                 </div>
@@ -362,7 +364,7 @@
             <div class="container">
                 <header class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;" role="presentation"></div>
-                    <h2 id="team-heading" class="display-5 mb-5">Our Team</h2>
+                    <h2 id="team-heading" class="display-5 mb-5" data-i18n="team.heading">Our Team</h2>
                 </header>
                 <div class="row g-4" role="list" aria-label="Équipe dirigeante GROUP AGECOSCO">
                     <article class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" role="listitem">
@@ -395,7 +397,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h3 id="team-member-1" class="h5 mb-0">TOSSOU Messan Romeo</h3>
-                                <p class="text-primary mb-0">CEO</p>
+                                <p class="text-primary mb-0" data-i18n="team.ceo">CEO</p>
                             </div>
                         </div>
                     </article>
@@ -428,7 +430,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h3 id="team-member-2" class="h5 mb-0">TOSSOU Ekoue Alex</h3>
-                                <p class="text-primary mb-0">Manager</p>
+                                <p class="text-primary mb-0" data-i18n="team.manager">Manager</p>
                             </div>
                         </div>
                     </article>
@@ -461,7 +463,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h3 id="team-member-3" class="h5 mb-0">NTOMBA MOÏSE</h3>
-                                <p class="text-primary mb-0">Manager</p>
+                                <p class="text-primary mb-0" data-i18n="team.manager">Manager</p>
                             </div>
                         </div>
                     </article>
@@ -494,7 +496,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h3 id="team-member-4" class="h5 mb-0">AHLONSOU Emmanuel</h3>
-                                <p class="text-primary mb-0">Manager</p>
+                                <p class="text-primary mb-0" data-i18n="team.manager">Manager</p>
                             </div>
                         </div>
                     </article>
@@ -510,10 +512,10 @@
     <footer class="container-fluid bg-dark text-secondary footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s"
         role="contentinfo" aria-labelledby="footer-heading">
         <div class="container py-5">
-            <h2 id="footer-heading" class="visually-hidden">Informations de contact et liens utiles</h2>
+            <h2 id="footer-heading" class="visually-hidden" data-i18n="footer.heading">Informations de contact et liens utiles</h2>
             <div class="row g-5">
                 <section class="col-lg-3 col-md-6" aria-labelledby="contact-heading">
-                    <h3 id="contact-heading" class="h5 text-light mb-4">Address</h3>
+                    <h3 id="contact-heading" class="h5 text-light mb-4" data-i18n="footer.address">Address</h3>
                     <address class="mb-4">
                         <p class="mb-2">
                             <i class="fas fa-map-marker-alt me-3" aria-hidden="true"></i>
@@ -560,48 +562,41 @@
                 </section>
 
                 <section class="col-lg-3 col-md-6" aria-labelledby="services-footer-heading">
-                    <h3 id="services-footer-heading" class="h5 text-light mb-4">Services</h3>
+                    <h3 id="services-footer-heading" class="h5 text-light mb-4" data-i18n="footer.servicesTitle">Services</h3>
                     <nav aria-label="Services navigation">
                         <ul class="list-unstyled">
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="tally-inspection.html">Tally
-                                    Inspections and Supervisions</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="p-i-claims-handling.html">Crisis
-                                    Control Interventions</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="survey.html">Forensic
-                                    Investigations</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="loss-prevent.html">Loss Prevention
-                                    Plans</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="risk.html">Risk Management</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="tally-inspection.html" data-i18n="footer.services.tally">Tally Inspections and Supervisions</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="p-i-claims-handling.html" data-i18n="footer.services.crisis">Crisis Control Interventions</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="survey.html" data-i18n="footer.services.forensic">Forensic Investigations</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="loss-prevent.html" data-i18n="footer.services.loss">Loss Prevention Plans</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="risk.html" data-i18n="footer.services.risk">Risk Management</a></li>
                         </ul>
                     </nav>
                 </section>
 
                 <section class="col-lg-3 col-md-6" aria-labelledby="menu-footer-heading">
-                    <h3 id="menu-footer-heading" class="h5 text-light mb-4">Quick Links</h3>
+                    <h3 id="menu-footer-heading" class="h5 text-light mb-4" data-i18n="footer.menuTitle">Quick Links</h3>
                     <nav aria-label="Main menu navigation">
                         <ul class="list-unstyled">
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="index.html">Home</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="about.html">About Us</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="service.html">Our Services</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="branches.html">Branches</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="contact.html">Contact Us</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="index.html" data-i18n="nav.home">Home</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="about.html" data-i18n="nav.about">About Us</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="service.html" data-i18n="footer.menu.services">Our Services</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="branches.html" data-i18n="footer.menu.branches">Branches</a></li>
+                            <li><a class="btn btn-link text-start p-0 mb-2" href="contact.html" data-i18n="footer.menu.contact">Contact Us</a></li>
                         </ul>
                     </nav>
                 </section>
 
                 <section class="col-lg-3 col-md-6" aria-labelledby="newsletter-heading">
-                    <h3 id="newsletter-heading" class="h5 text-light mb-4">Newsletter</h3>
-                    <p class="mb-3">Follow us through our announcements and stay informed about our latest news.</p>
+                    <h3 id="newsletter-heading" class="h5 text-light mb-4" data-i18n="footer.newsletterTitle">Newsletter</h3>
+                    <p class="mb-3" data-i18n="footer.newsletterDescription">Follow us through our announcements and stay informed about our latest news.</p>
                     <form class="newsletter-form" aria-label="Newsletter subscription" novalidate>
                         <div class="position-relative w-100">
-                            <label for="newsletter-email-about" class="visually-hidden">Your email address</label>
+                            <label for="newsletter-email-about" class="visually-hidden" data-i18n="footer.newsletterPlaceholder">Your email address</label>
                             <input id="newsletter-email-about"
                                 class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="email"
-                                placeholder="Your email" required aria-describedby="newsletter-error-about">
-                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                                aria-label="Subscribe to newsletter">
-                                SignUp
-                            </button>
+                                placeholder="Your email" required aria-describedby="newsletter-error-about" data-i18n-placeholder="footer.newsletterPlaceholder">
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" aria-label="Subscribe to newsletter" data-i18n="footer.newsletterBtn">SignUp</button>
                         </div>
                         <div id="newsletter-error-about" class="text-danger mt-2" style="display: none;" role="alert">
                         </div>
@@ -642,7 +637,11 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

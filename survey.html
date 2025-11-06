@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Survey Services - GROUP AGECOSCO | Professional Marine & Cargo Surveys</title>
+    <title data-i18n="survey.header.title">Surveys</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
         content="marine surveys, cargo surveys, nautical surveys, technical surveys, GROUP AGECOSCO, West Africa, maritime inspection, damage surveys, pre-loading surveys, discharge surveys"
@@ -70,6 +70,21 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Inline styles for Survey gallery grid -->
+    <style>
+        .survey-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+        .survey-gallery-grid img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+    <!-- Language System: moved to page end after Bootstrap JS -->
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -176,39 +191,36 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
+            <!--<img src="img/logo.png" alt="GROUP AGECOSCO Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="About menu">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="feature.html" class="dropdown-item">Quality and policy</a>
-                    <a href="quote.html" class="dropdown-item">Health and Safety</a>
-                    <a href="team.html" class="dropdown-item">General conditions of the Service</a>
-
-                </div>-->
-                <a href="./branches.html" class="nav-item nav-link">Branches</a>
-                <!--<a href="project.html" class="nav-item nav-link">Activities</a>-->
+                <a href="branches.html" data-i18n="nav.branches" class="nav-item nav-link">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                        aria-label="Services menu">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
                         <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
@@ -218,17 +230,46 @@
                         <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>Français</span>
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
+                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
+                            <span>English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" data-i18n="nav.contact" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-instagram"></i></a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
+                aria-label="Social media links">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -238,7 +279,7 @@
     <!-- Page Header Start -->
     <header class="container-fluid page-header py-5 mb-5" role="banner">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Surveys</h1>
+            <h1 data-i18n="survey.header.title" class="display-3 text-white mb-3 animated slideInDown">Surveys</h1>
             <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html" rel="home">Home</a></li>
@@ -265,7 +306,7 @@
                     <!-- Service List with Icons -->
                     <div class="col-md-6">
                         <nav aria-label="Related services">
-                            <h3 class="h5 mb-3 text-primary">Our Service Portfolio</h3>
+                            <h3 data-i18n="survey.service_portfolio_heading" class="h5 mb-3 text-primary">Our Service Portfolio</h3>
                             <ul class="list-unstyled service-list">
                                 <li class="mb-2">
                                     <i class="fas fa-clipboard-check text-primary me-2" aria-hidden="true"></i>
@@ -291,11 +332,11 @@
                                 </li>
                                 <li class="mb-2">
                                     <i class="fas fa-apple-alt text-primary me-2" aria-hidden="true"></i>
-                                    <a href="fruit-perish.html" class="text-decoration-none">Fruit and Perishables</a>
+                                    <span>Forensic Investigations</span>
                                 </li>
                                 <li class="mb-2">
                                     <i class="fas fa-seedling text-primary me-2" aria-hidden="true"></i>
-                                    <a href="agri-food.html" class="text-decoration-none">Agrifood Sector</a>
+                                    <span>Crisis Control Interventions (Casualty Management)</span>
                                 </li>
                             </ul>
                         </nav>
@@ -310,9 +351,9 @@
                 <div class="row">
                     <div class="col-12">
                         <header class="text-center mb-5">
-                            <h3 id="survey-overview-heading" class="display-5 text-primary mb-3">Professional Survey
+                            <h3 data-i18n="survey.overview_heading" class="display-5 text-primary mb-3">Professional Survey
                                 Services</h3>
-                            <p class="lead text-muted">Comprehensive marine, cargo, nautical, and technical surveys with
+                            <p data-i18n="survey.overview_desc" class="lead text-muted">Comprehensive marine, cargo, nautical, and technical surveys with
                                 expert assessment capabilities</p>
                         </header>
                     </div>
@@ -326,206 +367,91 @@
                 <div class="row">
                     <div class="col-12">
                         <header class="text-center mb-5">
-                            <h3 id="survey-types-heading" class="h2 text-primary mb-3">Our Survey Specializations</h3>
-                            <p class="lead text-muted">Expert survey services across multiple maritime and technical
+                            <h3 data-i18n="survey.types_heading" class="h2 text-primary mb-3">Our Survey Specializations</h3>
+                            <p data-i18n="survey.types_desc" class="lead text-muted">Expert survey services across multiple maritime and technical
                                 domains</p>
                         </header>
                     </div>
                 </div>
 
-                <!-- Cargo Surveys -->
+                <!-- Fused Survey Sections: Cargo, Nautical, Technical -->
                 <article class="survey-type mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="row gy-5">
+                        <div class="col-md-4">
                             <header>
-                                <h4 class="h2 text-primary mb-4 fw-bold">Cargo Surveys</h4>
+                                <h4 data-i18n="survey.cargo_surveys.heading" class="h2 text-primary mb-3 fw-bold">Cargo Surveys</h4>
                             </header>
                             <div class="survey-content">
-                                <p class="lead mb-4">
-                                    Comprehensive cargo assessment services ensuring the integrity and condition
-                                    of goods throughout the transportation process.
+                                <p data-i18n="survey.cargo_surveys.description" class="mb-3">
+                                    Comprehensive cargo assessment services ensuring the integrity and condition of goods throughout transportation.
                                 </p>
                                 <ul class="list-unstyled survey-features">
-                                    <li class="mb-3">
-                                        <i class="fas fa-check-circle text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Damage Surveys:</strong> Thorough assessment of damage to soft and hard
-                                        commodities
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Damage Surveys:</strong> assessment of soft and hard commodities
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-anchor text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Lashing & Securing:</strong> Professional recommendations and
-                                        supervision for cargo securing
+                                    <li class="mb-2">
+                                        <i class="fas fa-anchor text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Lashing & Securing:</strong> recommendations and supervision
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-clipboard-list text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Condition Assessment:</strong> Pre-loading and discharge condition
-                                        evaluation
+                                    <li class="mb-2">
+                                        <i class="fas fa-clipboard-list text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Condition Assessment:</strong> pre-loading and discharge checks
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <figure class="mb-0">
-                                <div id="carouselCargo" class="carousel slide shadow rounded" data-bs-ride="carousel">
-                                    <div class="carousel-inner rounded">
-                                        <div class="carousel-item active">
-                                            <img src="img/portfolio-1.jpg" class="d-block w-100"
-                                                alt="Professional cargo survey team inspecting fruit commodities for damage assessment"
-                                                loading="lazy">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/portfolio-2.jpg" class="d-block w-100"
-                                                alt="Cargo survey specialist examining hard commodities and securing arrangements"
-                                                loading="lazy">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCargo"
-                                        data-bs-slide="prev" aria-label="Previous cargo survey image">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCargo"
-                                        data-bs-slide="next" aria-label="Next cargo survey image">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Nautical Surveys -->
-                <article class="survey-type mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="col-md-4">
                             <header>
-                                <h4 class="h2 text-primary mb-4 fw-bold">Nautical Surveys</h4>
+                                <h4 data-i18n="survey.nautical_surveys.heading" class="h2 text-primary mb-3 fw-bold">Nautical Surveys</h4>
                             </header>
                             <div class="survey-content">
-                                <p class="lead mb-4">
-                                    Specialized nautical survey services covering maritime incidents, environmental
-                                    issues, and vessel-related assessments.
+                                <p data-i18n="survey.nautical_surveys.description" class="mb-3">
+                                    Specialized nautical services covering maritime incidents, environmental issues, and vessel-related assessments.
                                 </p>
                                 <ul class="list-unstyled survey-features">
-                                    <li class="mb-3">
-                                        <i class="fas fa-ship text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Structural Damage:</strong> Assessment of damage to fixed and floating
-                                        maritime objects
+                                    <li class="mb-2">
+                                        <i class="fas fa-ship text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Structural Damage:</strong> fixed and floating maritime objects
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-exclamation-triangle text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Collision Investigation:</strong> Comprehensive collision and salvage
-                                        investigations with supervision
+                                    <li class="mb-2">
+                                        <i class="fas fa-exclamation-triangle text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Collision Investigation:</strong> collision and salvage supervision
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-tint text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Environmental Response:</strong> Oil pollution investigations and
-                                        clean-up supervision
+                                    <li class="mb-2">
+                                        <i class="fas fa-tint text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Environmental Response:</strong> oil pollution investigations
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <figure class="mb-0">
-                                <div id="carouselNautical" class="carousel slide shadow rounded"
-                                    data-bs-ride="carousel">
-                                    <div class="carousel-inner rounded">
-                                        <div class="carousel-item active">
-                                            <img src="img/portfolio-3.jpg" class="d-block w-100"
-                                                alt="Nautical survey team conducting maritime collision investigation"
-                                                loading="lazy">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/portfolio-4.jpg" class="d-block w-100"
-                                                alt="Professional nautical surveyors assessing vessel structural damage"
-                                                loading="lazy">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselNautical" data-bs-slide="prev"
-                                        aria-label="Previous nautical survey image">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselNautical" data-bs-slide="next"
-                                        aria-label="Next nautical survey image">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Technical Surveys -->
-                <article class="survey-type mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="col-md-4">
                             <header>
-                                <h4 class="h2 text-primary mb-4 fw-bold">Technical Surveys</h4>
+                                <h4 data-i18n="survey.technical_surveys.heading" class="h2 text-primary mb-3 fw-bold">Technical Surveys</h4>
                             </header>
                             <div class="survey-content">
-                                <p class="lead mb-4">
-                                    Advanced technical survey services covering complex machinery, vessels,
-                                    and specialized equipment assessments.
+                                <p data-i18n="survey.technical_surveys.description" class="mb-3">
+                                    Advanced technical surveys for complex machinery, vessels, and specialized equipment.
                                 </p>
                                 <ul class="list-unstyled survey-features">
-                                    <li class="mb-3">
-                                        <i class="fas fa-ship text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Hull & Machinery:</strong> Comprehensive vessel hull and machinery
-                                        surveys
+                                    <li class="mb-2">
+                                        <i class="fas fa-ship text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Hull & Machinery:</strong> vessel hull and machinery surveys
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-plane text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Aircraft Engines:</strong> Specialized aircraft engine assessment and
-                                        evaluation
+                                    <li class="mb-2">
+                                        <i class="fas fa-plane text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Aircraft Engines:</strong> engine assessment and evaluation
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-cogs text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Mechanical Equipment:</strong> Industrial and mechanical equipment
-                                        surveys
+                                    <li class="mb-2">
+                                        <i class="fas fa-cogs text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Mechanical Equipment:</strong> industrial equipment surveys
                                     </li>
-                                    <li class="mb-3">
-                                        <i class="fas fa-tools text-primary me-3" aria-hidden="true"></i>
-                                        <strong>Crane Systems:</strong> Comprehensive crane and lifting equipment
-                                        assessment
+                                    <li class="mb-2">
+                                        <i class="fas fa-tools text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Crane Systems:</strong> lifting equipment assessment
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <figure class="mb-0">
-                                <div id="carouselTechnical" class="carousel slide shadow rounded"
-                                    data-bs-ride="carousel">
-                                    <div class="carousel-inner rounded">
-                                        <div class="carousel-item active">
-                                            <img src="img/portfolio-5.jpg" class="d-block w-100"
-                                                alt="Technical survey specialist examining vessel hull and machinery systems"
-                                                loading="lazy">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/portfolio-6.jpg" class="d-block w-100"
-                                                alt="Professional technical survey of industrial crane and mechanical equipment"
-                                                loading="lazy">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselTechnical" data-bs-slide="prev"
-                                        aria-label="Previous technical survey image">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselTechnical" data-bs-slide="next"
-                                        aria-label="Next technical survey image">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </figure>
                         </div>
                     </div>
                 </article>
@@ -536,9 +462,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <header class="text-center mb-5">
-                                    <h4 id="survey-benefits-heading" class="h2 text-primary mb-3">Why Choose Our Survey
+                                    <h4 data-i18n="survey.benefits.heading" class="h2 text-primary mb-3">Why Choose Our Survey
                                         Services</h4>
-                                    <p class="lead text-muted">Professional expertise and comprehensive coverage for all
+                                    <p data-i18n="survey.benefits.description" class="lead text-muted">Professional expertise and comprehensive coverage for all
                                         your survey needs</p>
                                 </header>
                             </div>
@@ -550,8 +476,8 @@
                                     <div class="benefit-icon mb-3">
                                         <i class="fas fa-certificate fa-3x text-primary" aria-hidden="true"></i>
                                     </div>
-                                    <h5 class="text-primary mb-3">Certified Professionals</h5>
-                                    <p class="mb-0">
+                                    <h5 data-i18n="survey.benefits.certified_professionals.title" class="text-primary mb-3">Certified Professionals</h5>
+                                    <p data-i18n="survey.benefits.certified_professionals.description" class="mb-0">
                                         Our survey team consists of certified professionals with extensive
                                         experience in maritime and technical assessments.
                                     </p>
@@ -563,8 +489,8 @@
                                     <div class="benefit-icon mb-3">
                                         <i class="fas fa-clock fa-3x text-primary" aria-hidden="true"></i>
                                     </div>
-                                    <h5 class="text-primary mb-3">Rapid Response</h5>
-                                    <p class="mb-0">
+                                    <h5 data-i18n="survey.benefits.rapid_response.title" class="text-primary mb-3">Rapid Response</h5>
+                                    <p data-i18n="survey.benefits.rapid_response.description" class="mb-0">
                                         Quick deployment of survey teams to minimize delays and ensure
                                         timely assessment and reporting.
                                     </p>
@@ -576,8 +502,8 @@
                                     <div class="benefit-icon mb-3">
                                         <i class="fas fa-file-alt fa-3x text-primary" aria-hidden="true"></i>
                                     </div>
-                                    <h5 class="text-primary mb-3">Detailed Reporting</h5>
-                                    <p class="mb-0">
+                                    <h5 data-i18n="survey.benefits.detailed_reporting.title" class="text-primary mb-3">Detailed Reporting</h5>
+                                    <p data-i18n="survey.benefits.detailed_reporting.description" class="mb-0">
                                         Comprehensive survey reports with detailed findings, recommendations,
                                         and photographic evidence.
                                     </p>
@@ -586,6 +512,24 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </section>
+
+        <!-- Survey Gallery Section -->
+        <section class="survey-gallery py-5" aria-labelledby="survey-gallery-heading">
+            <div class="container">
+                <header class="text-center mb-4">
+                    <h4 id="survey-gallery-heading" class="h2 text-primary">Survey Gallery</h4>
+                    <p class="text-muted">Key visuals from cargo, nautical and technical surveys.</p>
+                </header>
+                <div class="survey-gallery-grid">
+                    <img src="img/portfolio-1.jpg" alt="Cargo survey visual 1" loading="lazy">
+                    <img src="img/portfolio-2.jpg" alt="Cargo survey visual 2" loading="lazy">
+                    <img src="img/portfolio-3.jpg" alt="Nautical survey visual 1" loading="lazy">
+                    <img src="img/portfolio-4.jpg" alt="Nautical survey visual 2" loading="lazy">
+                    <img src="img/portfolio-5.jpg" alt="Technical survey visual 1" loading="lazy">
+                    <img src="img/portfolio-6.jpg" alt="Technical survey visual 2" loading="lazy">
+                </div>
             </div>
         </section>
     </main>
@@ -597,7 +541,7 @@
             <div class="row g-5">
                 <!-- Contact Information -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Contact Information</h5>
+                    <h5 data-i18n="footer.contact_info" class="text-light mb-4">Contact Information</h5>
                     <address class="mb-0">
                         <div class="mb-3">
                             <i class="fa fa-map-marker-alt me-3 text-primary" aria-hidden="true"></i>
@@ -652,7 +596,7 @@
 
                 <!-- Services Links -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Our Services</h5>
+                    <h5 class="text-light mb-4" data-i18n="footer.services">Our Services</h5>
                     <nav aria-label="Services navigation">
                         <ul class="list-unstyled">
                             <li class="mb-2">
@@ -691,7 +635,7 @@
 
                 <!-- Quick Links -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <h5 class="text-light mb-4" data-i18n="footer.quick_links">Quick Links</h5>
                     <nav aria-label="Quick navigation">
                         <ul class="list-unstyled">
                             <li class="mb-2">
@@ -730,8 +674,8 @@
 
                 <!-- Newsletter Subscription -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter Subscription</h5>
-                    <p class="mb-4">Stay updated with our latest announcements and industry insights</p>
+                    <h5 class="text-light mb-4" data-i18n="footer.newsletter_title">Newsletter Subscription</h5>
+                    <p class="mb-4" data-i18n="footer.newsletter_text">Stay updated with our latest announcements and industry insights</p>
 
                     <form class="newsletter-form" id="newsletterForm" novalidate>
                         <div class="position-relative w-100 mb-3">
@@ -740,7 +684,7 @@
                                 type="email" id="newsletterEmail" name="email" placeholder="Enter your email address"
                                 required aria-describedby="emailHelp emailError">
                             <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                                aria-label="Subscribe to newsletter">
+                                aria-label="Subscribe to newsletter" data-i18n="footer.subscribe_button">
                                 Subscribe
                             </button>
                         </div>
@@ -791,7 +735,11 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

@@ -197,6 +197,54 @@
     }
 }
 
+/* Language Selector Styles */
+.dropdown-item[data-lang] {
+    position: relative;
+    padding-left: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item[data-lang]:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    padding-left: 2.75rem;
+}
+
+.dropdown-item[data-lang].active .fa-check,
+.dropdown-item[data-lang][aria-current="true"] .fa-check {
+    opacity: 1 !important;
+}
+
+.dropdown-item[data-lang] .fa-check {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-item[data-lang].active {
+    font-weight: 600;
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Language transition animation */
+[data-lang-transition] {
+    transition: opacity 0.2s ease-in-out;
+}
+
+[data-lang-transition].fade-out {
+    opacity: 0.5;
+}
+
+/* Globe icon animation */
+.nav-link .fa-globe {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover .fa-globe {
+    transform: rotate(15deg) scale(1.1);
+}
+
 .navbar .btn:hover {
     color: #FFFFFF !important;
     background: var(--primary) !important;
