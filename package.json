@@ -1,0 +1,25 @@
+{
+  "name": "pkg",
+  "version": "1.0.0",
+  "description": "Corporate Official Website for Client: Group Agecosco",
+  "main": "check-translations.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "http-server -p 8000 -c-1 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielgrafcib/Agesco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielgrafcib/Agesco/issues"
+  },
+  "homepage": "https://github.com/danielgrafcib/Agesco#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
