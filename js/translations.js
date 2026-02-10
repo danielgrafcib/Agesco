@@ -38,12 +38,14 @@ const translations = {
 
         // Hero Section
         hero: {
-            title1: "Vos Experts Maritimes",
-            description1: "Des services d'inspection inégalés dans la sous-région.",
-            title2: "Logistique des Commodités Agricoles",
-            description2: "Agecosco Group est spécialisé dans le transport des produits agroalimentaires",
-            title3: "Inspection Maritime Fiable",
-            description3: "AGECOSCO, leader en inspection maritime internationale, garantit des services de qualité avec une expertise éprouvée et une accréditation reconnue.",
+            title0: "25 ANS D'EXPÉRIENCE DANS LES INSPECTIONS DE CARGAISONS",
+            description0: "Fournissant des inspections marines et de cargaisons en Afrique de l'Ouest via notre bureau du TOGO.",
+            title1: "INSPECTIONS INDÉPENDANTES",
+            description1: "Nous faisons la différence lors des chargements et déchargements avec notre équipe expérimentée.",
+            title2: "SERVICES RAPIDES ET FIABLES ASSURANCE ET EXPERTISES DE DOMMAGES CARGAISONS",
+            description2: "Fournissant des services d'expertise en assurance et dommages rapides et orientés solutions localement et mondialement depuis plus de 25 ans avec nos experts en cargaisons et assurances expérimentés.",
+            title3: "SOLUTIONS COMPLÈTES POUR LES EXPERTISES MARITIMES",
+            description3: "Expertise de tirant d'eau, on/off – soute et plus encore.",
             btnCheck: "Vérifiez",
             btnQuote: "Devis",
             btnReadMore: "En Savoir Plus",
@@ -71,7 +73,7 @@ const translations = {
         about: {
             heading: "À Propos",
             title: "À Propos",
-            paragraph1: "AGECOSCO est une entreprise maritime d'inspection internationale, fondée en 1999 et accréditée ISO 9001 par l'Agence d'accréditation du Togo. En tant que seul organisme national d'accréditation reconnu par le gouvernement togolais, nous sommes fiers de notre affiliation avec le ministère des Affaires étrangères.",
+            paragraph1: "AGECOSCO est une entreprise maritime d'inspection internationale, fondée en 1999 et accréditée ISO 17020 par l'Agence d'accréditation du Togo. En tant que seul organisme national d'accréditation reconnu par le gouvernement togolais, nous sommes fiers de notre affiliation avec le ministère des Affaires étrangères.",
             paragraph2: "Notre équipe, composée d'ingénieurs et d'experts qualifiés, met à votre disposition plus de 10 ans d'expérience dans le domaine de l'inspection maritime. Nous nous engageons à garantir la conformité des organismes d'évaluation aux normes nationales et internationales.",
             paragraph3: "Grâce à notre large gamme de services, y compris l'inspection, le contrôle et la surveillance, GROUP AGECOSCO se positionne comme votre partenaire de confiance pour toutes vos opérations maritimes.",
             stats: {
@@ -279,12 +281,14 @@ const translations = {
 
         // Hero Section
         hero: {
-            title1: "Your Maritime Experts",
-            description1: "Unmatched inspection services in the sub-region.",
-            title2: "Agricultural Commodities Logistics",
-            description2: "Agecosco Group specializes in the transportation of agrifood products",
-            title3: "Reliable Maritime Inspection",
-            description3: "AGECOSCO, leader in international maritime inspection, guarantees quality services with proven expertise and recognized accreditation.",
+            title0: "25 YEARS OF EXPERIENCE IN CARGO INSPECTIONS",
+            description0: "Providing marine and cargo inspections at West Africa via our TOGO office.",
+            title1: "INDEPENDENT INSPECTIONS",
+            description1: "We make a difference at loading and discharges with our experienced team.",
+            title2: "FAST & RELIABLE SERVICES INSURANCE & CARGO DAMAGE SURVEYS",
+            description2: "Providing fast and solution-oriented insurance & damage expertise services locally and globally for over 25 years with our experienced cargo and insurance experts.",
+            title3: "COMPLETE SOLUTIONS FOR MARINE SURVEYS",
+            description3: "Draft survey, on/off – bunker and more.",
             btnCheck: "Check",
             btnQuote: "Quotation",
             btnReadMore: "Read More",
@@ -312,7 +316,7 @@ const translations = {
         about: {
             heading: "About Us",
             title: "About Us",
-            paragraph1: "AGECOSCO is an international marine inspection company, founded in 1999 and accredited to ISO 9001 by the Togo Accreditation Agency. As the only national accreditation body recognized by the Togolese government, we are proud of our affiliation with the Ministry of Foreign Affairs.",
+            paragraph1: "AGECOSCO is an international marine inspection company, founded in 1999 and accredited to ISO 17020 by the Togo Accreditation Agency. As the only national accreditation body recognized by the Togolese government, we are proud of our affiliation with the Ministry of Foreign Affairs.",
             paragraph2: "Our team of qualified engineers and experts has over 25 years of combined experience in marine inspection. We are committed to ensuring that our assessment bodies comply with national and international standards, providing unparalleled expertise in maritime operations.",
             paragraph3: "Thanks to our wide range of services, including inspection, control and surveillance, GROUP AGECOSCO is your trusted partner for all your maritime operations across West Africa.",
             stats: {

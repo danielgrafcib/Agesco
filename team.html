@@ -68,7 +68,7 @@
 
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https://cdn.jsdelivr.net;">
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https://cdn.jsdelivr.net;">
 
 </head>
 
@@ -97,7 +97,7 @@
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
                         <small class="fas fa-envelope-open text-white"></small>
                     </div>
-                    <small data-i18n="topbar.email">agecosco@gmail.com</small>
+                    <small data-i18n="topbar.email">info@groupagecosco.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-end">
@@ -294,9 +294,12 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">TOSSOU Messan</h5>
-                            <span class="text-primary">CEO</span>
+                            <h5 class="mb-0" data-i18n="team.members.prof_tossou.name">Prof. TOSSOU Messan Romeo</h5>
+                            <span class="text-primary" data-i18n="team.members.prof_tossou.role">Managing Director</span>
                         </div>
+                        <div class="team-description bg-light p-4">
+                            <p class="mb-0" data-i18n="team.members.prof_tossou.description">Experienced Administrative
+                                Assistant with seven years of industry experience, adept at providing HR support.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -313,15 +316,20 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">TOSSOU Ekoue Alex</h5>
-                            <span class="text-primary">Manager</span>
+                            <h5 class="mb-0" data-i18n="team.members.tossou_alex.name">TOSSOU Ekoue Alex</h5>
+                            <span class="text-primary" data-i18n="team.members.tossou_alex.role">Manager</span>
+                        </div>
+                        <div class="team-description bg-light p-4">
+                            <p class="mb-0" data-i18n="team.members.tossou_alex.description">With over a decade of
+                                experience, Mr. TOSSOU Alex is a seasoned professional in P&I handling Claims, Marine
+                                Cargo Surveying and Claims Handling.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="Photo of CAKPO Vincent">
                             <div class="team-social">
                                 <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
                                         class="fab fa-facebook-f"></i></a>
@@ -332,15 +340,21 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">NTOMBA MOÏSE</h5>
-                            <span class="text-primary">Manager</span>
+                            <h5 class="mb-0" data-i18n="team.members.cakpo_vincent.name">CAKPO Vincent</h5>
+                            <span class="text-primary" data-i18n="team.members.cakpo_vincent.role">Senior Operations
+                                Coordinator – Cargo Surveyor Supervisor</span>
+                        </div>
+                        <div class="team-description bg-light p-4">
+                            <p class="mb-0" data-i18n="team.members.cakpo_vincent.description">Cargo Surveyor Supervisor
+                                with six years of industry experience, overseeing and managing cargo surveying
+                                operations.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="overflow-hidden position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="Photo of VIGBEDOR Edem">
                             <div class="team-social">
                                 <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
                                         class="fab fa-facebook-f"></i></a>
@@ -351,8 +365,14 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">AHLONSOU Emmanuel</h5>
-                            <span class="text-primary">Manager</span>
+                            <h5 class="mb-0" data-i18n="team.members.vigbedor_edem.name">VIGBEDOR Edem</h5>
+                            <span class="text-primary" data-i18n="team.members.vigbedor_edem.role">Claims Handler &
+                                Coordinator</span>
+                        </div>
+                        <div class="team-description bg-light p-4">
+                            <p class="mb-0" data-i18n="team.members.vigbedor_edem.description">Experienced Cargo
+                                Surveyor with six years of hands-on experience assessing and documenting cargo
+                                conditions.</p>
                         </div>
                     </div>
                 </div>
@@ -506,21 +526,11 @@
                                         </div>
                                     </div>
                                     <div class="team-info">
-                                        <h5 id="member-tossou-messan" data-i18n="team.managing.member1.name">TOSSOU
-                                            Messan Romeo</h5>
+<h5 id="member-tossou-messan" data-i18n="team.managing.member1.name">Prof. Romeo Messan TOSSOU</h5>
                                         <small class="text-muted role-badge"
-                                            data-i18n="team.managing.member1.role">Managing Director</small>
-                                        <p class="team-description" data-i18n="team.managing.member1.description">
-                                            Enthusiastic and self-motivated Chartered Accountant with 10 years of
-                                            valuable experience in maritime inspection and financial management.</p>
-                                        <div class="team-expertise">
-                                            <span class="expertise-tag"
-                                                data-i18n="team.managing.member1.expertise1">Financial Management</span>
-                                            <span class="expertise-tag"
-                                                data-i18n="team.managing.member1.expertise2">Maritime Law</span>
-                                            <span class="expertise-tag"
-                                                data-i18n="team.managing.member1.expertise3">Strategic Planning</span>
-                                        </div>
+                                            data-i18n="team.managing.member1.role">HR Assistant</small>
+<p class="team-description" data-i18n="team.managing.member1.description">
+                                            Experienced Administrative Assistant with seven years of industry experience, adept at providing HR support.</p>
                                     </div>
                                 </article>
                             </div>
@@ -560,13 +570,11 @@
                                     <div class="team-info">
                                         <h5 id="member-tossou-ekoue-ops-top">TOSSOU Ekoue Alex</h5>
                                         <small class="text-muted role-badge">Operations Manager</small>
-                                        <p class="team-description">A seasoned Operations Manager with over 18 years of
-                                            experience in driving growth and operational excellence in maritime
-                                            inspection services.</p>
+<p class="team-description">With over a decade of experience, Mr. TOSSOU Alex is a seasoned professional in P&I handling Claims, Marine Cargo Surveying and Claims Handling.</p>
                                         <div class="team-expertise">
-                                            <span class="expertise-tag">Operations Management</span>
-                                            <span class="expertise-tag">Process Optimization</span>
-                                            <span class="expertise-tag">Team Leadership</span>
+                                            <span class="expertise-tag">P&I handling Claims</span>
+                                            <span class="expertise-tag">Marine Cargo Surveying</span>
+                                            <span class="expertise-tag">Claims Handling</span>
                                         </div>
                                     </div>
                                 </article>
@@ -600,11 +608,9 @@
                                         </div>
                                     </div>
                                     <div class="team-info">
-                                        <h5 id="member-akakpo-cakpo">AKAKPO Cakpo vincent</h5>
-                                        <small class="text-muted role-badge">Operations Manager</small>
-                                        <p class="team-description">Experienced in operations and compliance, ensuring
-                                            smooth business processes and regulatory adherence in maritime operations.
-                                        </p>
+<h5 id="member-akakpo-cakpo">CAKPO Vincent</h5>
+                                        <small class="text-muted role-badge">Senior Operations Coordinator – Cargo Surveyor Supervisor</small>
+                                        <p class="team-description">Cargo Surveyor Supervisor with six years of industry experience, overseeing and managing cargo surveying operations.</p>
                                         <div class="team-expertise">
                                             <span class="expertise-tag">Operations Supervision</span>
                                             <span class="expertise-tag">Compliance Management</span>
@@ -640,11 +646,9 @@
                                         </div>
                                     </div>
                                     <div class="team-info">
-                                        <h5 id="member-vigbedoz-edem">VIGBEDOZ Edem</h5>
-                                        <small class="text-muted role-badge">Operations Supervisor</small>
-                                        <p class="team-description">Expert in logistics and team coordination with 8
-                                            years of experience in maritime operations and cargo inspection services.
-                                        </p>
+<h5 id="member-vigbedoz-edem">VIGBEDOR Edem</h5>
+                                        <small class="text-muted role-badge">Claims Handler & Coordinator</small>
+                                        <p class="team-description">Experienced Cargo Surveyor with six years of hands-on experience assessing and documenting cargo conditions.</p>
                                         <div class="team-expertise">
                                             <span class="expertise-tag">Logistics Management</span>
                                             <span class="expertise-tag">Team Coordination</span>
@@ -659,122 +663,119 @@
                     <div id="team-admin-panel" class="team-group team-admin w-100" role="tabpanel"
                         aria-labelledby="btn-admin" style="display:none;">
                         <div class="row justify-content-center">
-                            <div class="col-md-4 d-flex justify-content-center">
+<div class="col-md-4 d-flex justify-content-center">
                                 <article class="team-card" tabindex="0" role="article"
-                                    aria-labelledby="member-admin-akakpo-cakpo">
+                                    aria-labelledby="member-admin-ayamenou">
                                     <div class="team-image-wrapper">
                                         <img src="img/team-3.jpg"
-                                            alt="Professional headshot of TOSSOU Ekoue Alex , Accountant at GROUP AGECOSCO"
+                                            alt="Professional headshot of AYAMENOU KODJO, Accountant at GROUP AGECOSCO"
                                             class="team-member-photo" loading="lazy">
                                         <div class="team-social-overlay">
                                             <div class="social-links" role="group"
-                                                aria-label="TOSSOU Ekoue Alext administration social media links">
-                                                <a href="https://linkedin.com/in/akakpo-cakpo-vincent" target="_blank"
+                                                aria-label="AYAMENOU KODJO administration social media links">
+                                                <a href="https://linkedin.com/in/ayamenou-kodjo" target="_blank"
                                                     rel="noopener" class="social-link"
-                                                    aria-label="Connect with TOSSOU Ekoue Alex on LinkedIn">
+                                                    aria-label="Connect with AYAMENOU KODJO on LinkedIn">
                                                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                                                 </a>
-                                                <a href="mailto:cakpo.akakpo@agecosco.com" class="social-link"
-                                                    aria-label="Send email to TOSSOU Ekoue Alex">
+                                                <a href="mailto:kodjo.ayamenou@groupagecosco.com" class="social-link"
+                                                    aria-label="Send email to AYAMENOU KODJO">
                                                     <i class="fas fa-envelope" aria-hidden="true"></i>
                                                 </a>
-                                                <a href="tel:+22898246483" class="social-link"
-                                                    aria-label="Call TOSSOU Ekoue Alext">
+                                                <a href="tel:+22890057466" class="social-link"
+                                                    aria-label="Call AYAMENOU KODJO">
                                                     <i class="fas fa-phone" aria-hidden="true"></i>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="team-info">
-                                        <h5 id="member-admin-akakpo-cakpo">TOSSOU Ekoue Alex</h5>
+                                        <h5 id="member-admin-ayamenou">AYAMENOU KODJO</h5>
                                         <small class="text-muted role-badge">Accountant</small>
-                                        <p class="team-description">Expert in accounting and financial management with 10 years of
-                                            experience in financial operations and compliance management across maritime services.
+                                        <p class="team-description">Experienced Financial Assistant with five years of hands-on experience in financial management.
                                         </p>
                                         <div class="team-expertise">
                                             <span class="expertise-tag">Financial Management</span>
                                             <span class="expertise-tag">Accounting</span>
-                                            <span class="expertise-tag">Compliance</span>
+                                            <span class="expertise-tag">Financial Reporting</span>
                                         </div>
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-md-4 d-flex justify-content-center">
+<div class="col-md-4 d-flex justify-content-center">
                                 <article class="team-card" tabindex="0" role="article"
-                                    aria-labelledby="member-admin-ahlonsou">
+                                    aria-labelledby="member-admin-hountondji">
                                     <div class="team-image-wrapper">
                                         <img src="img/team-4.jpg"
-                                            alt="Professional headshot of AHLONSOU Emmanuel, Administrative secretary at GROUP AGECOSCO"
+                                            alt="Professional headshot of HOUNTONDJI AKOFA, Administrative Secretary at GROUP AGECOSCO"
                                             class="team-member-photo" loading="lazy">
                                         <div class="team-social-overlay">
                                             <div class="social-links" role="group"
-                                                aria-label="AHLONSOU Emmanuel administration social media links">
-                                                <a href="https://linkedin.com/in/ahlonsou-emmanuel" target="_blank"
+                                                aria-label="HOUNTONDJI AKOFA administration social media links">
+                                                <a href="https://linkedin.com/in/hountondji-akofa" target="_blank"
                                                     rel="noopener" class="social-link"
-                                                    aria-label="Connect with AHLONSOU Emmanuel on LinkedIn">
+                                                    aria-label="Connect with HOUNTONDJI AKOFA on LinkedIn">
                                                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                                                 </a>
-                                                <a href="mailto:emmanuel.ahlonsou@agecosco.com" class="social-link"
-                                                    aria-label="Send email to AHLONSOU Emmanuel">
+                                                <a href="mailto:akofa.hountondji@groupagecosco.com" class="social-link"
+                                                    aria-label="Send email to HOUNTONDJI AKOFA">
                                                     <i class="fas fa-envelope" aria-hidden="true"></i>
                                                 </a>
                                                 <a href="tel:+22898246483" class="social-link"
-                                                    aria-label="Call AHLONSOU Emmanuel">
+                                                    aria-label="Call HOUNTONDJI AKOFA">
                                                     <i class="fas fa-phone" aria-hidden="true"></i>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="team-info">
-                                        <h5 id="member-admin-ahlonsou">AHLONSOU Emmanuel</h5>
-                                        <small class="text-muted role-badge">Administrative secretary</small>
-                                        <p class="team-description">Expert in administrative support and company
-                                            management with 15+ years of experience in administrative operations and
-                                            strategic planning.</p>
+                                        <h5 id="member-admin-hountondji">HOUNTONDJI AKOFA</h5>
+                                        <small class="text-muted role-badge">Administrative Secretary</small>
+                                        <p class="team-description">Experienced Administrative Secretary with four years of industry experience.
+                                        </p>
                                         <div class="team-expertise">
                                             <span class="expertise-tag">Administrative Support</span>
-                                            <span class="expertise-tag">Administrative Operations</span>
-                                            <span class="expertise-tag">Strategic Planning</span>
+                                            <span class="expertise-tag">Office Management</span>
+                                            <span class="expertise-tag">Document Processing</span>
                                         </div>
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-md-4 d-flex justify-content-center">
+<div class="col-md-4 d-flex justify-content-center">
                                 <article class="team-card" tabindex="0" role="article"
-                                    aria-labelledby="member-admin-tossou-messan">
+                                    aria-labelledby="member-admin-tossou-messan-hr">
                                     <div class="team-image-wrapper">
                                         <img src="img/team-3.jpg"
-                                            alt="Professional headshot of TOSSOU Messan Romeo, RH resource humaine at GROUP AGECOSCO"
+                                            alt="Professional headshot of TOSSOU Messan, HR Assistant at GROUP AGECOSCO"
                                             class="team-member-photo" loading="lazy">
                                         <div class="team-social-overlay">
                                             <div class="social-links" role="group"
-                                                aria-label="TOSSOU Messan Romeo administration social media links">
+                                                aria-label="TOSSOU Messan HR administration social media links">
                                                 <a href="https://linkedin.com/in/tossou-messan" target="_blank"
                                                     rel="noopener" class="social-link"
-                                                    aria-label="Connect with TOSSOU Messan Romeo on LinkedIn">
+                                                    aria-label="Connect with TOSSOU Messan on LinkedIn">
                                                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                                                 </a>
-                                                <a href="mailto:messan.tossou@agecosco.com" class="social-link"
-                                                    aria-label="Send email to TOSSOU Messan Romeo">
+                                                <a href="mailto:messan.tossou@groupagecosco.com" class="social-link"
+                                                    aria-label="Send email to TOSSOU Messan">
                                                     <i class="fas fa-envelope" aria-hidden="true"></i>
                                                 </a>
                                                 <a href="tel:+22890057466" class="social-link"
-                                                    aria-label="Call TOSSOU Messan Romeo">
+                                                    aria-label="Call TOSSOU Messan">
                                                     <i class="fas fa-phone" aria-hidden="true"></i>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="team-info">
-                                        <h5 id="member-admin-tossou-messan">TOSSOU Messan Romeo</h5>
-                                        <small class="text-muted role-badge">RH resource humaine</small>
-                                        <p class="team-description">Chartered Accountant with 10 years of valuable
-                                            experience in human resources and administration management within maritime
-                                            inspection services.</p>
+                                        <h5 id="member-admin-tossou-messan-hr">TOSSOU Messan</h5>
+                                        <small class="text-muted role-badge">HR Assistant</small>
+                                        <p class="team-description">Experienced Administrative Assistant with seven years of industry experience, adept at providing HR support.
+                                        </p>
                                         <div class="team-expertise">
                                             <span class="expertise-tag">Human Resources</span>
-                                            <span class="expertise-tag">HR Management</span>
-                                            <span class="expertise-tag">Administration</span>
+                                            <span class="expertise-tag">HR Support</span>
+                                            <span class="expertise-tag">Employee Relations</span>
                                         </div>
                                     </div>
                                 </article>
@@ -811,18 +812,18 @@
                                     <div class="contact-item mb-3">
                                         <i class="fas fa-envelope me-3 text-primary" aria-hidden="true"></i>
                                         <div>
-                                            <a href="mailto:agecosco@gmail.com"
+<a href="mailto:groupagecosco@gmail.com"
                                                 class="text-secondary text-decoration-none"
-                                                data-i18n="footer.email_general">agecosco@gmail.com</a><br>
-                                            <a href="mailto:info@agecosco.com"
+                                                data-i18n="footer.email_general">groupagecosco@gmail.com</a><br>
+                                            <a href="mailto:info@groupagecosco.com"
                                                 class="text-secondary text-decoration-none"
-                                                data-i18n="footer.email_info">info@agecosco.com</a>
+                                                data-i18n="footer.email_info">info@groupagecosco.com</a>
                                         </div>
                                     </div>
                                     <div class="contact-item">
                                         <i class="fas fa-clock me-3 text-primary" aria-hidden="true"></i>
                                         <div>
-                                            <span data-i18n="footer.hours_mon_fri">Mon-Fri: 9:00 AM - 6:00 PM</span><br>
+<span data-i18n="footer.hours_mon_fri">Mon-Fri: 8:00 AM - 6:00 PM</span><br>
                                             <span data-i18n="footer.hours_sat">Saturday: 9:00 AM - 12:00 PM</span>
                                         </div>
                                     </div>

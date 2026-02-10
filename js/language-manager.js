@@ -39,13 +39,30 @@ class LanguageManager {
             return entry[lang] || entry['en'] || undefined;
         };
 
-        // Translate elements with data-i18n attributes
-        const nodes = document.querySelectorAll('[data-i18n], [data-i18n-placeholder], [data-i18n-value]');
+        // Translate elements with data-i18n or data-translate attributes
+        const nodes = document.querySelectorAll('[data-i18n], [data-translate], [data-i18n-placeholder], [data-i18n-value]');
         nodes.forEach(node => {
-            const k = node.getAttribute('data-i18n');
+            const k = node.getAttribute('data-i18n') || node.getAttribute('data-translate');
             if (k) {
                 const v = lookup(k);
-                if (v !== undefined) node.textContent = v;
+                if (v !== undefined) {
+                    // Preserve HTML structure if element contains other elements
+                    const hasChildren = node.children.length > 0;
+                    if (hasChildren) {
+                        const textNodes = Array.from(node.childNodes).filter(node => node.nodeType === 3);
+                        if (textNodes.length > 0) {
+                            textNodes.forEach(textNode => {
+                                if (textNode.textContent.trim()) {
+                                    textNode.textContent = v;
+                                }
+                            });
+                        } else {
+                            node.textContent = v;
+                        }
+                    } else {
+                        node.textContent = v;
+                    }
+                }
             }
             const p = node.getAttribute('data-i18n-placeholder');
             if (p) {
@@ -610,16 +627,35 @@ class LanguageManager {
     }
 
     /**
-     * NEW: Universal translation using data-i18n attributes
+     * NEW: Universal translation using data-i18n and data-translate attributes
      * This works on ALL pages automatically
      */
     translateDataI18nElements(t) {
-        const elements = document.querySelectorAll('[data-i18n]');
+        // Support both data-i18n and data-translate attributes
+        const elements = document.querySelectorAll('[data-i18n], [data-translate]');
         elements.forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            const translation = this.getNestedTranslation(t, key);
-            if (translation) {
-                element.textContent = translation;
+            const key = element.getAttribute('data-i18n') || element.getAttribute('data-translate');
+            if (key) {
+                const translation = this.getNestedTranslation(t, key);
+                if (translation) {
+                    // Preserve HTML structure if element contains other elements (like buttons with icons)
+                    const hasChildren = element.children.length > 0;
+                    if (hasChildren) {
+                        // For elements with children, try to update text nodes only
+                        const textNodes = Array.from(element.childNodes).filter(node => node.nodeType === 3);
+                        if (textNodes.length > 0) {
+                            textNodes.forEach(node => {
+                                if (node.textContent.trim()) {
+                                    node.textContent = translation;
+                                }
+                            });
+                        } else {
+                            element.textContent = translation;
+                        }
+                    } else {
+                        element.textContent = translation;
+                    }
+                }
             }
         });
     }
@@ -808,6 +844,8 @@ class LanguageManager {
 
     /**
      * Translate hero/carousel section
+     * Slide mapping: 0->title0, 1->title1, 2->title3, 3->title2
+     * Note: Elements with data-translate attributes are handled by translateDataI18nElements
      */
     translateHero(t) {
         const carouselItems = document.querySelectorAll('.owl-carousel-item, .carousel-item');
@@ -817,28 +855,51 @@ class LanguageManager {
             const description = item.querySelector('p.fs-5');
             const buttons = item.querySelectorAll('.btn');
 
-            if (index === 0 && title) title.textContent = t.hero.title1;
-            if (index === 0 && description) description.textContent = t.hero.description1;
-            if (index === 1 && title) title.textContent = t.hero.title2;
-            if (index === 1 && description) description.textContent = t.hero.description2;
-            if (index === 2 && title) title.textContent = t.hero.title3;
-            if (index === 2 && description) description.textContent = t.hero.description3;
+            // Only translate if element doesn't have data-translate attribute (to avoid conflicts)
+            // Map slides correctly: 0->title0, 1->title1, 2->title3, 3->title2
+            if (index === 0 && title && t.hero.title0 && !title.hasAttribute('data-translate') && !title.hasAttribute('data-i18n')) {
+                title.textContent = t.hero.title0;
+            }
+            if (index === 0 && description && t.hero.description0 && !description.hasAttribute('data-translate') && !description.hasAttribute('data-i18n')) {
+                description.textContent = t.hero.description0;
+            }
+            
+            if (index === 1 && title && t.hero.title1 && !title.hasAttribute('data-translate') && !title.hasAttribute('data-i18n')) {
+                title.textContent = t.hero.title1;
+            }
+            if (index === 1 && description && t.hero.description1 && !description.hasAttribute('data-translate') && !description.hasAttribute('data-i18n')) {
+                description.textContent = t.hero.description1;
+            }
+            
+            if (index === 2 && title && t.hero.title3 && !title.hasAttribute('data-translate') && !title.hasAttribute('data-i18n')) {
+                title.textContent = t.hero.title3;
+            }
+            if (index === 2 && description && t.hero.description3 && !description.hasAttribute('data-translate') && !description.hasAttribute('data-i18n')) {
+                description.textContent = t.hero.description3;
+            }
+            
+            if (index === 3 && title && t.hero.title2 && !title.hasAttribute('data-translate') && !title.hasAttribute('data-i18n')) {
+                title.textContent = t.hero.title2;
+            }
+            if (index === 3 && description && t.hero.description2 && !description.hasAttribute('data-translate') && !description.hasAttribute('data-i18n')) {
+                description.textContent = t.hero.description2;
+            }
 
-            // Translate buttons
+            // Translate buttons (only if they don't have data-translate)
             if (buttons.length >= 2) {
-                const btnTexts = [t.hero.btnCheck, t.hero.btnReadMore, t.hero.btnMoreInfo];
-                buttons.forEach((btn, btnIndex) => {
-                    if (btnTexts[btnIndex]) {
-                        const textContent = btn.textContent.trim();
-                        if (textContent.includes('Vérif') || textContent.includes('Check')) {
-                            btn.textContent = t.hero.btnCheck;
-                        } else if (textContent.includes('Quot') || textContent.includes('Devis')) {
-                            btn.textContent = t.hero.btnQuote;
-                        } else if (textContent.includes('Read') || textContent.includes('Savoir')) {
-                            btn.textContent = t.hero.btnReadMore;
-                        } else if (textContent.includes('Info')) {
-                            btn.textContent = t.hero.btnMoreInfo;
-                        }
+                buttons.forEach((btn) => {
+                    if (btn.hasAttribute('data-translate') || btn.hasAttribute('data-i18n')) {
+                        return; // Skip, already handled by translateDataI18nElements
+                    }
+                    const textContent = btn.textContent.trim();
+                    if (textContent.includes('Vérif') || textContent.includes('Check')) {
+                        btn.textContent = t.hero.btnCheck;
+                    } else if (textContent.includes('Quot') || textContent.includes('Devis')) {
+                        btn.textContent = t.hero.btnQuote;
+                    } else if (textContent.includes('Read') || textContent.includes('Savoir')) {
+                        btn.textContent = t.hero.btnReadMore;
+                    } else if (textContent.includes('Info')) {
+                        btn.textContent = t.hero.btnMoreInfo;
                     }
                 });
             }

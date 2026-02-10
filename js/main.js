@@ -56,6 +56,7 @@
         dots: true,
         loop: false,
         nav: true,
+        startPosition: 1,
         animateOut: 'fadeOut',
         navText: [
             '<i class="bi bi-chevron-left" aria-hidden="true"></i>',

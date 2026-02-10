@@ -252,6 +252,12 @@
 
 
 /*** Header ***/
+.header-carousel {
+    position: relative;
+    min-height: 600px;
+    background-color: #161616;
+}
+
 .header-carousel .carousel-inner {
     position: absolute;
     width: 100%;
@@ -261,6 +267,23 @@
     display: flex;
     align-items: center;
     background: rgba(22, 22, 22, .7);
+}
+
+.header-carousel .owl-carousel-item {
+    position: relative;
+    min-height: 600px;
+}
+
+.header-carousel .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-carousel .owl-stage-outer,
+.header-carousel .owl-stage {
+    min-height: 600px;
 }
 
 @media (max-width: 768px) {
@@ -292,11 +315,12 @@
     position: absolute;
     width: 200px;
     height: 45px;
-    bottom: 30px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .header-carousel .owl-nav .owl-prev,
@@ -357,6 +381,16 @@
 .header-carousel .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
+}
+
+/* Ensure only actual carousel items create dots */
+.header-carousel .owl-item {
+    min-height: 600px;
+}
+
+/* Fix for carousel item visibility */
+.header-carousel .owl-item.active {
+    display: block;
 }
 
 .page-header {
