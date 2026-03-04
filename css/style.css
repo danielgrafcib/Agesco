@@ -5,6 +5,12 @@
     --secondary: #9B9B9B;
     --light: #F5F5F5;
     --dark: #161616;
+    --text-default: #FFFFFF;
+}
+
+/* Fix text readability */
+body {
+    color: var(--text-default) !important;
 }
 
 .text-primary {
