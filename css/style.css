@@ -13,6 +13,17 @@ body {
     color: var(--text-default) !important;
 }
 
+/* About Us section text should be black */
+.about-text {
+    color: #000000 !important;
+}
+
+.about-text p,
+.about-text h2,
+.about-text .h2 {
+    color: #000000 !important;
+}
+
 .text-primary {
     color: var(--primary-agecosco) !important;
 }
