@@ -194,55 +194,47 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Home</a>
+            <div class="navbar-nav ms-auto py-4 py-lg-0">
+                <a href="index.html" data-i18n="nav.home" class="nav-item nav-link">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                        data-i18n="nav.about">About</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="about.html" class="dropdown-item" data-i18n="nav.about">About Us</a>
-                        <a href="team.html" class="dropdown-item" data-i18n="nav.team">Our Team</a>
-                        <a href="quality-policy.html" class="dropdown-item" data-i18n="nav.quality_policy">Quality and
-                            Policy</a>
-                        <a href="health-safety.html" class="dropdown-item" data-i18n="nav.health_safety">Health and
-                            Safety</a>
-                        <a href="general-conditions.html" class="dropdown-item" data-i18n="nav.general_conditions">General
-                            Conditions</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="quality-policy.html" data-i18n="nav.quality_policy" class="dropdown-item">Quality and policy</a>
+                        <a href="team.html" data-i18n="nav.our_team" class="dropdown-item">Our Team</a>
+                        <a href="health-safety.html" data-i18n="nav.health_safety" class="dropdown-item">Health and Safety</a>
+                        <a href="general-conditions.html" data-i18n="nav.general_conditions" class="dropdown-item">General conditions of the Service</a>
+                    </div>
+                </div>
+                <a href="branches.html" data-i18n="nav.branches" class="nav-item nav-link">Branches</a>
+                <div class="nav-item dropdown">
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="tally-inspection.html" data-i18n="nav.tally_inspection" class="dropdown-item">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" data-i18n="nav.survey" class="dropdown-item">Surveys</a>
+                        <a href="p-i-claims-handling.html" data-i18n="nav.p_i_claims" class="dropdown-item">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" data-i18n="nav.loss_prevent" class="dropdown-item">Loss prevention plans</a>
+                        <a href="risk.html" data-i18n="nav.risk" class="dropdown-item active">Risk and management</a>
+                        <a href="fruit-perish.html" data-i18n="nav.fruit_perish" class="dropdown-item">Fruit and perishables</a>
+                        <a href="agri-food.html" data-i18n="nav.agri_food" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
-                        data-i18n="nav.services">Services</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="service.html" class="dropdown-item" data-i18n="nav.services">Our Services</a>
-                        <a href="tally-inspection.html" class="dropdown-item"
-                            data-i18n="nav.tally_inspection">Tally Inspections</a>
-                        <a href="survey.html" class="dropdown-item" data-i18n="nav.survey">Surveys</a>
-                        <a href="p-i-claims-handling.html" class="dropdown-item" data-i18n="nav.p_i_claims">P&I Claims
-                            Handling</a>
-                        <a href="fruit-perish.html" class="dropdown-item" data-i18n="nav.fruit_perish">Fruit and
-                            Perishables</a>
-                        <a href="agri-food.html" class="dropdown-item" data-i18n="nav.agri_food">Agrifood Sector</a>
-                        <a href="loss-prevent.html" class="dropdown-item" data-i18n="nav.loss_prevent">Loss Prevention
-                            Plans</a>
-                        <a href="risk.html" class="dropdown-item active" data-i18n="nav.risk">Risk and Management</a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>Languages
+                    </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">Français</a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">English</a>
                     </div>
                 </div>
-                <a href="branches.html" class="nav-item nav-link" data-i18n="nav.branches">Branches</a>
-                <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contact</a>
+                <a href="contact.html" data-i18n="nav.contact" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="nav-item dropdown ms-auto me-4">
-                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="languageDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-globe me-2"></i><span id="currentLanguage">FR</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                    <li><a class="dropdown-item lang-select" href="#" data-lang="fr">Français</a></li>
-                    <li><a class="dropdown-item lang-select" href="#" data-lang="en">English</a></li>
-                </ul>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.facebook.com/agecosco"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.twitter.com/agecosco"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.linkedin.com/company/agecosco"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.instagram.com/agecosco"><i class="fab fa-instagram"></i></a>
             </div>
-            <a href="contact.html" class="btn btn-cta py-4 px-lg-5 d-none d-lg-block"
-                data-i18n="hero.btnRequestQuote">Request A Quote<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
