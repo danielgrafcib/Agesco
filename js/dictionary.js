@@ -159,6 +159,8 @@ const dictionary = {
     "buttons.getQuote": { en: "Get Quote", fr: "Obtenir un Devis" },
     "buttons.learnMore": { en: "Learn More", fr: "Plus d'Info" },
     "buttons.readMore": { en: "Read More", fr: "En Savoir Plus" },
+    "hero.btnOurServices": { en: "Our Services", fr: "Nos Services" },
+    "hero.btnRequestQuote": { en: "Request a Quote", fr: "Demander un Devis" },
     "common.cancel": { en: "Cancel", fr: "Annuler" },
     "common.close": { en: "Close", fr: "Fermer" },
     "common.learn_more": { en: "Learn More", fr: "En Savoir Plus" },
@@ -1734,11 +1736,36 @@ const footerServiceTranslations = {
     "footer.services.loss_prevention": { en: "Loss Prevention Plans", fr: "Plans de Prévention des Pertes" }
 };
 
-// Merge fruit & perishables translations with main dictionary
-Object.assign(dictionary, fruitPerishTranslations);
+// Footer translations
+const globalFooterTranslations = {
+    "footer.address_title": { en: "Our Office", fr: "Notre Bureau" },
+    "footer.address": { en: "Rue du CYRUS-Ablogame N°1, Villa N°140, Zone Portuaire Lomé-TOGO", fr: "Rue du CYRUS-Ablogame N°1, Villa N°140, Zone Portuaire Lomé-TOGO" },
+    "footer.phone_title": { en: "Phone Numbers", fr: "Numéros de Téléphone" },
+    "footer.email_title": { en: "Email Address", fr: "Adresse Email" },
+    "footer.services_title": { en: "Services", fr: "Services" },
+    "footer.menu_title": { en: "Quick Links", fr: "Liens Rapides" },
+    "footer.newsletter_title": { en: "Newsletter", fr: "Bulletin d'information" },
+    "footer.newsletter_desc": { en: "Stay updated with our latest maritime news and announcements.", fr: "Restez informé de nos dernières actualités et annonces maritimes." },
+    "footer.newsletter_placeholder": { en: "Your email", fr: "Votre email" },
+    "footer.newsletter_btn": { en: "Subscribe", fr: "S'inscrire" },
+    "footer.copyright": { en: "Copyright © Agecosco 2025, All Right Reserved.", fr: "Copyright © Agecosco 2025, Tous droits réservés." },
+    "footer.designed_by": { en: "Designed By", fr: "Conçu Par" }
+};
 
-// Merge footer service translations with main dictionary
+// About section translations
+const aboutTranslations = {
+    "about.title": { en: "About Us", fr: "À Propos de Nous" },
+    "about.stats.clients": { en: "Satisfied Clients", fr: "Clients Satisfaits" },
+    "about.stats.projects": { en: "Completed Projects", fr: "Projets Effectués" },
+    "about.stats.years": { en: "Years of Experience", fr: "Années d'Expérience" },
+    "about.stats.countries": { en: "Countries Covered", fr: "Pays Couverts" }
+};
+
+// Merge translations
+Object.assign(dictionary, fruitPerishTranslations);
 Object.assign(dictionary, footerServiceTranslations);
+Object.assign(dictionary, globalFooterTranslations);
+Object.assign(dictionary, aboutTranslations);
 
 // Fill any missing French translations by defaulting to the English text.
 // This completes entries where `` was left empty during merge.

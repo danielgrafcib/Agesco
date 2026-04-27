@@ -150,35 +150,34 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5">
-        <div class="row gx-4 d-none d-lg-flex">
-            <div class="col-lg-6 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+    <div class="container-fluid bg-dark px-5 top-bar">
+        <div class="row gx-4 d-none d-lg-flex h-100">
+            <div class="col-lg-7 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-map-marker-alt text-white"></small>
+                        <i class="fas fa-map-marker-alt text-white"></i>
                     </div>
-                    <small>Rue du CYRUS Ablogame N°1,Lomé, TOGO</small>
+                    <small class="text-white" data-i18n="topbar.address">Rue du CYRUS Ablogame N°1, Lomé, TOGO</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
+                <div class="h-100 d-inline-flex align-items-center">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-envelope-open text-white"></small>
+                        <i class="fas fa-envelope text-white"></i>
                     </div>
-                    <small>Info@groupagecosco.com</small>
+                    <small class="text-white" data-i18n="topbar.email">Info@groupagecosco.com</small>
                 </div>
             </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <div class="col-lg-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-phone-alt text-white"></small>
+                        <i class="fas fa-phone-alt text-white"></i>
                     </div>
-                    <small>Tél. : (228) 90-05-74-66
-                        Cél. : (228) 98-24-64-83</small>
+                    <small class="text-white" data-i18n="topbar.phone">Tél. : (228) 90-05-74-66 Cél. : (228) 98-24-64-83</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
+                <div class="h-100 d-inline-flex align-items-center">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="far fa-clock text-white"></small>
+                        <i class="fas fa-clock text-white"></i>
                     </div>
-                    <small>Lun - Vend : 9H - 18H</small>
+                    <small class="text-white" data-i18n="topbar.hours">Lun - Vend : 9H - 18H</small>
                 </div>
             </div>
         </div>
@@ -187,86 +186,63 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
-        aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="GROUP AGECOSCO Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" data-i18n="nav.home" class="nav-item nav-link">Home</a>
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
-                        aria-label="About menu">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
-                        <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
-                    </div>
-                </div>
-                <a href="branches.html" data-i18n="nav.branches" class="nav-item nav-link">Branches</a>
-                <div class="nav-item dropdown">
-                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
-                        aria-label="Services menu">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
-                        <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
-                        <a href="survey.html" class="dropdown-item">Surveys</a>
-                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                        <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
-                        <a href="risk.html" class="dropdown-item">Risk and management</a>
-                        <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
-                        <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
+                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        data-i18n="nav.about">About</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="about.html" class="dropdown-item" data-i18n="nav.about">About Us</a>
+                        <a href="team.html" class="dropdown-item" data-i18n="nav.team">Our Team</a>
+                        <a href="quality-policy.html" class="dropdown-item" data-i18n="nav.quality_policy">Quality and
+                            Policy</a>
+                        <a href="health-safety.html" class="dropdown-item" data-i18n="nav.health_safety">Health and
+                            Safety</a>
+                        <a href="general-conditions.html" class="dropdown-item" data-i18n="nav.general_conditions">General
+                            Conditions</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
-                        <i class="fas fa-globe me-2"></i>Languages
-                    </a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
-                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
-                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
-                            <span>Français</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
-                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
-                            <span>English</span>
-                        </a>
+                    <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                        data-i18n="nav.services">Services</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="service.html" class="dropdown-item" data-i18n="nav.services">Our Services</a>
+                        <a href="tally-inspection.html" class="dropdown-item"
+                            data-i18n="nav.tally_inspection">Tally Inspections</a>
+                        <a href="survey.html" class="dropdown-item" data-i18n="nav.survey">Surveys</a>
+                        <a href="p-i-claims-handling.html" class="dropdown-item" data-i18n="nav.p_i_claims">P&I Claims
+                            Handling</a>
+                        <a href="fruit-perish.html" class="dropdown-item" data-i18n="nav.fruit_perish">Fruit and
+                            Perishables</a>
+                        <a href="agri-food.html" class="dropdown-item" data-i18n="nav.agri_food">Agrifood Sector</a>
+                        <a href="loss-prevent.html" class="dropdown-item" data-i18n="nav.loss_prevent">Loss Prevention
+                            Plans</a>
+                        <a href="risk.html" class="dropdown-item active" data-i18n="nav.risk">Risk and Management</a>
                     </div>
                 </div>
-                <a href="contact.html" data-i18n="nav.contact" class="nav-item nav-link">Contact Us</a>
+                <a href="branches.html" class="nav-item nav-link" data-i18n="nav.branches">Branches</a>
+                <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contact</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
-                aria-label="Social media links">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook">
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Twitter">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Connect with us on LinkedIn">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
-                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
+            <div class="nav-item dropdown ms-auto me-4">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="languageDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe me-2"></i><span id="currentLanguage">FR</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item lang-select" href="#" data-lang="fr">Français</a></li>
+                    <li><a class="dropdown-item lang-select" href="#" data-lang="en">English</a></li>
+                </ul>
             </div>
+            <a href="contact.html" class="btn btn-cta py-4 px-lg-5 d-none d-lg-block"
+                data-i18n="hero.btnRequestQuote">Request A Quote<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -653,127 +629,73 @@
 
 
     <!-- Footer Start -->
-    <footer class="container-fluid bg-dark text-secondary footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s"
-        role="contentinfo">
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4" data-i18n="footer.contact_info">Contact Information</h5>
-                    <address class="mb-0">
-                        <p class="mb-2">
-                            <i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i>
-                            <span>Rue du CYRUS-Ablogame N°1, Villa N°140<br>Zone Portuaire, Lomé-TOGO</span>
-                        </p>
-                        <p class="mb-2">
-                            <i class="fa fa-phone-alt me-3" aria-hidden="true"></i>
-                            <a href="tel:+22890057466" class="text-secondary text-decoration-none">Tél: (228)
-                                90-05-74-66</a><br>
-                            <a href="tel:+22898246483" class="text-secondary text-decoration-none">Cél: (228)
-                                98-24-64-83</a>
-                        </p>
-                        <p class="mb-2">
-                            <i class="fa fa-envelope me-3" aria-hidden="true"></i>
-                            <a href="mailto:Info@groupagecosco.com"
-                                class="text-secondary text-decoration-none">Info@groupagecosco.com</a>
-                        </p>
-                    </address>
-                    <div class="d-flex pt-2" role="group" aria-label="Social media links">
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Follow us on Twitter">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Follow us on Facebook">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://youtube.com/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Subscribe to our YouTube channel">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Connect with us on LinkedIn">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                        </a>
+                    <h4 class="text-light mb-4" data-i18n="footer.address_title">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><span data-i18n="footer.address_full">Rue du
+                            CYRUS-Ablogame N°1, Villa N°140-Zone Portuaire Lomé-TOGO</span></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><span data-i18n="topbar.phone">+228 90 05 74 66 /
+                            98 24 64 83</span></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><span
+                            data-i18n="topbar.email">info@groupagecosco.com</span></p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4" data-i18n="footer.services">Our Services</h5>
-                    <nav aria-label="Services navigation">
-                        <a class="btn btn-link text-secondary" href="tally-inspection.html">Tally Inspections</a>
-                        <a class="btn btn-link text-secondary" href="survey.html">Surveys</a>
-                        <a class="btn btn-link text-secondary" href="p-i-claims-handling.html">P&I Claims Handling</a>
-                        <a class="btn btn-link text-secondary" href="fruit-perish.html">Fruit and Perishables</a>
-                        <a class="btn btn-link text-secondary" href="agri-food.html">Agrifood Sector</a>
-                        <a class="btn btn-link text-secondary" href="loss-prevent.html">Loss Prevention Plans</a>
-                        <a class="btn btn-link text-secondary" href="risk.html">Risk Management</a>
-                    </nav>
+                    <h4 class="text-light mb-4" data-i18n="footer.services_footer">Services</h4>
+                    <a class="btn btn-link" href="tally-inspection.html" data-i18n="nav.tally_inspection">Tally
+                        Inspections</a>
+                    <a class="btn btn-link" href="survey.html" data-i18n="nav.survey">Surveys</a>
+                    <a class="btn btn-link" href="p-i-claims-handling.html" data-i18n="nav.p_i_claims">P&I Claims
+                        Handling</a>
+                    <a class="btn btn-link" href="fruit-perish.html" data-i18n="nav.fruit_perish">Fruit and
+                        Perishables</a>
+                    <a class="btn btn-link" href="agri-food.html" data-i18n="nav.agri_food">Agrifood Sector</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4" data-i18n="footer.quick_links">Quick Links</h5>
-                    <nav aria-label="Quick navigation">
-                        <a class="btn btn-link text-secondary" href="index.html">Home</a>
-                        <a class="btn btn-link text-secondary" href="about.html">About Us</a>
-                        <a class="btn btn-link text-secondary" href="service.html">Our Services</a>
-                        <a class="btn btn-link text-secondary" href="branches.html">Branches</a>
-                        <a class="btn btn-link text-secondary" href="contact.html">Contact Us</a>
-                        <a class="btn btn-link text-secondary" href="quality-policy.html">Quality Policy</a>
-                        <a class="btn btn-link text-secondary" href="health-safety.html">Health & Safety</a>
-                    </nav>
+                    <h4 class="text-light mb-4" data-i18n="footer.menu_footer">Menu</h4>
+                    <a class="btn btn-link" href="about.html" data-i18n="nav.about">About Us</a>
+                    <a class="btn btn-link" href="contact.html" data-i18n="nav.contact">Contact Us</a>
+                    <a class="btn btn-link" href="service.html" data-i18n="nav.services">Our Services</a>
+                    <a class="btn btn-link" href="branches.html" data-i18n="nav.branches">Branches</a>
+                    <a class="btn btn-link" href="quality-policy.html" data-i18n="nav.quality_policy">Quality Policy</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4" data-i18n="footer.newsletter_title">Newsletter Subscription</h5>
-                    <p class="mb-3" data-i18n="footer.subscribe_newsletter">Stay updated with our latest risk management insights and industry announcements.
-                    </p>
-                    <form class="newsletter-form" id="newsletter-form-risk" novalidate>
-                        <div class="position-relative w-100">
-                            <label for="newsletter-email-risk" class="visually-hidden">Email address for
-                                newsletter</label>
-                            <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5"
-                                type="email" id="newsletter-email-risk" name="email"
-                                placeholder="Enter your email address" required
-                                aria-describedby="newsletter-help-risk newsletter-error-risk">
-                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                                aria-describedby="newsletter-help-risk">
-                                <span class="btn-text" data-i18n="footer.subscribe_button">Subscribe</span>
-                                <span class="btn-loading d-none">
-                                    <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <div id="newsletter-help-risk" class="form-text text-muted mt-2">
-                            We respect your privacy. Unsubscribe at any time.
-                        </div>
-                        <div id="newsletter-error-risk" class="invalid-feedback mt-2" role="alert"></div>
-                        <div id="newsletter-success-risk" class="text-success mt-2" role="alert"></div>
-                    </form>
+                    <h4 class="text-light mb-4" data-i18n="footer.newsletter_title">Newsletter</h4>
+                    <p data-i18n="footer.newsletter_description">Follow us through our announcements</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"
+                            data-i18n-placeholder="footer.newsletter_placeholder">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                            data-i18n="footer.newsletter_button">SignUp</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid py-4" style="background: #000000;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">Copyright
-                    &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">EDX Design Web</a>
-                    </br>Distributed By <a class="border-bottom" href="https://themewagon.com/">E-Deal Express Sarl
-                        Department</a>
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" data-i18n="footer.copyright_text">
+                        &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <span data-i18n="footer.developer_text">Ce Site Web est créé par EDX Design Studio un department d' E-Deal Express Sarl Department</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+    <!-- Footer End -->
+
+
+
 
 
     <!-- Back to Top -->
@@ -784,10 +706,6 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Language System -->
-    <script src="js/translations.js"></script>
-    <script src="js/dictionary.js"></script>
-    <script src="js/language-manager.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -798,6 +716,11 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Language System -->
+    <script src="js/translations.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/language-manager.js"></script>
 </body>
 
 </html>

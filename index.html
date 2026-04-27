@@ -78,125 +78,89 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5">
-        <div class="row gx-4 d-none d-lg-flex">
-            <div class="col-lg-6 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+    <div class="container-fluid bg-dark px-5 top-bar">
+        <div class="row gx-4 d-none d-lg-flex h-100">
+            <div class="col-lg-7 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fas fa-map-marker-alt text-white"></small>
+                        <i class="fas fa-map-marker-alt text-white"></i>
                     </div>
-                    <small>Rue du CYRUS Ablogame N°1,Lomé, TOGO</small>
+                    <small class="text-white" data-i18n="topbar.address">Rue du CYRUS Ablogame N°1, Lomé, TOGO</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
+                <div class="h-100 d-inline-flex align-items-center">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fas fa-envelope-open text-white"></small>
+                        <i class="fas fa-envelope text-white"></i>
                     </div>
-                    <small>Info@groupagecosco.com</small>
+                    <small class="text-white" data-i18n="topbar.email">Info@groupagecosco.com</small>
                 </div>
             </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <div class="col-lg-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fas fa-phone-alt text-white"></small>
+                        <i class="fas fa-phone-alt text-white"></i>
                     </div>
-                    <small>Tél. : (228) 90-05-74-66
-                        Cél. : (228) 98-24-64-83</small>
+                    <small class="text-white" data-i18n="topbar.phone">Tél. : (228) 90-05-74-66 Cél. : (228) 98-24-64-83</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
+                <div class="h-100 d-inline-flex align-items-center">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fas fa-clock text-white"></small>
+                        <i class="fas fa-clock text-white"></i>
                     </div>
-                    <small>Lun-Vend:9H-18H/ Sam:9H-12H</small>
+                    <small class="text-white" data-i18n="topbar.hours">Lun - Vend : 9H - 18H</small>
                 </div>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
 
-
-    <!-- Skip to Content Link for Accessibility -->
-    <a href="#main-content" class="skip-to-content visually-hidden-focusable">Skip to main content</a>
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
-        aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation menu">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="index.html" class="nav-item nav-link active" aria-current="page">Home</a>
+                <a href="index.html" data-i18n="nav.home" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
-                        aria-label="About menu">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
-                        <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="quality-policy.html" data-i18n="nav.quality_policy" class="dropdown-item">Quality and policy</a>
+                        <a href="team.html" data-i18n="nav.our_team" class="dropdown-item">Our Team</a>
+                        <a href="health-safety.html" data-i18n="nav.health_safety" class="dropdown-item">Health and Safety</a>
+                        <a href="general-conditions.html" data-i18n="nav.general_conditions" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
-                <a href="branches.html" class="nav-item nav-link">Branches</a>
+                <a href="branches.html" data-i18n="nav.branches" class="nav-item nav-link">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
-                        aria-label="Services menu">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
-                        <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
-                        <a href="survey.html" class="dropdown-item">Surveys</a>
-                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
-                        <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
-                        <a href="risk.html" class="dropdown-item">Risk and management</a>
-                        <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
-                        <a href="agri-food.html" class="dropdown-item">Agrifood sector</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="tally-inspection.html" data-i18n="nav.tally_inspection" class="dropdown-item">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" data-i18n="nav.survey" class="dropdown-item">Surveys</a>
+                        <a href="p-i-claims-handling.html" data-i18n="nav.p_i_claims" class="dropdown-item">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" data-i18n="nav.loss_prevent" class="dropdown-item">Loss prevention plans</a>
+                        <a href="risk.html" data-i18n="nav.risk" class="dropdown-item">Risk and management</a>
+                        <a href="fruit-perish.html" data-i18n="nav.fruit_perish" class="dropdown-item">Fruit and perishables</a>
+                        <a href="agri-food.html" data-i18n="nav.agri_food" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                         <i class="fas fa-globe me-2"></i>Languages
                     </a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
-                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
-                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
-                            <span>Français</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
-                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
-                            <span>English</span>
-                        </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">Français</a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">English</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <a href="contact.html" data-i18n="nav.contact" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
-                aria-label="Social media links">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook">
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Twitter">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Connect with us on LinkedIn">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
-                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.facebook.com/agecosco"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.twitter.com/agecosco"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.linkedin.com/company/agecosco"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.instagram.com/agecosco"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </nav>
@@ -223,13 +187,8 @@
                                     25 YEARS OF EXPERIENCE IN CARGO INSPECTIONS</h1>
                                 <p class="fs-5 text-white mb-4 pb-2" data-translate="hero.description0">Providing marine
                                     and cargo inspections at West Africa via our TOGO office.</p>
-                                <a href="service.html"
-                                    class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft"
-                                    aria-label="Découvrir nos services d'inspection"
-                                    data-translate="hero.btnCheck">Vérifiez</a>
-                                <a href="contact.html"
-                                    class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight"
-                                    aria-label="Demander un devis" data-translate="hero.btnQuote">Quotation</a>
+                                <a href="service.html" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft" data-i18n="hero.btnOurServices">Our Services</a>
+<a href="contact.html" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight" data-i18n="hero.btnRequestQuote">Request a Quote</a>
                             </div>
                         </div>
                     </div>
@@ -248,13 +207,8 @@
                                     INDEPENDENT INSPECTIONS</h1>
                                 <p class="fs-5 text-white mb-4 pb-2" data-translate="hero.description1">We make a
                                     difference at loading and discharges with our experienced team.</p>
-                                <a href="service.html"
-                                    class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft"
-                                    aria-label="Découvrir nos services d'inspection"
-                                    data-translate="hero.btnCheck">Vérifiez</a>
-                                <a href="contact.html"
-                                    class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight"
-                                    aria-label="Demander un devis" data-translate="hero.btnQuote">Quotation</a>
+                                <a href="service.html" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft" data-i18n="hero.btnOurServices">Our Services</a>
+<a href="contact.html" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight" data-i18n="hero.btnRequestQuote">Request a Quote</a>
                             </div>
                         </div>
                     </div>
@@ -273,13 +227,8 @@
                                     COMPLETE SOLUTIONS FOR MARINE SURVEYS</h1>
                                 <p class="fs-5 text-white mb-4 pb-2" data-translate="hero.description3">Draft survey,
                                     on/off – bunker and more.</p>
-                                <a href="service.html"
-                                    class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft"
-                                    aria-label="Découvrir nos services d'inspection"
-                                    data-translate="hero.btnCheck">Vérifiez</a>
-                                <a href="contact.html"
-                                    class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight"
-                                    aria-label="Demander un devis" data-translate="hero.btnQuote">Quotation</a>
+                                <a href="service.html" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft" data-i18n="hero.btnOurServices">Our Services</a>
+<a href="contact.html" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight" data-i18n="hero.btnRequestQuote">Request a Quote</a>
                             </div>
                         </div>
                     </div>
@@ -387,64 +336,50 @@
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="./img/carousel-2.jpg"
                             style="object-fit: cover;"
-                            alt="Équipe d'experts maritimes AGECOSCO travaillant sur l'inspection de navires au port"
+                            alt="GROUP AGECOSCO maritime experts working on vessel inspection at the port"
                             loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <article class="p-lg-5 pe-lg-0">
                         <div class="bg-primary mb-3" style="width: 60px; height: 2px;" role="presentation"></div>
-                        <h2 id="about-heading" class="display-5 mb-4">About Us</h2>
-                        <p class="mb-4 pb-2">AGECOSCO is an international marine inspection company, founded in 1998
-                            with approval from the Minister of Finance and Privatization and accredited to ISO 9001 V
-                            2015 and is a member of international associations.</p>
+                        <h2 id="about-heading" class="display-5 mb-4" data-i18n="about.title">About Us</h2>
+                        <p class="mb-4 pb-2" data-i18n="about.description1">AGECOSCO is an international marine inspection company, founded in 1998 with approval from the Minister of Finance and Privatization and accredited to ISO 9001 V 2015 and is a member of international associations.</p>
 
-                        <p class="mb-4">Our team of qualified engineers and experts has over 25 years of combined
-                            experience in marine inspection. We are committed to ensuring that our assessment bodies
-                            comply with national and international standards, providing unparalleled expertise in
-                            maritime operations.</p>
-
-                        <p class="mb-4">Thanks to our wide range of services, including inspection, control and
-                            surveillance, GROUP AGECOSCO is your trusted partner for all your maritime operations across
-                            West Africa.</p>
+                        <p class="mb-4" data-i18n="about.description2">Our team of qualified engineers and experts has over 25 years of combined experience in marine inspection. We are committed to ensuring that our assessment bodies comply with national and international standards, providing unparalleled expertise in maritime operations.</p>
 
                         <div class="row g-4 mb-4 pb-3" role="region" aria-labelledby="statistics-heading">
-                            <h3 id="statistics-heading" class="visually-hidden">Nos Statistiques</h3>
+                            <h3 id="statistics-heading" class="visually-hidden">Our Statistics</h3>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="d-flex align-items-center">
                                     <div class="btn-square bg-white rounded-circle" style="width: 64px; height: 64px;"
-                                        role="img" aria-label="Icône clients satisfaits">
-                                        <img class="img-fluid" src="img/icon/icon-1.png"
-                                            alt="Icône représentant la satisfaction client">
+                                        role="img">
+                                        <img class="img-fluid" src="img/icon/icon-1.png" alt="Satisfied Clients Icon">
                                     </div>
                                     <div class="ms-4">
-                                        <div class="mb-1" data-toggle="counter-up" aria-label="1234 clients satisfaits">
-                                            <span class="h2 mb-1">1234</span>
-                                            <noscript><span class="h2 mb-1">1234</span></noscript>
+                                        <div class="mb-1" data-toggle="counter-up">
+                                            <span class="h2 mb-1">1,234</span>
                                         </div>
-                                        <p class="fw-medium text-primary mb-0">Clients satisfaits</p>
+                                        <p class="fw-medium text-primary mb-0" data-i18n="about.stats.clients">Satisfied Clients</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="d-flex align-items-center">
                                     <div class="btn-square bg-white rounded-circle" style="width: 64px; height: 64px;"
-                                        role="img" aria-label="Icône projets effectués">
-                                        <img class="img-fluid" src="img/icon/icon-5.png"
-                                            alt="Icône représentant les projets réalisés">
+                                        role="img">
+                                        <img class="img-fluid" src="img/icon/icon-5.png" alt="Completed Projects Icon">
                                     </div>
                                     <div class="ms-4">
-                                        <div class="mb-1" data-toggle="counter-up" aria-label="950 projets effectués">
+                                        <div class="mb-1" data-toggle="counter-up">
                                             <span class="h2 mb-1">950</span>
-                                            <noscript><span class="h2 mb-1">950</span></noscript>
                                         </div>
-                                        <p class="fw-medium text-primary mb-0">Projets effectués</p>
+                                        <p class="fw-medium text-primary mb-0" data-i18n="about.stats.projects">Completed Projects</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5"
-                            aria-label="En savoir plus sur GROUP AGECOSCO">Plus d'infos</a>
+                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5" data-i18n="buttons.readMore">Read More</a>
                     </article>
                 </div>
             </div>
@@ -1108,107 +1043,45 @@
 
 
     <!-- Footer Start -->
-    <footer class="container-fluid bg-dark text-secondary footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s"
-        role="contentinfo" aria-labelledby="footer-heading">
+    <footer class="container-fluid bg-dark text-secondary footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h2 id="footer-heading" class="visually-hidden">Informations de contact et liens utiles</h2>
             <div class="row g-5">
-                <section class="col-md-6 text-center text-md-start mb-3 mb-md-0">Adresse
-                    <address class="mb-4">
-                        <p class="mb-2">
-                            <i class="fas fa-map-marker-alt me-3" aria-hidden="true"></i>
-                            <span>Rue du CYRUS-Ablogame N°1, Villa N°140<br>Zone Portuaire Lomé-TOGO</span>
-                        </p>
-                        <p class="mb-2">
-                            <i class="fas fa-phone-alt me-3" aria-hidden="true"></i>
-                            <a href="tel:+22890057466" class="text-secondary text-decoration-none">
-                                Tél: (228) 90-05-74-66
-                            </a><br>
-                            <a href="tel:+22898246483" class="text-secondary text-decoration-none ms-4">
-                                Cél: (228) 98-24-64-83
-                            </a>
-                        </p>
-                        <p class="mb-2">
-                            <i class="fas fa-envelope me-3" aria-hidden="true"></i>
-                            <a href="mailto:info@groupagecosco.com" class="text-secondary text-decoration-none">
-                                info@groupagecosco.com
-                            </a>
-                        </p>
-                    </address>
-                    <div class="d-flex pt-2" role="list" aria-label="Réseaux sociaux">
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Suivez-nous sur Twitter" role="listitem">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Suivez-nous sur Facebook" role="listitem">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://www.youtube.com/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Suivez-nous sur YouTube" role="listitem">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                        </a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
-                            href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
-                            aria-label="Connectez-vous avec nous sur LinkedIn" role="listitem">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                        </a>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.address_title">Our Office</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rue du CYRUS Ablogame N°1, Lomé, TOGO</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+228 90 05 74 66</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@groupagecosco.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.twitter.com/agecosco"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.facebook.com/agecosco"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.youtube.com/agecosco"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.linkedin.com/company/agecosco"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </section>
-
-                <section class="col-lg-3 col-md-6" aria-labelledby="services-footer-heading">
-                    <h3 id="services-footer-heading" class="h5 text-light mb-4">Services</h3>
-                    <nav aria-label="Services navigation">
-                        <ul class="list-unstyled">
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="tally-inspection.html">Tally
-                                    Inspections and Supervisions</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="p-i-claims-handling.html">Crisis
-                                    Control Interventions</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="survey.html">Forensic
-                                    Investigations</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="loss-prevent.html">Loss Prevention
-                                    Plans</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="risk.html">Risk Management</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section class="col-lg-3 col-md-6" aria-labelledby="menu-footer-heading">
-                    <h3 id="menu-footer-heading" class="h5 text-light mb-4">Menu</h3>
-                    <nav aria-label="Main menu navigation">
-                        <ul class="list-unstyled">
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="index.html">Home</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="about.html">About</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="service.html">Our Services</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="branches.html">Branches</a></li>
-                            <li><a class="btn btn-link text-start p-0 mb-2" href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section class="col-lg-3 col-md-6" aria-labelledby="newsletter-heading">
-                    <h3 id="newsletter-heading" class="h5 text-light mb-4">Bulletin d'information</h3>
-                    <p class="mb-3">Suivez-nous à travers nos annonces et restez informé de nos dernières actualités.
-                    </p>
-                    <form class="newsletter-form" aria-label="Inscription à la newsletter" novalidate>
-                        <div class="position-relative w-100">
-                            <label for="newsletter-email" class="visually-hidden">Votre adresse email</label>
-                            <input id="newsletter-email"
-                                class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="email"
-                                placeholder="Votre email" required aria-describedby="newsletter-error">
-                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                                aria-label="S'inscrire à la newsletter">
-                                Inscrire
-                            </button>
-                        </div>
-                        <div id="newsletter-error" class="text-danger mt-2" style="display: none;" role="alert"></div>
-                        <div id="newsletter-success" class="text-success mt-2" style="display: none;" role="alert">
-                        </div>
-                    </form>
-                </section>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.services_title">Services</h3>
+                    <a class="btn btn-link" href="tally-inspection.html" data-i18n="nav.tally_inspection">Tally Inspection</a>
+                    <a class="btn btn-link" href="survey.html" data-i18n="nav.survey">Surveys</a>
+                    <a class="btn btn-link" href="p-i-claims-handling.html" data-i18n="nav.p_i_claims">P&I Claims</a>
+                    <a class="btn btn-link" href="loss-prevent.html" data-i18n="nav.loss_prevent">Loss Prevention</a>
+                    <a class="btn btn-link" href="risk.html" data-i18n="nav.risk">Risk Management</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.menu_title">Quick Links</h3>
+                    <a class="btn btn-link" href="index.html" data-i18n="nav.home">Home</a>
+                    <a class="btn btn-link" href="about.html" data-i18n="nav.about">About Us</a>
+                    <a class="btn btn-link" href="service.html" data-i18n="nav.services">Our Services</a>
+                    <a class="btn btn-link" href="branches.html" data-i18n="nav.branches">Branches</a>
+                    <a class="btn btn-link" href="contact.html" data-i18n="nav.contact">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.newsletter_title">Newsletter</h3>
+                    <p data-i18n="footer.newsletter_desc">Stay updated with our latest maritime news and announcements.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-i18n="footer.newsletter_btn">Subscribe</button>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

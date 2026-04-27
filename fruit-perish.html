@@ -84,35 +84,34 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5">
-        <div class="row gx-4 d-none d-lg-flex">
-            <div class="col-lg-6 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+    <div class="container-fluid bg-dark px-5 top-bar">
+        <div class="row gx-4 d-none d-lg-flex h-100">
+            <div class="col-lg-7 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-map-marker-alt text-white"></small>
+                        <i class="fas fa-map-marker-alt text-white"></i>
                     </div>
-                    <small data-i18n="fruit_perish.topbar.address">Rue du CYRUS Ablogame N°1,Lomé, TOGO</small>
+                    <small class="text-white" data-i18n="topbar.address">Rue du CYRUS Ablogame N°1, Lomé, TOGO</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
+                <div class="h-100 d-inline-flex align-items-center">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-envelope-open text-white"></small>
+                        <i class="fas fa-envelope text-white"></i>
                     </div>
-                    <small data-i18n="fruit_perish.topbar.email">Info@groupagecosco.com</small>
+                    <small class="text-white" data-i18n="topbar.email">Info@groupagecosco.com</small>
                 </div>
             </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <div class="col-lg-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="fa fa-phone-alt text-white"></small>
+                        <i class="fas fa-phone-alt text-white"></i>
                     </div>
-                    <small data-i18n="fruit_perish.topbar.phone">Tél. : (228) 90-05-74-66
-                        Cél. : (228) 98-24-64-83</small>
+                    <small class="text-white" data-i18n="topbar.phone">Tél. : (228) 90-05-74-66 Cél. : (228) 98-24-64-83</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
+                <div class="h-100 d-inline-flex align-items-center">
                     <div class="btn-sm-square rounded-circle bg-primary me-2">
-                        <small class="far fa-clock text-white"></small>
+                        <i class="fas fa-clock text-white"></i>
                     </div>
-                    <small data-i18n="fruit_perish.topbar.hours">Lun-Vend:9H-18H/ Sam:9H-12H</small>
+                    <small class="text-white" data-i18n="topbar.hours">Lun - Vend : 9H - 18H</small>
                 </div>
             </div>
         </div>
@@ -121,85 +120,54 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
-        aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary" data-i18n="nav.home">GROUP AGECOSCO</h2>
-            <!--<img src="img/logo.png" alt="Logo" style="width: 50px; height: 50px;">-->
+            <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation menu">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
                 <a href="index.html" data-i18n="nav.home" class="nav-item nav-link">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
-                        aria-label="About menu">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
-                        <a href="./quality-policy.html" class="dropdown-item" data-i18n="nav.about.quality_policy">Quality and policy</a>
-                        <a href="team.html" class="dropdown-item" data-i18n="nav.aboutDropdown.team">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item" data-i18n="nav.about.health_safety">Health and Safety</a>
-                        <a href="./general-conditions.html" class="dropdown-item" data-i18n="nav.about.general_conditions">General conditions of the Service</a>
+                    <a href="about.html" data-i18n="nav.about" class="nav-item nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="quality-policy.html" data-i18n="nav.quality_policy" class="dropdown-item">Quality and policy</a>
+                        <a href="team.html" data-i18n="nav.our_team" class="dropdown-item">Our Team</a>
+                        <a href="health-safety.html" data-i18n="nav.health_safety" class="dropdown-item">Health and Safety</a>
+                        <a href="general-conditions.html" data-i18n="nav.general_conditions" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
                 <a href="branches.html" data-i18n="nav.branches" class="nav-item nav-link">Branches</a>
                 <div class="nav-item dropdown">
-                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
-                        aria-label="Services menu">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
-                        <a href="tally-inspection.html" class="dropdown-item" data-i18n="nav.servicesDropdown.tally">Tally Inspections and Supervisions</a>
-                        <a href="survey.html" class="dropdown-item" data-i18n="nav.services.surveys">Surveys</a>
-                        <a href="./p-i-claims-handling.html" class="dropdown-item" data-i18n="nav.servicesDropdown.claims">P&I Claims Handling</a>
-                        <a href="loss-prevent.html" class="dropdown-item" data-i18n="nav.services.loss_prevention">Loss prevention plans</a>
-                        <a href="risk.html" class="dropdown-item" data-i18n="nav.services.risk_management">Risk and management</a>
-                        <a href="fruit-perish.html" class="dropdown-item" data-i18n="nav.services.fruit_perishables">Fruit and perishables</a>
-                        <a href="agri-food.html" class="dropdown-item" data-i18n="nav.services.agrifood_sector">Agrifood sector</a>
+                    <a href="service.html" data-i18n="nav.services" class="nav-item nav-link dropdown-toggle active">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="tally-inspection.html" data-i18n="nav.tally_inspection" class="dropdown-item">Tally Inspections and Supervisions</a>
+                        <a href="survey.html" data-i18n="nav.survey" class="dropdown-item">Surveys</a>
+                        <a href="p-i-claims-handling.html" data-i18n="nav.p_i_claims" class="dropdown-item">P&I Claims Handling</a>
+                        <a href="loss-prevent.html" data-i18n="nav.loss_prevent" class="dropdown-item">Loss prevention plans</a>
+                        <a href="risk.html" data-i18n="nav.risk" class="dropdown-item">Risk and management</a>
+                        <a href="fruit-perish.html" data-i18n="nav.fruit_perish" class="dropdown-item">Fruit and perishables</a>
+                        <a href="agri-food.html" data-i18n="nav.agri_food" class="dropdown-item">Agrifood sector</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" aria-haspopup="true" aria-label="Language selection menu">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                         <i class="fas fa-globe me-2"></i>Languages
                     </a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Language options">
-                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">
-                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
-                            <span data-i18n="nav.fr">Français</span>
-                        </a>
-                        <a href="#" class="dropdown-item" data-lang="en" lang="en">
-                            <i class="fas fa-check me-2 text-primary" style="opacity: 0;"></i>
-                            <span data-i18n="nav.en">English</span>
-                        </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item" data-lang="fr" lang="fr">Français</a>
+                        <a href="#" class="dropdown-item" data-lang="en" lang="en">English</a>
                     </div>
                 </div>
                 <a href="contact.html" data-i18n="nav.contact" class="nav-item nav-link">Contact Us</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none" role="complementary"
-                aria-label="Social media links">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.facebook.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Facebook">
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.twitter.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Twitter">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.linkedin.com/company/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Connect with us on LinkedIn">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
-                    href="https://www.instagram.com/agecosco" target="_blank" rel="noopener noreferrer"
-                    aria-label="Follow us on Instagram">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.facebook.com/agecosco"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.twitter.com/agecosco"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.linkedin.com/company/agecosco"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.instagram.com/agecosco"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </nav>
@@ -222,17 +190,17 @@
                     </p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <div class="service-stats bg-white bg-opacity-10 rounded-3 p-4 animated fadeInRight"
-                        data-wow-delay="0.4s">
-                        <div class="row text-center">
-                            <div class="col-6">
-                                <h3 class="text-white mb-1">24/7</h3>
-                                <small class="text-white-50">Monitoring</small>
-                            </div>
-                            <div class="col-6">
-                                <h3 class="text-white mb-1">100%</h3>
-                                <small class="text-white-50">Quality Focus</small>
-                            </div>
+                    <div class="banner-stats-card animated fadeInRight" data-wow-delay="0.4s" aria-label="GAFTA approval and commodity coverage">
+                        <div class="banner-stats-card__item">
+                            <strong class="banner-stats-card__value">GAFTA</strong>
+                            <span class="banner-stats-card__label">Approved</span>
+                        </div>
+
+                        <div class="banner-stats-card__divider" aria-hidden="true"></div>
+
+                        <div class="banner-stats-card__item">
+                            <strong class="banner-stats-card__value">20+</strong>
+                            <span class="banner-stats-card__label">Commodities</span>
                         </div>
                     </div>
                 </div>
@@ -997,255 +965,67 @@
         <!-- Team End -->
 
 
-        <!-- Enhanced Footer Start -->
-        <footer class="enhanced-footer bg-dark text-light mt-5 py-5" role="contentinfo"
-            aria-labelledby="footer-heading">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <!-- Contact Information -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-section">
-                            <h3 id="footer-heading" class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.contact_info">
-                                <i class="fas fa-map-marker-alt me-2 text-primary" aria-hidden="true"></i>
-                                <span data-i18n="fruit_perish.footer.contact_info">Contact Information</span>
-                            </h3>
-                            <address class="mb-4" itemscope itemtype="https://schema.org/PostalAddress">
-                                <div class="contact-item mb-3 d-flex align-items-start">
-                                    <i class="fas fa-building text-primary me-3 mt-1" aria-hidden="true"></i>
-                                    <div>
-                                        <span itemprop="streetAddress" data-i18n="fruit_perish.footer.address_line1">Rue du CYRUS-Ablogame N°1</span><br><span data-i18n="fruit_perish.footer.address_line2">Villa N°140 - Zone Portuaire</span><br>
-                                        <span itemprop="addressLocality" data-i18n="fruit_perish.footer.address_city">Lomé</span>, <span
-                                            itemprop="addressCountry" data-i18n="fruit_perish.footer.address_city">TOGO</span>
-                                    </div>
-                                </div>
-                            </address>
-
-                            <div class="contact-details">
-                                <div class="contact-item mb-3 d-flex align-items-center">
-                                    <i class="fas fa-phone text-primary me-3" aria-hidden="true"></i>
-                                    <div>
-                                        <a href="tel:+22890057466" class="text-light text-decoration-none"
-                                            aria-label="Call main office" data-i18n="fruit_perish.footer.phone">Tél: (228) 90-05-74-66</a><br>
-                                        <a href="tel:+22898246483" class="text-light text-decoration-none"
-                                            aria-label="Call mobile" data-i18n="fruit_perish.footer.cell">Cél: (228) 98-24-64-83</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item mb-4 d-flex align-items-center">
-                                    <i class="fas fa-envelope text-primary me-3" aria-hidden="true"></i>
-                                    <div>
-                                        <a href="mailto:Info@groupagecosco.com" class="text-light text-decoration-none"
-                                            aria-label="Send email to main address" data-i18n="fruit_perish.topbar.email">Info@groupagecosco.com</a><br>
-                                        <a href="mailto:Info@groupagecosco.com" class="text-light text-decoration-none"
-                                            aria-label="Send email to info address" data-i18n="fruit_perish.footer.email">Info@groupagecosco.com</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <nav class="social-media-nav" aria-label="Social media links">
-                                <h4 class="visually-hidden" data-i18n="fruit_perish.footer.social_media">Follow us on social media</h4>
-                                <div class="d-flex gap-2">
-                                    <a class="btn btn-outline-primary btn-sm rounded-circle" href="#"
-                                        onclick="return false;" aria-label="Follow us on Twitter (link not available)"
-                                        title="Twitter">
-                                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a class="btn btn-outline-primary btn-sm rounded-circle" href="#"
-                                        onclick="return false;" aria-label="Follow us on Facebook (link not available)"
-                                        title="Facebook">
-                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                    </a>
-                                    <a class="btn btn-outline-primary btn-sm rounded-circle" href="#"
-                                        onclick="return false;" aria-label="Follow us on YouTube (link not available)"
-                                        title="YouTube">
-                                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                                    </a>
-                                    <a class="btn btn-outline-primary btn-sm rounded-circle" href="#"
-                                        onclick="return false;" aria-label="Follow us on LinkedIn (link not available)"
-                                        title="LinkedIn">
-                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <!-- Services Links -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-section">
-                            <h3 class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.services">
-                                <i class="fas fa-cogs me-2 text-primary" aria-hidden="true"></i>
-                                <span data-i18n="fruit_perish.footer.services">Our Services</span>
-                            </h3>
-                            <nav aria-label="Services navigation">
-                                <ul class="list-unstyled footer-links">
-                                    <li class="mb-2">
-                                        <a href="tally-inspection.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-check-circle text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.tally">Tally Inspections</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="survey.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-search text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.surveys">Surveys & Assessments</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="p-i-claims-handling.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-gavel text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.pi_claims">P&I Claims Handling</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="fruit-perish.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-apple-alt text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.fruit_perishables">Fruit and Perishables</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="agri-food.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-seedling text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.agrifood">Agrifood Sector</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="loss-prevent.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-shield-alt text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.loss_prevention">Loss Prevention Plans</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="risk.html"
-                                            class="text-light text-decoration-none d-flex align-items-center">
-                                            <i class="fas fa-exclamation-triangle text-primary me-2"
-                                                aria-hidden="true"></i>
-                                            <span data-i18n="footer.services.risk">Risk Management</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-section">
-                            <h3 class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.quick_links">
-                                <i class="fas fa-link me-2 text-primary" aria-hidden="true"></i>
-                                <span data-i18n="fruit_perish.footer.quick_links">Quick Links</span>
-                            </h3>
-                            <nav aria-label="Quick navigation">
-                                <ul class="list-unstyled footer-links">
-                                    <li class="mb-2">
-                                        <a href="index.html"
-                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.home">
-                                            <i class="fas fa-home text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="fruit_perish.footer.home">Home</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="about.html"
-                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.about">
-                                            <i class="fas fa-info-circle text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="fruit_perish.footer.about">About Us</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="service.html"
-                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.our_services">
-                                            <i class="fas fa-concierge-bell text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="fruit_perish.footer.our_services">Our Services</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="branches.html"
-                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.branches">
-                                            <i class="fas fa-map-marked-alt text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="fruit_perish.footer.branches">Branches</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="team.html"
-                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.team">
-                                            <i class="fas fa-users text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="fruit_perish.footer.team">Our Team</span>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="contact.html"
-                                            class="text-light text-decoration-none d-flex align-items-center" data-i18n="fruit_perish.footer.contact">
-                                            <i class="fas fa-envelope text-primary me-2" aria-hidden="true"></i>
-                                            <span data-i18n="fruit_perish.footer.contact">Contact Us</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter Subscription -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-section">
-                            <h3 class="h5 text-light mb-4 fw-bold" data-i18n="fruit_perish.footer.newsletter">
-                                <i class="fas fa-newspaper me-2 text-primary" aria-hidden="true"></i>
-                                <span data-i18n="fruit_perish.footer.newsletter">Newsletter</span>
-                            </h3>
-                            <p class="text-light mb-4" data-i18n="fruit_perish.footer.newsletter_desc">Stay updated with our latest announcements and industry insights
-                            </p>
-
-                            <form class="newsletter-form" aria-label="Newsletter subscription" novalidate>
-                                <div class="position-relative mb-3">
-                                    <label for="newsletter-email" class="visually-hidden" data-i18n="fruit_perish.footer.email_placeholder">Email address for
-                                        newsletter</label>
-                                    <input type="email" id="newsletter-email"
-                                        class="form-control bg-transparent border-secondary text-light py-3 ps-4 pe-5"
-                                        placeholder="Enter your email address" required
-                                        aria-describedby="email-help email-error" data-i18n-placeholder="fruit_perish.footer.email_placeholder">
-                                    <button type="submit"
-                                        class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                                        aria-label="Subscribe to newsletter">
-                                        <i class="fas fa-paper-plane me-1" aria-hidden="true"></i>
-                                        Subscribe
-                                    </button>
-                                </div>
-                                <div id="email-help" class="form-text text-muted small" data-i18n="fruit_perish.footer.privacy">
-                                    <span data-i18n="fruit_perish.footer.privacy">We respect your privacy. Unsubscribe at any time.</span>
-                                </div>
-                                <div id="email-error" class="invalid-feedback" role="alert" aria-live="polite" data-i18n="fruit_perish.footer.email_error">
-                                    <span data-i18n="fruit_perish.footer.email_error">Please enter a valid email address.</span>
-                                </div>
-                            </form>
-                        </div>
+        <!-- Footer Start -->
+    <footer class="container-fluid bg-dark text-secondary footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.address_title">Our Office</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rue du CYRUS Ablogame N°1, Lomé, TOGO</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+228 90 05 74 66</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@groupagecosco.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.twitter.com/agecosco"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.facebook.com/agecosco"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.youtube.com/agecosco"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href="https://www.linkedin.com/company/agecosco"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- Enhanced Footer End -->
-
-
-        <!-- Copyright Start -->
-        <div class="container-fluid py-4" style="background: #000000;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0"><span data-i18n="fruit_perish.footer.copyright">Copyright
-                        &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <span data-i18n="fruit_perish.footer.designed_by">Designed By</span> <a class="border-bottom" href="https://htmlcodex.com">EDX Design Web
-                            Studio</a><br><span data-i18n="fruit_perish.footer.distributed_by">Distributed By</span>
-                        <a class="border-bottom" href="https://themewagon.com/">E-Deal Express Sarl</a>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.services_title">Services</h3>
+                    <a class="btn btn-link" href="tally-inspection.html" data-i18n="nav.tally_inspection">Tally Inspection</a>
+                    <a class="btn btn-link" href="survey.html" data-i18n="nav.survey">Surveys</a>
+                    <a class="btn btn-link" href="p-i-claims-handling.html" data-i18n="nav.p_i_claims">P&I Claims</a>
+                    <a class="btn btn-link" href="loss-prevent.html" data-i18n="nav.loss_prevent">Loss Prevention</a>
+                    <a class="btn btn-link" href="risk.html" data-i18n="nav.risk">Risk Management</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.menu_title">Quick Links</h3>
+                    <a class="btn btn-link" href="index.html" data-i18n="nav.home">Home</a>
+                    <a class="btn btn-link" href="about.html" data-i18n="nav.about">About Us</a>
+                    <a class="btn btn-link" href="service.html" data-i18n="nav.services">Our Services</a>
+                    <a class="btn btn-link" href="branches.html" data-i18n="nav.branches">Branches</a>
+                    <a class="btn btn-link" href="contact.html" data-i18n="nav.contact">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 text-light mb-4" data-i18n="footer.newsletter_title">Newsletter</h3>
+                    <p data-i18n="footer.newsletter_desc">Stay updated with our latest maritime news and announcements.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-i18n="footer.newsletter_btn">Subscribe</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid py-4" style="background: #000000;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">Copyright
+                    &copy; <a class="border-bottom" href="#">Agecosco 2025 All Right Reserved </a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Ce Site Web est créé par <a class="border-bottom" href="https://htmlcodex.com">EDX Design Studio</a><br>un department d'
+                    <a class="border-bottom" href="https://themewagon.com/">E-Deal Express Sarl Department</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
 
 
         <!-- Back to Top -->
@@ -1270,7 +1050,6 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        </div>
 </body>
 
 </html>
